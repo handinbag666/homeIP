@@ -7,21 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9086,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - ryan",
+      "server": "195.238.126.20",
+      "server_port": 9078,
+      "method": "aes-256-cfb",
+      "password": "JCJpbRbQZNw9XFZG"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - ryan",
       "server": "195.238.126.20",
       "server_port": 9008,
       "method": "aes-256-cfb",
@@ -29,19 +37,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - ryan",
-      "server": "195.238.126.20",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 05 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9001,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
@@ -55,67 +55,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 07 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 08 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9078,
+      "server_port": 9011,
       "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - ryan",
-      "server": "88.119.176.24",
-      "server_port": 443,
-      "uuid": "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lit9.helper-internet.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
-          "short_id": "ff776ff77be48b88"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - ryan",
-      "server": "lith.2clash.ru",
-      "server_port": 443,
-      "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lith.2clash.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "66DIn_CbsE4-fWeWpy3vrRLP-XN8D-axun3jbZzuPmk",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 11 - ryan",
-      "server": "195.238.126.20",
-      "server_port": 9045,
-      "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "selector",
@@ -129,10 +79,7 @@
         "🇱🇹 立陶宛 (Lithuania) 05 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 06 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 07 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 08 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 09 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 10 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 11 - ryan"
+        "🇱🇹 立陶宛 (Lithuania) 08 - ryan"
       ]
     },
     {
@@ -146,10 +93,7 @@
         "🇱🇹 立陶宛 (Lithuania) 05 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 06 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 07 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 08 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 09 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 10 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 11 - ryan"
+        "🇱🇹 立陶宛 (Lithuania) 08 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

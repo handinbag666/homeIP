@@ -4,19 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - ryan",
-      "server": "94.183.170.135",
-      "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - ryan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - ryan",
       "server": "109.206.241.10",
       "server_port": 449,
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
@@ -28,6 +17,16 @@
           "enabled": true,
           "fingerprint": "chrome"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - ryan",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -61,34 +60,13 @@
     {
       "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - ryan",
-      "server": "31.76.71.63",
+      "server": "faq.wwwinternetvideo.click",
       "server_port": 443,
       "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
       "tls": {
         "enabled": true,
         "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - ryan",
-      "server": "95.85.224.154",
-      "server_port": 8443,
-      "uuid": "52ecaf96-9c28-4cad-a132-13898f2bbb29",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fota-cloud-dn.ospserver.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E",
-          "short_id": "8c554321"
-        }
+        "insecure": true
       }
     },
     {
@@ -100,8 +78,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - ryan",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - ryan",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - ryan"
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - ryan"
       ]
     },
     {
@@ -112,8 +89,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - ryan",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - ryan",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - ryan"
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - ryan
-  server: 172.64.229.2
-  port: 80
+  server: 162.159.43.187
+  port: 2086
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -16,70 +16,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan
-  server: 62.233.39.9
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
-  tls: true
-  reality-opts:
-    public-key: oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk
-  servername: dl.dell.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - ryan
-  server: 3h-kazakhstan1.09vpn.com
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - ryan
-  server: 91.224.87.22
-  port: 9882
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aa
-  servername: dl.google.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - ryan
-  server: 77.73.232.61
-  port: 19747
-  udp: true
-  type: vless
-  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
-  tls: true
-  reality-opts:
-    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
-    short-id: '2001'
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - ryan
-  server: 178.236.16.98
-  port: 35728
-  udp: true
-  type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  tls: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - ryan
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -91,7 +27,7 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - ryan
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - ryan
   server: 83.222.23.81
   port: 38065
   udp: true
@@ -111,11 +47,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - ryan
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - ryan
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - ryan
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - ryan
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - ryan
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - ryan
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,10 +55,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - ryan
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - ryan
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - ryan
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - ryan
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - ryan
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - ryan
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - ryan
 rules:
 - MATCH,PROXIES

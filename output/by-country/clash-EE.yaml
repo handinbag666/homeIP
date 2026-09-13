@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - ryan
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - ryan
   server: 94.183.170.135
   port: 443
   udp: true
@@ -13,14 +21,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - ryan
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - ryan
   server: 94.183.170.135
   port: 8443
@@ -41,26 +41,13 @@ proxies:
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - ryan
-  server: 31.76.71.63
+  server: faq.wwwinternetvideo.click
   port: 443
   udp: true
   type: hysteria2
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - ryan
-  server: 95.85.224.154
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 52ecaf96-9c28-4cad-a132-13898f2bbb29
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E
-    short-id: 8c554321
-  servername: fota-cloud-dn.ospserver.net
-  client-fingerprint: chrome
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,7 +58,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - ryan
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - ryan
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - ryan
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,6 +68,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - ryan
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - ryan
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - ryan
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - ryan
 rules:
 - MATCH,PROXIES

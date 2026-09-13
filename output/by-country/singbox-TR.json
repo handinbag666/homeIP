@@ -6,25 +6,9 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - ryan",
-      "server": "104.17.147.22",
-      "server_port": 443,
-      "uuid": "5ef04ae8-8d7c-0a66-13f4-6e3f00000003",
-      "tls": {
-        "enabled": true,
-        "server_name": "relay.lunetcloud.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lunetnetwork",
-        "headers": {
-          "Host": "relay.lunetcloud.ir"
-        }
-      }
+      "server": "188.132.237.20",
+      "server_port": 2095,
+      "uuid": "3b9e513e-30d9-4ca8-8340-8f33fc6710de"
     },
     {
       "type": "vless",
@@ -50,83 +34,58 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - ryan",
-      "server": "45.74.159.233",
-      "server_port": 56659,
-      "uuid": "12af43c3-84b4-4248-878b-b75f35835487",
-      "flow": "xtls-rprx-vision",
+      "server": "tr.iramssmoth.ir",
+      "server_port": 8443,
+      "uuid": "f1505323-ecb6-4152-9a5b-d37b3ae1cacf",
       "tls": {
         "enabled": true,
-        "server_name": "amp-api-edge.apps.apple.com",
+        "server_name": "play-apps-features.googleusercontent.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "qLggZ7qospn6X7UEO1zSoohNXK4Y1EX7Hx2sJeWfvw0",
-          "short_id": "9aa3a3f599f3d5d0"
+          "public_key": "72SJFDXHCtB2fWWRrjMj23J8iJ8T_2jvj-iNThmLREs",
+          "short_id": "8dc4f3de3846efa9"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - ryan",
-      "server": "162.159.91.222",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-723a643df685",
+      "server": "me17.msjia8844.site",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
       "tls": {
         "enabled": true,
-        "server_name": "n3zaxce7u0es.crzl48eiuses.workers.dev",
+        "server_name": "me17.msjia8844.site",
         "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/723a643df685/loc-0",
-        "headers": {
-          "Host": "n3zaxce7u0es.crzl48eiuses.workers.dev"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 05 - ryan",
-      "server": "172.67.151.109",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
-      "tls": {
-        "enabled": true,
-        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
-        "headers": {
-          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - ryan",
       "server": "shop.neexbyte.ir",
       "server_port": 8443,
       "uuid": "464bc502-f963-45b6-81e3-e33d18427506",
       "tls": {
         "enabled": true,
         "server_name": "shop.neexbyte.ir",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/"
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - ryan",
-      "server": "188.132.237.20",
-      "server_port": 2095,
-      "uuid": "3b9e513e-30d9-4ca8-8340-8f33fc6710de"
     },
     {
       "type": "selector",
@@ -137,9 +96,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - ryan",
         "🇹🇷 土耳其 (Turkey) 03 - ryan",
         "🇹🇷 土耳其 (Turkey) 04 - ryan",
-        "🇹🇷 土耳其 (Turkey) 05 - ryan",
-        "🇹🇷 土耳其 (Turkey) 06 - ryan",
-        "🇹🇷 土耳其 (Turkey) 07 - ryan"
+        "🇹🇷 土耳其 (Turkey) 05 - ryan"
       ]
     },
     {
@@ -150,9 +107,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - ryan",
         "🇹🇷 土耳其 (Turkey) 03 - ryan",
         "🇹🇷 土耳其 (Turkey) 04 - ryan",
-        "🇹🇷 土耳其 (Turkey) 05 - ryan",
-        "🇹🇷 土耳其 (Turkey) 06 - ryan",
-        "🇹🇷 土耳其 (Turkey) 07 - ryan"
+        "🇹🇷 土耳其 (Turkey) 05 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
