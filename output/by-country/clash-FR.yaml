@@ -5,73 +5,68 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - ryan
-  server: 45.144.28.39
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  tls: true
-  servername: usejh2.neobo-tooth.ru
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇫🇷 法国 (France) 02 - ryan
-  server: 51.83.192.80
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇫🇷 法国 (France) 03 - ryan
-  server: 62.210.91.10
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 04 - ryan
-  server: 162.19.10.99
+  server: 172.67.152.98
   port: 443
   udp: true
   type: vless
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-  flow: xtls-rprx-vision
+  uuid: 5934b979-e128-4c90-a600-744b97bffc8c
   tls: true
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 05 - ryan
-  server: 62.210.147.2
-  port: 43115
+  servername: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/Fi3kP8cNjBoo8UPv?ed=2560
+    headers:
+      Host: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
+- name: 🇫🇷 法国 (France) 02 - ryan
+  server: 35.181.146.129
+  port: 22222
   udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 06 - ryan
-  server: 51.255.13.232
-  port: 8388
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 03 - ryan
+  server: 35.181.146.129
+  port: 22224
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 04 - ryan
+  server: 83.171.225.55
+  port: 1443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: 🇫🇷 法国 (France) 07 - ryan
-  server: 188.114.96.3
+  password: ZjAxZ
+- name: 🇫🇷 法国 (France) 05 - ryan
+  server: 35.181.166.40
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 35.181.166.40
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 06 - ryan
+  server: 151.247.197.253
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: 151.247.197.253
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 07 - ryan
+  server: 145.223.68.58
+  port: 443
+  udp: true
+  type: vless
+  uuid: edb50d20-2d3e-4c1e-8a75-a17168a89aa5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg
+    short-id: a44ff7d2e80213c2
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 08 - ryan
   server: 62.210.91.2
   port: 23576
@@ -86,14 +81,78 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 09 - ryan
-  server: 62.210.7.139
-  port: 60111
+  server: 62.210.91.10
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 10 - ryan
+  server: 172.64.152.23
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 11 - ryan
+  server: 51.83.192.80
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇫🇷 法国 (France) 12 - ryan
+  server: 45.144.28.39
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  tls: true
+  servername: usejh2.neobo-tooth.ru
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇫🇷 法国 (France) 13 - ryan
+  server: 217.179.6.154
+  port: 443
+  udp: true
+  type: vless
+  uuid: 97ecaad4-452c-45ec-b591-d68d3308aad4
+  flow: xtls-rprx-vision
+  tls: true
+  servername: kama4.api3-max.ru
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 14 - ryan
+  server: nasnet-162191099-direct.mbghalibaf.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: nasnet
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 15 - ryan
+  server: 62.210.124.146
+  port: 22000
   udp: true
   type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: t.me
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 10 - ryan
+- name: 🇫🇷 法国 (France) 16 - ryan
   server: 54.37.136.194
   port: 2053
   udp: true
@@ -105,7 +164,24 @@ proxies:
     short-id: 50ba05992b05c1c3
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 11 - ryan
+- name: 🇫🇷 法国 (France) 17 - ryan
+  server: 45.144.28.39
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇷 法国 (France) 18 - ryan
+  server: 62.210.147.2
+  port: 43115
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 19 - ryan
   server: 51.38.82.1
   port: 443
   udp: true
@@ -116,8 +192,8 @@ proxies:
     public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
     short-id: 98fa0b00d09419f7
   servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 12 - ryan
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 20 - ryan
   server: 45.144.28.39
   port: 2053
   udp: true
@@ -129,24 +205,127 @@ proxies:
     public-key: dRLd_E_GYCkCcwxLN5EcRQYsREKqisb26_ZSehxUpWY
     short-id: 1eb8ea8dae937ae0
   servername: vk.ru
-  client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 13 - ryan
-  server: 45.144.28.39
-  port: 2096
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 21 - ryan
+  server: vpn-fr-002.fastervpn.world
+  port: 443
   udp: true
-  type: vless
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 22 - ryan
+  server: n.acp.us.ci
+  port: 443
+  udp: true
+  type: hysteria2
+  password: vlxjqoiauby22dvb
+  sni: n.acp.us.ci
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: '@arshiacomplus'
+- name: 🇫🇷 法国 (France) 23 - ryan
+  server: 185.114.72.31
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-- name: 🇫🇷 法国 (France) 14 - ryan
+    path: /assignment
+- name: 🇫🇷 法国 (France) 24 - ryan
+  server: kama1.api3-max.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 97ecaad4-452c-45ec-b591-d68d3308aad4
+  flow: xtls-rprx-vision
+  tls: true
+  servername: kama1.api3-max.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 25 - ryan
   server: 173.212.201.85
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: 173.212.201.85
+  sni: www.docker.com
   skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 26 - ryan
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 27 - ryan
+  server: 172.67.175.23
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  tls: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 28 - ryan
+  server: 51.77.217.70
+  port: 2053
+  udp: true
+  type: vless
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  tls: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 29 - ryan
+  server: 104.20.37.53
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/b52a90ada6ab
+    headers:
+      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+- name: 🇫🇷 法国 (France) 30 - ryan
+  server: 104.19.110.205
+  port: 80
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/b52a90ada6ab
+    headers:
+      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+- name: 🇫🇷 法国 (France) 31 - ryan
+  server: 149.202.58.99
+  port: 443
+  udp: true
+  type: vless
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  tls: true
+  servername: bab-6.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -166,6 +345,23 @@ proxy-groups:
   - 🇫🇷 法国 (France) 12 - ryan
   - 🇫🇷 法国 (France) 13 - ryan
   - 🇫🇷 法国 (France) 14 - ryan
+  - 🇫🇷 法国 (France) 15 - ryan
+  - 🇫🇷 法国 (France) 16 - ryan
+  - 🇫🇷 法国 (France) 17 - ryan
+  - 🇫🇷 法国 (France) 18 - ryan
+  - 🇫🇷 法国 (France) 19 - ryan
+  - 🇫🇷 法国 (France) 20 - ryan
+  - 🇫🇷 法国 (France) 21 - ryan
+  - 🇫🇷 法国 (France) 22 - ryan
+  - 🇫🇷 法国 (France) 23 - ryan
+  - 🇫🇷 法国 (France) 24 - ryan
+  - 🇫🇷 法国 (France) 25 - ryan
+  - 🇫🇷 法国 (France) 26 - ryan
+  - 🇫🇷 法国 (France) 27 - ryan
+  - 🇫🇷 法国 (France) 28 - ryan
+  - 🇫🇷 法国 (France) 29 - ryan
+  - 🇫🇷 法国 (France) 30 - ryan
+  - 🇫🇷 法国 (France) 31 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -185,5 +381,22 @@ proxy-groups:
   - 🇫🇷 法国 (France) 12 - ryan
   - 🇫🇷 法国 (France) 13 - ryan
   - 🇫🇷 法国 (France) 14 - ryan
+  - 🇫🇷 法国 (France) 15 - ryan
+  - 🇫🇷 法国 (France) 16 - ryan
+  - 🇫🇷 法国 (France) 17 - ryan
+  - 🇫🇷 法国 (France) 18 - ryan
+  - 🇫🇷 法国 (France) 19 - ryan
+  - 🇫🇷 法国 (France) 20 - ryan
+  - 🇫🇷 法国 (France) 21 - ryan
+  - 🇫🇷 法国 (France) 22 - ryan
+  - 🇫🇷 法国 (France) 23 - ryan
+  - 🇫🇷 法国 (France) 24 - ryan
+  - 🇫🇷 法国 (France) 25 - ryan
+  - 🇫🇷 法国 (France) 26 - ryan
+  - 🇫🇷 法国 (France) 27 - ryan
+  - 🇫🇷 法国 (France) 28 - ryan
+  - 🇫🇷 法国 (France) 29 - ryan
+  - 🇫🇷 法国 (France) 30 - ryan
+  - 🇫🇷 法国 (France) 31 - ryan
 rules:
 - MATCH,PROXIES
