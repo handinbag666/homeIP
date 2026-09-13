@@ -12,20 +12,8 @@
       "password": "GEdoeeqLZtkJRgSa"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 02 - ryan",
-      "server": "65.2.178.161",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-in-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - ryan",
+      "tag": "🇮🇳 印度 (India) 02 - ryan",
       "server": "148.113.5.44",
       "server_port": 443,
       "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
@@ -46,7 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 - ryan",
+      "tag": "🇮🇳 印度 (India) 03 - ryan",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -65,8 +53,32 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
+      "tag": "🇮🇳 印度 (India) 04 - ryan",
+      "server": "65.2.178.161",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-in-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇮🇳 印度 (India) 05 - ryan",
+      "server": "vpn-in-001.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 06 - ryan",
       "server": "hyfuuf6.wsone.icu",
       "server_port": 443,
       "password": "M7v%w11Se*",
@@ -82,7 +94,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 06 - ryan",
+      "tag": "🇮🇳 印度 (India) 07 - ryan",
       "server": "152.67.8.205",
       "server_port": 80,
       "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
@@ -102,7 +114,8 @@
         "🇮🇳 印度 (India) 03 - ryan",
         "🇮🇳 印度 (India) 04 - ryan",
         "🇮🇳 印度 (India) 05 - ryan",
-        "🇮🇳 印度 (India) 06 - ryan"
+        "🇮🇳 印度 (India) 06 - ryan",
+        "🇮🇳 印度 (India) 07 - ryan"
       ]
     },
     {
@@ -114,7 +127,8 @@
         "🇮🇳 印度 (India) 03 - ryan",
         "🇮🇳 印度 (India) 04 - ryan",
         "🇮🇳 印度 (India) 05 - ryan",
-        "🇮🇳 印度 (India) 06 - ryan"
+        "🇮🇳 印度 (India) 06 - ryan",
+        "🇮🇳 印度 (India) 07 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

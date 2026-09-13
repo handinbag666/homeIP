@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - ryan
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   udp: true
   type: vmess
@@ -22,12 +22,13 @@ proxies:
   ws-opts:
     path: /7586c69d3dc9
 - name: 🇦🇺 澳大利亚 (Australia) 03 - ryan
-  server: vpn-au-002.fastervpn.world
+  server: 172.105.169.70
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: speedtest.tinkoff.ru
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 172.105.169.70
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 04 - ryan
   server: 51.161.204.242
@@ -43,15 +44,22 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 05 - ryan
-  server: 172.105.169.70
+  server: 32.236.171.236
   port: 443
   udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 172.105.169.70
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: css.rbxcdn.com
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 06 - ryan
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 07 - ryan
   server: 152.67.115.203
   port: 443
   udp: true
@@ -61,14 +69,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇦🇺 澳大利亚 (Australia) 07 - ryan
-  server: 32.236.171.236
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

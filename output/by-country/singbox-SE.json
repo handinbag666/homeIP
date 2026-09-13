@@ -14,7 +14,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -38,7 +38,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -85,8 +85,32 @@
       }
     },
     {
-      "type": "anytls",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - ryan",
+      "server": "89.47.55.9",
+      "server_port": 8443,
+      "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tl7xSwczBM--oN16cxdLnAD8GMf8tA0f-FXE9ilCCjA",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - ryan",
       "server": "svip.skycon808.com",
       "server_port": 60005,
       "password": "13f0acfa-38c1-4e82-a758-583aa31740df",
@@ -105,7 +129,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - ryan",
         "🇸🇪 瑞典 (Sweden) 03 - ryan",
         "🇸🇪 瑞典 (Sweden) 04 - ryan",
-        "🇸🇪 瑞典 (Sweden) 05 - ryan"
+        "🇸🇪 瑞典 (Sweden) 05 - ryan",
+        "🇸🇪 瑞典 (Sweden) 06 - ryan"
       ]
     },
     {
@@ -116,7 +141,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - ryan",
         "🇸🇪 瑞典 (Sweden) 03 - ryan",
         "🇸🇪 瑞典 (Sweden) 04 - ryan",
-        "🇸🇪 瑞典 (Sweden) 05 - ryan"
+        "🇸🇪 瑞典 (Sweden) 05 - ryan",
+        "🇸🇪 瑞典 (Sweden) 06 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

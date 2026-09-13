@@ -14,7 +14,7 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
@@ -28,7 +28,7 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
@@ -53,6 +53,20 @@ proxies:
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - ryan
+  server: 89.47.55.9
+  port: 8443
+  udp: true
+  type: vless
+  uuid: dca76b88-b038-e82b-45e1-1d76b476d7ca
+  tls: true
+  reality-opts:
+    public-key: tl7xSwczBM--oN16cxdLnAD8GMf8tA0f-FXE9ilCCjA
+  servername: download.intel.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 06 - ryan
   server: svip.skycon808.com
   port: 60005
   udp: true
@@ -70,6 +84,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - ryan
   - 🇸🇪 瑞典 (Sweden) 04 - ryan
   - 🇸🇪 瑞典 (Sweden) 05 - ryan
+  - 🇸🇪 瑞典 (Sweden) 06 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,5 +95,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - ryan
   - 🇸🇪 瑞典 (Sweden) 04 - ryan
   - 🇸🇪 瑞典 (Sweden) 05 - ryan
+  - 🇸🇪 瑞典 (Sweden) 06 - ryan
 rules:
 - MATCH,PROXIES

@@ -20,16 +20,8 @@
       "password": "itzvpn@321"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 03 - ryan",
-      "server": "91.201.65.122",
-      "server_port": 9070,
-      "method": "aes-256-cfb",
-      "password": "bf7v334KKDV3YDhH"
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 04 - ryan",
+      "tag": "🇮🇹 意大利 (Italy) 03 - ryan",
       "server": "57.131.38.163",
       "server_port": 2053,
       "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
@@ -49,7 +41,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 05 - ryan",
+      "tag": "🇮🇹 意大利 (Italy) 04 - ryan",
       "server": "82.118.16.187",
       "server_port": 443,
       "uuid": "dc2259c4-388e-4285-ba18-df619b6672b6",
@@ -70,7 +62,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 06 - ryan",
+      "tag": "🇮🇹 意大利 (Italy) 05 - ryan",
       "server": "82.118.16.189",
       "server_port": 443,
       "uuid": "d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e",
@@ -91,7 +83,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 07 - ryan",
+      "tag": "🇮🇹 意大利 (Italy) 06 - ryan",
       "server": "172.238.232.239",
       "server_port": 32833,
       "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
@@ -101,7 +93,7 @@
         "server_name": "www.intel.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -120,8 +112,7 @@
         "🇮🇹 意大利 (Italy) 03 - ryan",
         "🇮🇹 意大利 (Italy) 04 - ryan",
         "🇮🇹 意大利 (Italy) 05 - ryan",
-        "🇮🇹 意大利 (Italy) 06 - ryan",
-        "🇮🇹 意大利 (Italy) 07 - ryan"
+        "🇮🇹 意大利 (Italy) 06 - ryan"
       ]
     },
     {
@@ -133,8 +124,7 @@
         "🇮🇹 意大利 (Italy) 03 - ryan",
         "🇮🇹 意大利 (Italy) 04 - ryan",
         "🇮🇹 意大利 (Italy) 05 - ryan",
-        "🇮🇹 意大利 (Italy) 06 - ryan",
-        "🇮🇹 意大利 (Italy) 07 - ryan"
+        "🇮🇹 意大利 (Italy) 06 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
