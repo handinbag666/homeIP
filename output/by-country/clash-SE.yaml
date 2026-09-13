@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - ryan
+  server: 79.141.174.147
+  port: 33743
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 02 - ryan
   server: 91.193.17.156
   port: 9458
   udp: true
@@ -15,20 +29,6 @@ proxies:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
   client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 02 - ryan
-  server: 193.42.39.10
-  port: 33743
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
@@ -53,27 +53,13 @@ proxies:
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - ryan
-  server: 2.26.91.98
-  port: 1443
+  server: svip.skycon808.com
+  port: 60005
   udp: true
-  type: vless
-  uuid: fd30c61d-82bf-449c-aa9e-565d0ab64b75
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇸🇪 瑞典 (Sweden) 06 - ryan
-  server: 70.34.212.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  type: anytls
+  password: 13f0acfa-38c1-4e82-a758-583aa31740df
+  sni: xjp18.2uuzhe.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,7 +70,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - ryan
   - 🇸🇪 瑞典 (Sweden) 04 - ryan
   - 🇸🇪 瑞典 (Sweden) 05 - ryan
-  - 🇸🇪 瑞典 (Sweden) 06 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,6 +80,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - ryan
   - 🇸🇪 瑞典 (Sweden) 04 - ryan
   - 🇸🇪 瑞典 (Sweden) 05 - ryan
-  - 🇸🇪 瑞典 (Sweden) 06 - ryan
 rules:
 - MATCH,PROXIES

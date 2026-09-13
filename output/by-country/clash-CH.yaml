@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - ryan
-  server: 132.243.162.30
-  port: 46280
-  udp: true
-  type: vless
-  uuid: 12af43c3-84b4-4248-878b-b75f35835487
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3xEvhIbjIvO9bJSqHEF3D91YZEYaA3fWzb2JpxW0XmQ
-    short-id: e53690af52736850
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 02 - ryan
   server: 45.90.59.15
   port: 443
   udp: true
@@ -30,15 +17,7 @@ proxies:
     short-id: 19253fae84102271
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 03 - ryan
-  server: 104.165.205.42
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
-  sni: speedtestmark.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 04 - ryan
+- name: 🇨🇭 瑞士 (Switzerland) 02 - ryan
   server: 151.242.2.81
   port: 443
   udp: true
@@ -52,7 +31,7 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
-- name: 🇨🇭 瑞士 (Switzerland) 05 - ryan
+- name: 🇨🇭 瑞士 (Switzerland) 03 - ryan
   server: 104.165.205.40
   port: 8443
   udp: true
@@ -60,25 +39,14 @@ proxies:
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   sni: speedtestmark.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 06 - ryan
-  server: 140.238.213.114
-  port: 50160
+- name: 🇨🇭 瑞士 (Switzerland) 04 - ryan
+  server: 104.165.205.42
+  port: 8443
   udp: true
   type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 07 - ryan
-  server: 188.114.97.3
-  port: 443
-  udp: true
-  type: trojan
-  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
-  sni: mfyousheng.nl.eu.org
+  password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
+  sni: speedtestmark.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tjwsLhx0SFASG4l9FERJ1g
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,9 +56,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - ryan
   - 🇨🇭 瑞士 (Switzerland) 03 - ryan
   - 🇨🇭 瑞士 (Switzerland) 04 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 05 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 06 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 07 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,8 +65,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - ryan
   - 🇨🇭 瑞士 (Switzerland) 03 - ryan
   - 🇨🇭 瑞士 (Switzerland) 04 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 05 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 06 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 07 - ryan
 rules:
 - MATCH,PROXIES

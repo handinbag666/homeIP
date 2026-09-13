@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: fbf81d6c-b115-485f-99a6-f42f46fe36fd
+  uuid: af674f24-71f7-4683-9e8e-370ec70cffc4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -23,7 +23,7 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - ryan
@@ -40,7 +40,7 @@ proxies:
   grpc-opts:
     grpc-service-name: freegrpc
 - name: 🇦🇪 阿联酋 (UAE) 04 - ryan
-  server: 85.204.107.183
+  server: 85.204.107.172
   port: 8080
   udp: true
   type: hysteria2
@@ -48,18 +48,6 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - ryan
-  server: upload.tbotapi.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
-  servername: upload.tbotapi.ru
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 06 - ryan
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -70,21 +58,18 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - ryan
-  server: 92.113.124.204
-  port: 18443
+- name: 🇦🇪 阿联酋 (UAE) 06 - ryan
+  server: 31.58.181.88
+  port: 8443
   udp: true
   type: vless
-  uuid: 48a3d3a6-4fbb-4842-9f7b-71a976b3fbb5
+  uuid: 67018597-36a2-40f2-aa72-a253d0ad438b
+  flow: xtls-rprx-vision
   tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,7 +81,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - ryan
   - 🇦🇪 阿联酋 (UAE) 05 - ryan
   - 🇦🇪 阿联酋 (UAE) 06 - ryan
-  - 🇦🇪 阿联酋 (UAE) 07 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,6 +92,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - ryan
   - 🇦🇪 阿联酋 (UAE) 05 - ryan
   - 🇦🇪 阿联酋 (UAE) 06 - ryan
-  - 🇦🇪 阿联酋 (UAE) 07 - ryan
 rules:
 - MATCH,PROXIES
