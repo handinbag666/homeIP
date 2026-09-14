@@ -5,12 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - ryan
-  server: 188.132.174.236
-  port: 1080
+  server: 185.87.24.4
+  port: 2085
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vless
+  uuid: 128314f6-f09a-426f-b758-b8e559c38ddb
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇹🇷 土耳其 (Turkey) 02 - ryan
   server: 170.168.97.8
   port: 8443
@@ -49,6 +51,43 @@ proxies:
   obfs: salamander
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 - name: 🇹🇷 土耳其 (Turkey) 05 - ryan
+  server: 213.156.152.75
+  port: 8443
+  udp: true
+  type: vless
+  uuid: f1505323-ecb6-4152-9a5b-d37b3ae1cacf
+  tls: true
+  reality-opts:
+    public-key: 72SJFDXHCtB2fWWRrjMj23J8iJ8T_2jvj-iNThmLREs
+    short-id: 8dc4f3de3846efa9
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 06 - ryan
+  server: add.life-pro.ir
+  port: 8082
+  udp: true
+  type: vless
+  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
+- name: 🇹🇷 土耳其 (Turkey) 07 - ryan
+  server: 158.94.216.50
+  port: 32306
+  udp: true
+  type: vless
+  uuid: f1505323-ecb6-4152-9a5b-d37b3ae1cacf
+  tls: true
+  reality-opts:
+    public-key: 5iqitmx5fd71pubTxlrX0sd-ei7palcgVL7vtKToJGA
+    short-id: 61614f026070554f
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 08 - ryan
+  server: 188.132.174.236
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+- name: 🇹🇷 土耳其 (Turkey) 09 - ryan
   server: 13.143.137.164
   port: 9443
   udp: true
@@ -61,6 +100,20 @@ proxies:
     short-id: e336c9a786fae301
   servername: plaincanvas.videoclothing.xyz
   client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 10 - ryan
+  server: 172.67.134.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  tls: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +124,11 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
   - 🇹🇷 土耳其 (Turkey) 04 - ryan
   - 🇹🇷 土耳其 (Turkey) 05 - ryan
+  - 🇹🇷 土耳其 (Turkey) 06 - ryan
+  - 🇹🇷 土耳其 (Turkey) 07 - ryan
+  - 🇹🇷 土耳其 (Turkey) 08 - ryan
+  - 🇹🇷 土耳其 (Turkey) 09 - ryan
+  - 🇹🇷 土耳其 (Turkey) 10 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,5 +139,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
   - 🇹🇷 土耳其 (Turkey) 04 - ryan
   - 🇹🇷 土耳其 (Turkey) 05 - ryan
+  - 🇹🇷 土耳其 (Turkey) 06 - ryan
+  - 🇹🇷 土耳其 (Turkey) 07 - ryan
+  - 🇹🇷 土耳其 (Turkey) 08 - ryan
+  - 🇹🇷 土耳其 (Turkey) 09 - ryan
+  - 🇹🇷 土耳其 (Turkey) 10 - ryan
 rules:
 - MATCH,PROXIES

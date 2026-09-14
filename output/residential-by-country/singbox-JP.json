@@ -5,18 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 (家宽) - ryan",
-      "server": "roma2.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - ryan",
+      "server": "45.131.66.61",
+      "server_port": 20001,
+      "uuid": "cff687d9-5a5f-46fe-a2d5-e9401fa164e6",
       "tls": {
         "enabled": true,
-        "server_name": "roma2.moritech.net",
+        "server_name": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
         }
       }
     },
@@ -25,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01 (家宽) - ryan"
+        "🇯🇵 日本 (Japan) 01 (家宽) - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01 (家宽) - ryan"
+        "🇯🇵 日本 (Japan) 01 (家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
