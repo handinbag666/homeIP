@@ -15,16 +15,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - ryan",
-      "server": "213.183.63.60",
-      "server_port": 9098,
-      "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
-    },
-    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - ryan",
       "server": "neth9.lunariai.ru",
       "server_port": 8443,
       "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
@@ -36,11 +28,19 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
+      "server": "213.183.63.60",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - ryan",
       "server": "213.183.63.60",
-      "server_port": 9064,
+      "server_port": 9098,
       "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
+      "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "vless",

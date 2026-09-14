@@ -14,13 +14,6 @@ proxies:
   ws-opts:
     path: /
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
-  server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
   server: neth9.lunariai.ru
   port: 8443
   udp: true
@@ -29,13 +22,20 @@ proxies:
   tls: true
   servername: neth9.lunariai.ru
   skip-cert-verify: false
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
   server: 213.183.63.60
-  port: 9064
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - ryan
   server: 193.148.59.178
   port: 443

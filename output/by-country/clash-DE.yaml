@@ -5,115 +5,54 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - ryan
-  server: 151.101.56.101
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇩🇪 德国 (Germany) 02 - ryan
-  server: 199.232.78.160
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇩🇪 德国 (Germany) 03 - ryan
-  server: 167.82.76.7
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: '@mehrosaboran'
-- name: 🇩🇪 德国 (Germany) 04 - ryan
-  server: 213.202.208.199
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇩🇪 德国 (Germany) 05 - ryan
   server: 8.209.74.72
   port: 20001
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: PWpjPo3tqhPN4yRZ
-- name: 🇩🇪 德国 (Germany) 06 - ryan
-  server: 130.61.34.252
-  port: 59924
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: vQfEC6ISz0hIR/c7zLbfa5SxfaCCmcGPzetIzIkhLyk=
-- name: 🇩🇪 德国 (Germany) 07 - ryan
-  server: 2.58.81.221
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 08 - ryan
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 09 - ryan
-  server: 2.58.81.221
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 10 - ryan
-  server: 209.46.102.22
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-- name: 🇩🇪 德国 (Germany) 11 - ryan
+- name: 🇩🇪 德国 (Germany) 02 - ryan
   server: 141.95.29.163
   port: 2083
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:JTou+JSmZOAyrMLdvNBcXFm0Y9luZ/8u17ie48jQfVc=
-- name: 🇩🇪 德国 (Germany) 12 - ryan
-  server: 91.98.102.240
-  port: 42718
+- name: 🇩🇪 德国 (Germany) 03 - ryan
+  server: 209.46.102.22
+  port: 8388
   udp: true
-  type: vless
-  uuid: b775630e-1386-44a6-9d89-61d029d4b5ab
-- name: 🇩🇪 德国 (Germany) 13 - ryan
-  server: 178.105.126.242
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+- name: 🇩🇪 德国 (Germany) 04 - ryan
+  server: 2.58.81.221
   port: 443
   udp: true
-  type: anytls
-  password: e70ec0f2ab60e8c22b316156bf9ac43fec98b45be6681401
-  sni: cn.bing.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 14 - ryan
-  server: 88.99.125.243
-  port: 15036
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 05 - ryan
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 06 - ryan
+  server: 162.248.166.35
+  port: 443
   udp: true
   type: vless
-  uuid: 783c7211-5349-4c26-8f8f-85f0f4c93ae8
-- name: 🇩🇪 德国 (Germany) 15 - ryan
+  uuid: d92b6509-8b63-4505-b3a2-1dc5b1c014ac
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NYG48Fv1MF3SqOpHwoa4GqJH5IJrocSrwWzrffY-tCk
+    short-id: c6dc8abb0235dc05
+  servername: www.caradisiac.com
+  client-fingerprint: edge
+- name: 🇩🇪 德国 (Germany) 07 - ryan
   server: 82.24.203.20
   port: 2087
   udp: true
@@ -122,7 +61,23 @@ proxies:
   network: ws
   ws-opts:
     path: /fd5ba98a3970
-- name: 🇩🇪 德国 (Germany) 16 - ryan
+- name: 🇩🇪 德国 (Germany) 08 - ryan
+  server: 2.58.81.221
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 09 - ryan
+  server: 163.8.195.241
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
+- name: 🇩🇪 德国 (Germany) 10 - ryan
   server: 144.31.168.95
   port: 443
   udp: true
@@ -134,49 +89,8 @@ proxies:
     public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
     short-id: 00bca5982f82d083
   servername: eu-central.cendora.ru
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 17 - ryan
-  server: 57.129.41.216
-  port: 80
-  udp: true
-  type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 18 - ryan
-  server: 163.8.195.241
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  ws-opts:
-    path: /29c8fed7ca22
-- name: 🇩🇪 德国 (Germany) 19 - ryan
-  server: 170.101.109.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: bf645ffe-a3cc-4480-8e4c-9bcd1af41052
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A
-    short-id: ab88d256
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 20 - ryan
-  server: replay.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
-  sni: replay.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 21 - ryan
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 11 - ryan
   server: 82.118.19.153
   port: 443
   udp: true
@@ -189,15 +103,47 @@ proxies:
     short-id: 670ed9f350bd8ee0
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 22 - ryan
-  server: 178.104.68.107
+- name: 🇩🇪 德国 (Germany) 12 - ryan
+  server: 79.137.207.190
+  port: 3
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9ri2bpxWs4FHXRjlhTFlQQ
+- name: 🇩🇪 德国 (Germany) 13 - ryan
+  server: 144.31.221.57
   port: 443
   udp: true
-  type: anytls
-  password: 53c9301809f742ee777be97c064ffb0e2c222e4400a9e544
-  sni: 178.104.68.107
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 23 - ryan
+  type: hysteria2
+  password: V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8
+  sni: player.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 14 - ryan
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 15 - ryan
+  server: 144.31.148.87
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
+  sni: replay.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 16 - ryan
+  server: 140.82.34.114
+  port: 25585
+  udp: true
+  type: vless
+  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
+- name: 🇩🇪 德国 (Germany) 17 - ryan
   server: 93.152.217.41
   port: 40443
   udp: true
@@ -209,21 +155,63 @@ proxies:
     short-id: 5b97
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 24 - ryan
-  server: 140.82.34.114
-  port: 25585
-  udp: true
-  type: vless
-  uuid: e4668a2b-66d6-4500-bcef-5ed52414e40a
-- name: 🇩🇪 德国 (Germany) 25 - ryan
-  server: 144.31.221.57
-  port: 443
+- name: 🇩🇪 德国 (Germany) 18 - ryan
+  server: 130.61.50.75
+  port: 6443
   udp: true
   type: hysteria2
-  password: V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8
-  sni: player.wwwinternetvideo.click
+  password: zhangyang
+  sni: dash.cloudflare.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 26 - ryan
+- name: 🇩🇪 德国 (Germany) 19 - ryan
+  server: ov-germany1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 20 - ryan
+  server: setlor.rehan-iogsar.ir
+  port: 4680
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-128-gcm
+  password: 1JvlmtT4v8y1yGczDtT6Ww==:aCtpeMietGsJY50h6jDW6w==
+- name: 🇩🇪 德国 (Germany) 21 - ryan
+  server: 91.98.96.59
+  port: 80
+  udp: true
+  type: vless
+  uuid: 35a6c37b-5df7-4d7f-b338-f9092d3be2e9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 22 - ryan
+  server: 82.39.171.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 23 - ryan
+  server: 178.104.68.107
+  port: 443
+  udp: true
+  type: anytls
+  password: 53c9301809f742ee777be97c064ffb0e2c222e4400a9e544
+  sni: 178.104.68.107
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 24 - ryan
   server: 82.39.171.142
   port: 443
   udp: true
@@ -236,7 +224,7 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 27 - ryan
+- name: 🇩🇪 德国 (Germany) 25 - ryan
   server: rubifen.adaspoloandco.com
   port: 443
   udp: true
@@ -245,48 +233,75 @@ proxies:
   tls: true
   servername: rubifen.adaspoloandco.com
   skip-cert-verify: false
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /GOrbEh
-- name: 🇩🇪 德国 (Germany) 28 - ryan
-  server: 82.39.171.12
+- name: 🇩🇪 德国 (Germany) 26 - ryan
+  server: 88.99.125.243
+  port: 15036
+  udp: true
+  type: vless
+  uuid: 783c7211-5349-4c26-8f8f-85f0f4c93ae8
+- name: 🇩🇪 德国 (Germany) 27 - ryan
+  server: 170.101.109.37
   port: 443
   udp: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: bf645ffe-a3cc-4480-8e4c-9bcd1af41052
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
+    public-key: rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A
+    short-id: ab88d256
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 28 - ryan
+  server: 104.27.88.172
+  port: 80
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-nr6wpa.app-tp57xz.workers.dev
 - name: 🇩🇪 德国 (Germany) 29 - ryan
-  server: de1.sferavpn.pro
-  port: 443
+  server: 213.202.208.199
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇩🇪 德国 (Germany) 30 - ryan
+  server: 93.94.52.23
+  port: 40443
+  udp: true
+  type: vless
+  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
+    short-id: db46e2946fc466fd
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 31 - ryan
+  server: de1.xiaoliyu.cyou
+  port: 4433
   udp: true
   type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: de1.sferavpn.pro
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: de1.xiaoliyu.cyou
   skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇩🇪 德国 (Germany) 30 - ryan
-  server: 130.61.144.173
-  port: 59924
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: MSBulFIL/2cQ1Jg+HZEfrPrfk/2Ev2nlSei+wSvdOLY=
-- name: 🇩🇪 德国 (Germany) 31 - ryan
-  server: 130.61.144.173
-  port: 59924
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: MSBulFIL/2cQ1Jg+HZEfrPrfk/2Ev2nlSei+wSvdOLY=
 - name: 🇩🇪 德国 (Germany) 32 - ryan
+  server: 91.98.102.240
+  port: 42718
+  udp: true
+  type: vless
+  uuid: b775630e-1386-44a6-9d89-61d029d4b5ab
+- name: 🇩🇪 德国 (Germany) 33 - ryan
   server: undef.network
   port: 2052
   udp: true
@@ -297,6 +312,35 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 34 - ryan
+  server: 147.45.125.231
+  port: 443
+  udp: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 德国 (Germany) 35 - ryan
+  server: ww2.levikogjgfdd.ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
+    short-id: 85c86a9863
+  servername: www.intel.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -334,6 +378,9 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 30 - ryan
   - 🇩🇪 德国 (Germany) 31 - ryan
   - 🇩🇪 德国 (Germany) 32 - ryan
+  - 🇩🇪 德国 (Germany) 33 - ryan
+  - 🇩🇪 德国 (Germany) 34 - ryan
+  - 🇩🇪 德国 (Germany) 35 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -371,5 +418,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 30 - ryan
   - 🇩🇪 德国 (Germany) 31 - ryan
   - 🇩🇪 德国 (Germany) 32 - ryan
+  - 🇩🇪 德国 (Germany) 33 - ryan
+  - 🇩🇪 德国 (Germany) 34 - ryan
+  - 🇩🇪 德国 (Germany) 35 - ryan
 rules:
 - MATCH,PROXIES

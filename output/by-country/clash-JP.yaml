@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - ryan
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 02 - ryan
+  server: 168.110.60.104
+  port: 18112
+  udp: true
+  type: vmess
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 03 - ryan
   server: 45.32.57.118
   port: 4433
   udp: true
@@ -12,54 +27,21 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 (Japan) 02 - ryan
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 03 - ryan
+- name: 🇯🇵 日本 (Japan) 04 - ryan
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 04 - ryan
-  server: 149.22.87.204
+- name: 🇯🇵 日本 (Japan) 05 - ryan
+  server: 149.22.87.241
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 05 - ryan
-  server: 154.31.114.248
-  port: 50159
-  udp: true
-  type: vless
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 06 - ryan
-  server: 103.76.85.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4082b282-dc67-40df-b114-f70d71d61f6f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SsqcoKQAh4wOwKVxQcS4QGb_8xiHJ_IgzsEoTsEPDj8
-    short-id: 41dd2ebdd7e0a61a
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 07 - ryan
   server: 103.137.215.189
   port: 443
   udp: true
@@ -72,32 +54,47 @@ proxies:
     short-id: aa76df495eafba20
   servername: www.apple.com
   client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 07 - ryan
+  server: 154.31.114.248
+  port: 50159
+  udp: true
+  type: vless
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 08 - ryan
-  server: d3e887dc.459292.xyz
-  port: 8443
+  server: 8.209.217.129
+  port: 443
   udp: true
   type: hysteria2
-  password: 9b5ebb1c-5221-4381-850e-0b5eaac603e2
-  sni: localhost
+  password: 20b7100438be713dc89876906214c5b1
+  sni: 8.209.217.129
   skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a
 - name: 🇯🇵 日本 (Japan) 09 - ryan
-  server: 27add0b5.459921.xyz
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 9b5ebb1c-5221-4381-850e-0b5eaac603e2
-  sni: localhost
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - ryan
-  server: hyfnjp03.459292.xyz
+  server: jp06.459292.xyz
   port: 8443
   udp: true
   type: hysteria2
   password: 9b5ebb1c-5221-4381-850e-0b5eaac603e2
   sni: 127.0.0.1
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10 - ryan
+  server: 898ca7c3.459292.xyz
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 9b5ebb1c-5221-4381-850e-0b5eaac603e2
+  sni: localhost
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 11 - ryan
-  server: jp03.459292.xyz
+  server: hyfnjp03.459292.xyz
   port: 8443
   udp: true
   type: hysteria2
@@ -105,7 +102,7 @@ proxies:
   sni: localhost
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 12 - ryan
-  server: 5791271f.459921.xyz
+  server: d3e887dc.459292.xyz
   port: 8443
   udp: true
   type: hysteria2
@@ -113,40 +110,36 @@ proxies:
   sni: localhost
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 13 - ryan
-  server: 3.114.220.22
-  port: 10583
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 14 - ryan
-  server: 3.114.220.22
-  port: 19645
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 15 - ryan
-  server: 84.247.155.196
+  server: 168.138.43.75
   port: 80
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 14 - ryan
+  server: 1jp003.459292.xyz
+  port: 30001
+  udp: true
+  type: hysteria2
+  password: 9b5ebb1c-5221-4381-850e-0b5eaac603e2
+  sni: localhost
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 15 - ryan
+  server: 5791271f.459921.xyz
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 9b5ebb1c-5221-4381-850e-0b5eaac603e2
+  sni: localhost
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 16 - ryan
-  server: jp06.459292.xyz
+  server: jp03.459292.xyz
   port: 8443
   udp: true
   type: hysteria2
@@ -165,16 +158,28 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 18 - ryan
-  server: 898ca7c3.459292.xyz
-  port: 8443
+  server: 103.75.118.228
+  port: 11452
   udp: true
-  type: hysteria2
-  password: 9b5ebb1c-5221-4381-850e-0b5eaac603e2
-  sni: localhost
-  skip-cert-verify: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 19 - ryan
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 20 - ryan
   server: hyfnjp01.459292.xyz
   port: 8443
   udp: true
@@ -182,23 +187,28 @@ proxies:
   password: 9b5ebb1c-5221-4381-850e-0b5eaac603e2
   sni: localhost
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 20 - ryan
-  server: dog-jp.kunlun01dns.com
-  port: 21017
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
 - name: 🇯🇵 日本 (Japan) 21 - ryan
-  server: dog-jp.kunlun01dns.com
-  port: 21014
+  server: 3.114.220.22
+  port: 19645
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 22 - ryan
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 23 - ryan
   server: 156.246.88.125
   port: 26518
   udp: true
@@ -210,61 +220,21 @@ proxies:
     public-key: 1fa6iCY7vhoQyKu91FeaK04FN-mr1qeHnrtdyLZ79mk
     short-id: 6caead99
   servername: github.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 23 - ryan
-  server: dog-jp.kunlun01dns.com
-  port: 21016
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 24 - ryan
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 25 - ryan
-  server: 162.159.254.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 26 - ryan
-  server: 137.220.221.179
-  port: 443
+- name: 🇯🇵 日本 (Japan) 24 - ryan
+  server: 3.114.220.22
+  port: 10583
   udp: true
   type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 27 - ryan
-  server: c1.bestai.beauty
-  port: 3488
-  udp: true
-  type: hysteria2
-  password: baf3f51e-80dd-482b-8617-cea6de59631d
-  sni: admin.blob.core.windows.net
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 28 - ryan
-  server: 168.110.60.104
-  port: 18112
-  udp: true
-  type: vmess
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 29 - ryan
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 25 - ryan
   server: 31.76.91.72
   port: 2087
   udp: true
@@ -279,6 +249,59 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
+- name: 🇯🇵 日本 (Japan) 26 - ryan
+  server: 137.220.221.179
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 (Japan) 27 - ryan
+  server: 172.67.217.240
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 28 - ryan
+  server: aa.ccmusic.jp
+  port: 443
+  udp: true
+  type: trojan
+  password: tsuchiya
+  sni: aa.ccmusic.jp
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 29 - ryan
+  server: aa.ccmusic.jp
+  port: 443
+  udp: true
+  type: trojan
+  password: tsuchiya
+  sni: aa.ccmusic.jp
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 30 - ryan
+  server: aa.ccmusic.jp
+  port: 443
+  udp: true
+  type: trojan
+  password: tsuchiya
+  sni: aa.ccmusic.jp
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 31 - ryan
+  server: aa.ccmusic.jp
+  port: 443
+  udp: true
+  type: trojan
+  password: tsuchiya
+  sni: aa.ccmusic.jp
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -313,6 +336,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 27 - ryan
   - 🇯🇵 日本 (Japan) 28 - ryan
   - 🇯🇵 日本 (Japan) 29 - ryan
+  - 🇯🇵 日本 (Japan) 30 - ryan
+  - 🇯🇵 日本 (Japan) 31 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -347,5 +372,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 27 - ryan
   - 🇯🇵 日本 (Japan) 28 - ryan
   - 🇯🇵 日本 (Japan) 29 - ryan
+  - 🇯🇵 日本 (Japan) 30 - ryan
+  - 🇯🇵 日本 (Japan) 31 - ryan
 rules:
 - MATCH,PROXIES
