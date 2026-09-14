@@ -4,16 +4,37 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - ryan",
-      "server": "185.39.204.3",
-      "server_port": 8098,
+      "server": "89.105.206.123",
+      "server_port": 443,
+      "uuid": "3a22ca95-bd99-0028-a799-f8f73930ea05",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl.convert-flow.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
+          "short_id": "00a61d55a07de885"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - ryan",
+      "server": "130.49.189.158",
+      "server_port": 43558,
       "method": "chacha20-ietf-poly1305",
-      "password": "PluSKSrbtxTvlVv7BOUwn4"
+      "password": "jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs="
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - ryan",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - ryan",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -24,35 +45,27 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - ryan",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs="
-    },
-    {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - ryan",
-      "server": "170.168.99.8",
-      "server_port": 8443,
-      "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
+      "server": "91.224.87.22",
+      "server_port": 9882,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
       "tls": {
         "enabled": true,
-        "server_name": "www.epson.com",
+        "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "-GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28",
-          "short_id": ""
+          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+          "short_id": "aa"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "TunService"
+        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -68,61 +81,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - ryan",
-      "server": "46.8.200.91",
-      "server_port": 443,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf3.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/casc",
-        "headers": {
-          "Host": "cf3.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - ryan",
-      "server": "45.12.75.242",
-      "server_port": 26424,
-      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ya.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
-          "short_id": "23103e1e"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - ryan",
-      "server": "els1.mangshe.xyz",
-      "server_port": 2056,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -131,10 +89,7 @@
         "🇷🇺 俄罗斯 (Russia) 02 - ryan",
         "🇷🇺 俄罗斯 (Russia) 03 - ryan",
         "🇷🇺 俄罗斯 (Russia) 04 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 05 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 06 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 07 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 08 - ryan"
+        "🇷🇺 俄罗斯 (Russia) 05 - ryan"
       ]
     },
     {
@@ -145,10 +100,7 @@
         "🇷🇺 俄罗斯 (Russia) 02 - ryan",
         "🇷🇺 俄罗斯 (Russia) 03 - ryan",
         "🇷🇺 俄罗斯 (Russia) 04 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 05 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 06 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 07 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 08 - ryan"
+        "🇷🇺 俄罗斯 (Russia) 05 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
