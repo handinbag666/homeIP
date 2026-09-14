@@ -14,6 +14,29 @@ proxies:
   ws-opts:
     path: /
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
+  server: neth9.lunariai.ru
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  tls: true
+  servername: neth9.lunariai.ru
+  skip-cert-verify: false
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - ryan
   server: 193.148.59.178
   port: 443
   udp: true
@@ -26,17 +49,8 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
-  server: neth9.lunariai.ru
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  tls: true
-  servername: neth9.lunariai.ru
-  skip-cert-verify: false
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
-  server: prep.wwwinternetvideo.click
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - ryan
+  server: 144.31.50.236
   port: 443
   udp: true
   type: vless
@@ -57,6 +71,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +82,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - ryan
 rules:
 - MATCH,PROXIES

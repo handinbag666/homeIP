@@ -5,25 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - ryan
-  server: 185.39.204.3
-  port: 8098
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PluSKSrbtxTvlVv7BOUwn4
-- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
-  server: 107.161.174.26
-  port: 443
-  udp: true
-  type: vless
-  uuid: 069ba4cf-e8af-4561-b11e-18bd07b0dbd3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
-  servername: books.blackbigdog.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
   server: 156.67.63.231
   port: 443
   udp: true
@@ -36,17 +17,7 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - ryan
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 土耳其 (Turkey) 05 - ryan
+- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
   server: 13.143.137.164
   port: 9443
   udp: true
@@ -59,6 +30,37 @@ proxies:
     short-id: e336c9a786fae301
   servername: plaincanvas.videoclothing.xyz
   client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
+  server: 107.161.174.26
+  port: 443
+  udp: true
+  type: vless
+  uuid: 069ba4cf-e8af-4561-b11e-18bd07b0dbd3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
+  servername: books.blackbigdog.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - ryan
+  server: shop.neexbyte.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  tls: true
+  servername: shop.neexbyte.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇷 土耳其 (Turkey) 05 - ryan
+  server: 188.132.174.236
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
 proxy-groups:
 - name: PROXIES
   type: select

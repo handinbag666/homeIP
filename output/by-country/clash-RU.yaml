@@ -5,26 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - ryan
-  server: 89.105.206.123
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3a22ca95-bd99-0028-a799-f8f73930ea05
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: nl.convert-flow.net
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - ryan
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
-- name: 🇷🇺 俄罗斯 (Russia) 03 - ryan
+- name: 🇷🇺 俄罗斯 (Russia) 02 - ryan
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -32,22 +19,7 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 04 - ryan
-  server: 91.224.87.22
-  port: 9882
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aa
-  servername: dl.google.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇷🇺 俄罗斯 (Russia) 05 - ryan
+- name: 🇷🇺 俄罗斯 (Russia) 03 - ryan
   server: msk.frkn.org
   port: 443
   udp: true
@@ -63,8 +35,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - ryan
   - 🇷🇺 俄罗斯 (Russia) 02 - ryan
   - 🇷🇺 俄罗斯 (Russia) 03 - ryan
-  - 🇷🇺 俄罗斯 (Russia) 04 - ryan
-  - 🇷🇺 俄罗斯 (Russia) 05 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,7 +43,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - ryan
   - 🇷🇺 俄罗斯 (Russia) 02 - ryan
   - 🇷🇺 俄罗斯 (Russia) 03 - ryan
-  - 🇷🇺 俄罗斯 (Russia) 04 - ryan
-  - 🇷🇺 俄罗斯 (Russia) 05 - ryan
 rules:
 - MATCH,PROXIES

@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - ryan
   server: 185.135.86.175
-  port: 9086
+  port: 9007
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
+  password: kSPmvwdFzGMMW5pY
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - ryan
   server: 185.135.86.175
   port: 9068
@@ -20,11 +20,11 @@ proxies:
   password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - ryan
   server: 185.135.86.175
-  port: 9036
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - ryan
   server: 185.135.86.175
   port: 9082
