@@ -5,38 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - ryan
-  server: 31.58.181.88
-  port: 8443
+  server: hk-1.gsafevpnapi.com
+  port: 20270
   udp: true
   type: vless
-  uuid: 257c666f-9440-443c-9cef-d3b5b57d65cb
+  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - ryan
-  server: 202.144.192.76
-  port: 13779
-  udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - ryan
+  server: 119.246.1.143
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: 119.246.1.143
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - ryan
-  server: 46.17.40.234
-  port: 7018
+  server: 46.17.42.166
+  port: 50111
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: bdb313adf74c2ede
+  password: 6b39ae3234dfd68b
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - ryan
-  server: 162.128.157.164
+  server: vj37-1936vtw.fincore.top
   port: 443
   udp: true
   type: vless
@@ -49,20 +46,25 @@ proxies:
   servername: www.bing.com
   client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - ryan
-  server: 202.146.222.89
+  server: 34.92.123.152
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
+  type: vless
+  uuid: 5d77df4a-0b55-4597-b0e6-ae3ef70a72c0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: aZfMRLVe6AAcWbF9SpJ0s1RXN-OP5bqdTJ4C74_jTi0
+    short-id: 56c35a22730a22e5
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - ryan
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: "https://t.me/wangcai2ð\x9F\x87ð\x9F\x87"
+  sni: "https://t.me/wangcai2ð\x9F\x87"
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - ryan
   server: 202.146.222.174
@@ -73,55 +75,59 @@ proxies:
   sni: 202.146.222.174
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - ryan
-  server: hk-1.gsafevpnapi.com
-  port: 20270
+  server: 202.144.192.76
+  port: 13779
   udp: true
   type: vless
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
-  flow: xtls-rprx-vision
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
   tls: true
   reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - ryan
-  server: 207.56.137.51
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - ryan
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - ryan
+  server: 38.207.184.202
   port: 443
   udp: true
   type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
-  flow: xtls-rprx-vision
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - ryan
-  server: 47.83.207.148
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /mall?ed=2560
     headers:
-      Host: VAH4URdZL3jDX5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - ryan
-  server: 46.17.42.166
-  port: 50111
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
+      Host: cdn8848.776676.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - ryan
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 127.0.0.1
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - ryan
   server: www.wto.org
   port: 443
   udp: true
@@ -130,12 +136,51 @@ proxies:
   tls: true
   servername: hk.152568.xyz
   skip-cert-verify: false
+  client-fingerprint: edge
   network: ws
   ws-opts:
     path: /cdn/packages/runtime-core.tar.gz
     headers:
       Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - ryan
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - ryan
+  server: 47.238.210.5
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - ryan
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a6dca797-9803-4f2c-ae45-e6bd8d0e9842
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - ryan
+  server: m01c7b2z26dtqgee.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: m01c7b2z26dtqgee.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - ryan
   server: wwafj5lhl6bi8au9.v.3dns.vip
   port: 443
   udp: true
@@ -149,15 +194,71 @@ proxies:
   network: ws
   ws-opts:
     path: /ws-vmess
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - ryan
-  server: 119.246.1.143
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - ryan
+  server: www.shopify.com
   port: 443
   udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: 119.246.1.143
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - ryan
+  type: vmess
+  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: yoga-suggesting-recording-calls.trycloudflare.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
+    headers:
+      Host: yoga-suggesting-recording-calls.trycloudflare.com
+- name: 🇭🇰 中国香港 (Hong Kong) 19 - ryan
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: nycqg19zkwacpm1b.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 20 - ryan
+  server: 8.217.229.155
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 21 - ryan
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 22 - ryan
   server: 47.239.6.251
   port: 13779
   udp: true
@@ -170,36 +271,20 @@ proxies:
     short-id: af1bdd293097b664
   servername: tesla.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - ryan
-  server: nas.aizhzo.com
-  port: 5010
+- name: 🇭🇰 中国香港 (Hong Kong) 23 - ryan
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
   udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - ryan
-  server: 47.238.210.5
-  port: 13779
-  udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - ryan
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
 proxy-groups:
 - name: PROXIES
   type: select
@@ -223,6 +308,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 16 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 17 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 18 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 19 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 20 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 21 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 22 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 23 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -246,5 +336,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 16 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 17 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 18 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 19 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 20 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 21 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 22 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 23 - ryan
 rules:
 - MATCH,PROXIES
