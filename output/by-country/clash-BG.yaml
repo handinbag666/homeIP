@@ -12,8 +12,18 @@ proxies:
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   tls: true
   servername: neth9.lunariai.ru
-  skip-cert-verify: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
+  server: 192.145.31.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
   server: 193.148.59.178
   port: 443
   udp: true
@@ -26,19 +36,8 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
-  server: neth9.lunariai.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth9.lunariai.ru
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
-  server: prep.wwwinternetvideo.click
+  server: 144.31.50.236
   port: 443
   udp: true
   type: vless
@@ -49,7 +48,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
