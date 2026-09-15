@@ -5,28 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - ryan
-  server: 31.58.181.88
-  port: 8443
+  server: 128.241.25.11
+  port: 30021
   udp: true
   type: vless
-  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
-  flow: xtls-rprx-vision
+  uuid: 72fbb611-628d-4afa-8198-bda3e38021f9
   tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - ryan
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
   skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - ryan
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 - ryan
   server: 31.56.189.27
   port: 2087
   udp: true
@@ -39,15 +32,65 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
+- name: 🇦🇪 阿联酋 (UAE) 03 - ryan
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: ab3b8e51-9d1b-443a-83e0-6fea6504b44b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 04 - ryan
-  server: 85.204.107.181
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 05 - ryan
+  server: 85.204.107.177
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - ryan
+- name: 🇦🇪 阿联酋 (UAE) 06 - ryan
+  server: 78.40.195.140
+  port: 443
+  udp: true
+  type: vless
+  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
+    short-id: 98096455d963bdbb
+  servername: www.booking.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 07 - ryan
+  server: 116.204.164.17
+  port: 7443
+  udp: true
+  type: vless
+  uuid: ef8907eb-8bb5-4735-80f2-1d0068500d95
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 08 - ryan
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -68,6 +111,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - ryan
   - 🇦🇪 阿联酋 (UAE) 04 - ryan
   - 🇦🇪 阿联酋 (UAE) 05 - ryan
+  - 🇦🇪 阿联酋 (UAE) 06 - ryan
+  - 🇦🇪 阿联酋 (UAE) 07 - ryan
+  - 🇦🇪 阿联酋 (UAE) 08 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +124,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - ryan
   - 🇦🇪 阿联酋 (UAE) 04 - ryan
   - 🇦🇪 阿联酋 (UAE) 05 - ryan
+  - 🇦🇪 阿联酋 (UAE) 06 - ryan
+  - 🇦🇪 阿联酋 (UAE) 07 - ryan
+  - 🇦🇪 阿联酋 (UAE) 08 - ryan
 rules:
 - MATCH,PROXIES

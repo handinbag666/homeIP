@@ -4,36 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
-      "server": "dog-tw.kunlun01dns.com",
-      "server_port": 21035,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
       "server": "36.224.152.189",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
