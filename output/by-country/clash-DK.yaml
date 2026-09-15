@@ -1,0 +1,42 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇩🇰 丹麦 (Denmark) 01 - ryan
+  server: 6705c.veloradigital.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: aea9e420-de22-4dcb-93b8-af1f71a3c264
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qlnm4eHQTTfqHf_z0o4GBQwbY0FvX9Ubfne_8KW57go
+    short-id: 8c754df1
+  servername: 6705c.veloradigital.xyz
+  client-fingerprint: firefox
+- name: 🇩🇰 丹麦 (Denmark) 02 - ryan
+  server: 38.180.214.110
+  port: 5600
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇩🇰 丹麦 (Denmark) 01 - ryan
+  - 🇩🇰 丹麦 (Denmark) 02 - ryan
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇰 丹麦 (Denmark) 01 - ryan
+  - 🇩🇰 丹麦 (Denmark) 02 - ryan
+rules:
+- MATCH,PROXIES

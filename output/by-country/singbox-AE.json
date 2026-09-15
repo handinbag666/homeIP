@@ -6,55 +6,9 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - ryan",
-      "server": "128.241.25.11",
-      "server_port": 30021,
-      "uuid": "72fbb611-628d-4afa-8198-bda3e38021f9",
-      "tls": {
-        "enabled": true,
-        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - ryan",
-      "server": "31.56.189.27",
-      "server_port": 2087,
-      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-21bac9.vless.monster",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "freegrpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - ryan",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "ab3b8e51-9d1b-443a-83e0-6fea6504b44b",
+      "uuid": "17e85193-a95c-4430-9b05-d8f303a34ac3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -71,15 +25,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - ryan",
+      "server": "31.56.189.27",
+      "server_port": 2087,
+      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-21bac9.vless.monster",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "freegrpc"
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - ryan",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - ryan",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -88,64 +62,20 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - ryan",
-      "server": "85.204.107.177",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - ryan",
+      "server": "85.204.107.181",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
         "enabled": true,
         "server_name": "hopp-romania-new.roxa.org",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - ryan",
-      "server": "78.40.195.140",
-      "server_port": 443,
-      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.booking.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo",
-          "short_id": "98096455d963bdbb"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - ryan",
-      "server": "116.204.164.17",
-      "server_port": 7443,
-      "uuid": "ef8907eb-8bb5-4735-80f2-1d0068500d95",
-      "tls": {
-        "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 08 - ryan",
-      "server": "84.235.244.108",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - ryan",
+      "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
@@ -165,10 +95,7 @@
         "🇦🇪 阿联酋 (UAE) 02 - ryan",
         "🇦🇪 阿联酋 (UAE) 03 - ryan",
         "🇦🇪 阿联酋 (UAE) 04 - ryan",
-        "🇦🇪 阿联酋 (UAE) 05 - ryan",
-        "🇦🇪 阿联酋 (UAE) 06 - ryan",
-        "🇦🇪 阿联酋 (UAE) 07 - ryan",
-        "🇦🇪 阿联酋 (UAE) 08 - ryan"
+        "🇦🇪 阿联酋 (UAE) 05 - ryan"
       ]
     },
     {
@@ -179,10 +106,7 @@
         "🇦🇪 阿联酋 (UAE) 02 - ryan",
         "🇦🇪 阿联酋 (UAE) 03 - ryan",
         "🇦🇪 阿联酋 (UAE) 04 - ryan",
-        "🇦🇪 阿联酋 (UAE) 05 - ryan",
-        "🇦🇪 阿联酋 (UAE) 06 - ryan",
-        "🇦🇪 阿联酋 (UAE) 07 - ryan",
-        "🇦🇪 阿联酋 (UAE) 08 - ryan"
+        "🇦🇪 阿联酋 (UAE) 05 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

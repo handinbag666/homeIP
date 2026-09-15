@@ -1,0 +1,62 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇩🇰 丹麦 (Denmark) 01 - ryan",
+      "server": "6705c.veloradigital.xyz",
+      "server_port": 443,
+      "uuid": "aea9e420-de22-4dcb-93b8-af1f71a3c264",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "6705c.veloradigital.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qlnm4eHQTTfqHf_z0o4GBQwbY0FvX9Ubfne_8KW57go",
+          "short_id": "8c754df1"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇰 丹麦 (Denmark) 02 - ryan",
+      "server": "38.180.214.110",
+      "server_port": 5600,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇩🇰 丹麦 (Denmark) 01 - ryan",
+        "🇩🇰 丹麦 (Denmark) 02 - ryan"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇩🇰 丹麦 (Denmark) 01 - ryan",
+        "🇩🇰 丹麦 (Denmark) 02 - ryan"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
