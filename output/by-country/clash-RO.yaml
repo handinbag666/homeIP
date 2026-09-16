@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - ryan
-  server: 205.237.109.166
+  server: 205.237.109.174
   port: 8443
   udp: true
   type: hysteria2
@@ -13,7 +13,7 @@ proxies:
   sni: hopp-netherland-new.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - ryan
-  server: 162.249.126.7
+  server: 162.249.126.6
   port: 8443
   udp: true
   type: hysteria2
@@ -21,7 +21,7 @@ proxies:
   sni: hopp-germany-new.ddnsguru.com
   skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - ryan
-  server: 85.204.107.185
+  server: 85.204.107.174
   port: 8443
   udp: true
   type: hysteria2
@@ -63,24 +63,7 @@ proxies:
   servername: yandex.ru
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 07 - ryan
-  server: 162.249.125.133
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - ryan
   server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - ryan
-  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss
@@ -98,8 +81,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 05 - ryan
   - 🇷🇴 罗马尼亚 (Romania) 06 - ryan
   - 🇷🇴 罗马尼亚 (Romania) 07 - ryan
-  - 🇷🇴 罗马尼亚 (Romania) 08 - ryan
-  - 🇷🇴 罗马尼亚 (Romania) 09 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -112,7 +93,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 05 - ryan
   - 🇷🇴 罗马尼亚 (Romania) 06 - ryan
   - 🇷🇴 罗马尼亚 (Romania) 07 - ryan
-  - 🇷🇴 罗马尼亚 (Romania) 08 - ryan
-  - 🇷🇴 罗马尼亚 (Romania) 09 - ryan
 rules:
 - MATCH,PROXIES

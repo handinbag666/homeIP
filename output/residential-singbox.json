@@ -4,22 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - ryan",
-      "server": "162.159.39.218",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
       "server": "61.231.19.116",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
@@ -27,7 +13,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan",
       "server": "r3mrcg001287h3p.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
@@ -35,7 +21,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan",
       "server": "82259754d625.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -54,38 +40,22 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - ryan",
-      "server": "1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "591ac730-bd6f-11ed-a8bf-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - ryan"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - ryan"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

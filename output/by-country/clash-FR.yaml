@@ -5,12 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - ryan
-  server: 13.38.76.125
-  port: 443
+  server: 15.188.219.10
+  port: 22224
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇫🇷 法国 (France) 02 - ryan
   server: 15.237.218.241
   port: 443
@@ -19,46 +18,49 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇫🇷 法国 (France) 03 - ryan
-  server: 45.205.0.6
+  server: 13.39.233.161
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇫🇷 法国 (France) 04 - ryan
-  server: vpn-fr-002.fastervpn.world
+  server: 13.38.76.125
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 05 - ryan
+  server: 51.77.217.70
+  port: 2053
+  udp: true
+  type: vless
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  tls: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 06 - ryan
+  server: 35.181.166.40
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 05 - ryan
-  server: 62.210.91.10
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 06 - ryan
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: speedtest.tinkoff.ru
+  sni: vpn-fr-002.fastervpn.world
   skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 07 - ryan
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 08 - ryan
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -71,27 +73,35 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 08 - ryan
-  server: 35.181.166.40
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-fr-002.fastervpn.world
-  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 09 - ryan
-  server: 51.77.217.70
-  port: 2053
+  server: 31.77.61.62
+  port: 50051
   udp: true
   type: vless
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  uuid: 4141d4ab-dba8-4da5-a4e6-dc89c34ded3e
   tls: true
   reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  servername: www.apple.com
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: cd1dd1e4a801f54b
+  servername: jobinvest.ru
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 - name: 🇫🇷 法国 (France) 10 - ryan
+  server: 62.210.91.10
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 11 - ryan
   server: 145.223.68.58
   port: 443
   udp: true
@@ -104,17 +114,18 @@ proxies:
     short-id: a44ff7d2e80213c2
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 11 - ryan
-  server: nasnet-162191099-direct.mbghalibaf.com
+- name: 🇫🇷 法国 (France) 12 - ryan
+  server: 162.19.10.99
   port: 443
   udp: true
   type: vless
-  uuid: nasnet
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
   flow: xtls-rprx-vision
   tls: true
   servername: nasnet-162191099-direct.mbghalibaf.com
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 12 - ryan
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 13 - ryan
   server: 151.247.197.253
   port: 36723
   udp: true
@@ -122,29 +133,23 @@ proxies:
   password: Krab9Hyst2_Rk7pQ2xL
   sni: 151.247.197.253
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 13 - ryan
-  server: OV-France1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-France1.09vpn.com
 - name: 🇫🇷 法国 (France) 14 - ryan
-  server: 185.255.179.166
+  server: 173.212.201.85
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.docker.com
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 15 - ryan
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: 62.210.7.139
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 16 - ryan
   server: 54.37.136.194
   port: 2053
   udp: true
@@ -155,18 +160,10 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
     short-id: 50ba05992b05c1c3
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 16 - ryan
-  server: 173.212.201.85
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.docker.com
-  skip-cert-verify: true
+  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 17 - ryan
-  server: 185.114.72.31
-  port: 2053
+  server: 172.67.231.254
+  port: 443
   udp: true
   type: trojan
   password: humanity

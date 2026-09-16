@@ -13,15 +13,7 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - ryan
-  server: 36.133.78.37
-  port: 50017
-  udp: true
-  type: vmess
-  uuid: 9195e0f1-f466-4e69-838f-a95519b5d45e
-  alterId: 0
-  cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 03 - ryan
-  server: 103.86.49.57
+  server: V2rAy.SiMsPeEdUp.CoM
   port: 80
   udp: true
   type: vless
@@ -38,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - ryan
   - 🇹🇭 泰国 (Thailand) 02 - ryan
-  - 🇹🇭 泰国 (Thailand) 03 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - ryan
   - 🇹🇭 泰国 (Thailand) 02 - ryan
-  - 🇹🇭 泰国 (Thailand) 03 - ryan
 rules:
 - MATCH,PROXIES
