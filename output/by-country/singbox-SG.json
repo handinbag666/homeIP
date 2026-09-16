@@ -4,173 +4,118 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - ryan",
-      "server": "104.17.3.81",
-      "server_port": 443,
-      "uuid": "fc60147e-76b8-4bc5-b691-90b2da79e3d2",
-      "tls": {
-        "enabled": true,
-        "server_name": "nautica-cff.kloningstrife002.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/138.2.74.219-28616",
-        "headers": {
-          "Host": "nautica-cff.kloningstrife002.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - ryan",
-      "server": "63.141.128.22",
-      "server_port": 443,
-      "uuid": "b8b01773-36b1-4b49-9bd0-6249f52345b4",
-      "tls": {
-        "enabled": true,
-        "server_name": "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
-        "headers": {
-          "Host": "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - ryan",
-      "server": "188.114.97.7",
-      "server_port": 443,
-      "uuid": "ba49d874-fe02-465d-82d3-ed981dc7694f",
-      "tls": {
-        "enabled": true,
-        "server_name": "o94Yv7LIF0-aNXISd9eFehvvS7mxn6bH.Z-ULe-iKa-d-e-ne-K-e.wORkeRs.Dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/7J5lLqtBnJg9WjVT?ed",
-        "headers": {
-          "Host": "o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - ryan",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 - ryan",
       "server": "149.88.23.202",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - ryan",
-      "server": "sg-2.gsafevpnapi.com",
-      "server_port": 31870,
-      "method": "aes-256-gcm",
-      "password": "5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55"
-    },
-    {
       "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 - ryan",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - ryan",
       "server": "149.88.23.207",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - ryan",
+      "server": "194.87.10.92",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "n0Aq20NZ0D8jEp7q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - ryan",
+      "server": "sg-2.gsafevpnapi.com",
+      "server_port": 31870,
+      "method": "aes-256-gcm",
+      "password": "5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 07 - ryan",
-      "server": "138.2.73.238",
-      "server_port": 50160,
-      "password": "f87376e17da040ed04c9665ce8972930",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - ryan",
+      "server": "13.212.32.171",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
       "tls": {
         "enabled": true,
-        "server_name": "138.2.73.238",
+        "server_name": "vpn-sg-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - ryan",
+      "server": "167.150.100.115",
+      "server_port": 27755,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 07 - ryan",
+      "server": "13.212.83.43",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-sg-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 08 - ryan",
+      "server": "47.129.189.148",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-sg-001.fastervpn.world",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 08 - ryan",
-      "server": "91.192.81.214",
-      "server_port": 443,
-      "uuid": "607801ac-dbdd-4938-a167-129015d9978e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bMcyxNueltQhz5Kuxcf8odDStWHowYfLhKNdCbUweDc",
-          "short_id": "d1742269"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 09 - ryan",
-      "server": "sg-1.gsafevpnapi.com",
-      "server_port": 20270,
-      "uuid": "1803e6f6-9da1-4b31-8cc5-ffa155771a14",
+      "server": "sg3.miyazono-kaori.com",
+      "server_port": 443,
+      "uuid": "f3c10b66-6a02-499f-9ed5-e518be4dde61",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.yahoo.com",
+        "server_name": "www.changiairport.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0",
-          "short_id": "fc13d6208ebbae16"
+          "public_key": "jpn2pLj_p5lxGwycLht80v2qNeP7jHwh1Gv-nTU8zXY",
+          "short_id": "ddcd71ec09e5893a"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇸🇬 新加坡 (Singapore) 10 - ryan",
-      "server": "46.137.202.178",
-      "server_port": 12512,
-      "uuid": "2a6c617d-98e4-49c3-95ab-76f02fcf0150",
-      "flow": "xtls-rprx-vision",
+      "server": "cloud.lakshan.us",
+      "server_port": 119,
+      "password": "skynet",
       "tls": {
         "enabled": true,
-        "server_name": "www.intel.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA",
-          "short_id": "e692a8250d2e2fd0"
-        }
+        "server_name": "cloud.lakshan.us",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 11 - ryan",
-      "server": "146.235.16.130",
+      "server": "sg2-8sb.6121999.dpdns.org",
       "server_port": 19825,
       "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
       "flow": "xtls-rprx-vision",
@@ -191,12 +136,12 @@
     {
       "type": "hysteria2",
       "tag": "🇸🇬 新加坡 (Singapore) 12 - ryan",
-      "server": "13.212.32.171",
-      "server_port": 443,
-      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "server": "138.2.73.238",
+      "server_port": 50160,
+      "password": "f87376e17da040ed04c9665ce8972930",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-sg-001.fastervpn.world",
+        "server_name": "138.2.73.238",
         "insecure": true
       }
     },
@@ -209,11 +154,15 @@
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/register?ed=2560fp=chrome",
+        "path": "/register?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -222,35 +171,17 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 14 - ryan",
-      "server": "170.114.45.6",
-      "server_port": 80,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "u.srilankangrill.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 15 - ryan",
       "server": "68.64.179.129",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/code?ed=2560",
+        "path": "/code?ed=2560fp=chrome",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -258,13 +189,72 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 16 - ryan",
-      "server": "116.251.217.65",
-      "server_port": 443,
-      "uuid": "2388e166-3890-33ae-f77e-efac00000002",
+      "tag": "🇸🇬 新加坡 (Singapore) 15 - ryan",
+      "server": "217.217.254.126",
+      "server_port": 2053,
+      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
       "tls": {
         "enabled": true,
-        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
+          "short_id": "87829de0e2bb82cb"
+        }
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "🇸🇬 新加坡 (Singapore) 16 - ryan",
+      "server": "sg2-8sb.6121999.dpdns.org",
+      "server_port": 33738,
+      "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
+      "password": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "quic",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg2-8sb.6121999.dpdns.org",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 17 - ryan",
+      "server": "3.0.111.82",
+      "server_port": 17623,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 18 - ryan",
+      "server": "43.175.131.30",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -273,49 +263,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
-        "headers": {
-          "Host": "netlivpn4813.ddhshhshs.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 17 - ryan",
-      "server": "104.16.10.10",
-      "server_port": 443,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-      "tls": {
-        "enabled": true,
-        "server_name": "u.srilankangrill.online",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "u.srilankangrill.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 18 - ryan",
-      "server": "140.245.38.33",
-      "server_port": 2096,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/class/season?ed=2560",
+        "path": "/article?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -324,53 +272,37 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 19 - ryan",
-      "server": "141.193.213.20",
-      "server_port": 8443,
-      "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
-      "tls": {
-        "enabled": true,
-        "server_name": "u.srilankangrill.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "support.zoom.us",
+      "server_port": 80,
+      "uuid": "6aa028bc-08a9-41d1-a397-d60ce65df081",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/shalana",
         "headers": {
-          "Host": "u.srilankangrill.online"
+          "Host": "shalana.xyz"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇬 新加坡 (Singapore) 20 - ryan",
-      "server": "172.66.212.110",
-      "server_port": 2053,
-      "uuid": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
+      "server": "138.2.89.249",
+      "server_port": 443,
+      "password": "d042d150716709bb778cc73889cddb02",
       "tls": {
         "enabled": true,
-        "server_name": "singapore.36109178.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
+        "server_name": "www.bing.com",
+        "insecure": true
       },
-      "transport": {
-        "type": "ws",
-        "path": "/static/media/video-chunk.f4v",
-        "headers": {
-          "Host": "singapore.36109178.xyz"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "309502c4a8df10b46fb976d4a8c43f42"
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 21 - ryan",
-      "server": "91.193.58.157",
+      "server": "91.193.58.27",
       "server_port": 2096,
       "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
       "tls": {
@@ -393,47 +325,29 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 22 - ryan",
-      "server": "217.217.254.126",
-      "server_port": 2053,
-      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
+      "server": "140.245.38.33",
+      "server_port": 2096,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
-          "short_id": "87829de0e2bb82cb"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/class/season?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 23 - ryan",
-      "server": "3.0.111.82",
-      "server_port": 12972,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 24 - ryan",
       "server": "3.0.111.82",
       "server_port": 10574,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -453,15 +367,151 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 25 - ryan",
-      "server": "mszz.mangshe.xyz",
-      "server_port": 20562,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 24 - ryan",
+      "server": "sg-1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "7647b321-4bfe-43f3-b21f-926c5de8f9b6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0",
+          "short_id": "fc13d6208ebbae16"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 25 - ryan",
+      "server": "support.zoom.us",
+      "server_port": 80,
+      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "u.srilankangrill.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 26 - ryan",
+      "server": "104.16.10.10",
+      "server_port": 443,
+      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+      "tls": {
+        "enabled": true,
+        "server_name": "u.srilankangrill.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "u.srilankangrill.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 27 - ryan",
+      "server": "104.17.70.206",
+      "server_port": 2096,
+      "uuid": "395d040e-a04a-43d7-a1e9-8635f545879a",
+      "tls": {
+        "enabled": true,
+        "server_name": "shalana.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/shalana",
+        "headers": {
+          "Host": "shalana.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 28 - ryan",
+      "server": "91.193.58.157",
+      "server_port": 2096,
+      "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
+      "tls": {
+        "enabled": true,
+        "server_name": "free-server.techsonic.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/free-server.techsonic.dev",
+        "headers": {
+          "Host": "free-server.techsonic.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 29 - ryan",
+      "server": "3.0.111.82",
+      "server_port": 12972,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 30 - ryan",
+      "server": "141.193.213.20",
+      "server_port": 8443,
+      "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
+      "tls": {
+        "enabled": true,
+        "server_name": "u.srilankangrill.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "u.srilankangrill.online"
+        }
       }
     },
     {
@@ -493,7 +543,12 @@
         "🇸🇬 新加坡 (Singapore) 22 - ryan",
         "🇸🇬 新加坡 (Singapore) 23 - ryan",
         "🇸🇬 新加坡 (Singapore) 24 - ryan",
-        "🇸🇬 新加坡 (Singapore) 25 - ryan"
+        "🇸🇬 新加坡 (Singapore) 25 - ryan",
+        "🇸🇬 新加坡 (Singapore) 26 - ryan",
+        "🇸🇬 新加坡 (Singapore) 27 - ryan",
+        "🇸🇬 新加坡 (Singapore) 28 - ryan",
+        "🇸🇬 新加坡 (Singapore) 29 - ryan",
+        "🇸🇬 新加坡 (Singapore) 30 - ryan"
       ]
     },
     {
@@ -524,7 +579,12 @@
         "🇸🇬 新加坡 (Singapore) 22 - ryan",
         "🇸🇬 新加坡 (Singapore) 23 - ryan",
         "🇸🇬 新加坡 (Singapore) 24 - ryan",
-        "🇸🇬 新加坡 (Singapore) 25 - ryan"
+        "🇸🇬 新加坡 (Singapore) 25 - ryan",
+        "🇸🇬 新加坡 (Singapore) 26 - ryan",
+        "🇸🇬 新加坡 (Singapore) 27 - ryan",
+        "🇸🇬 新加坡 (Singapore) 28 - ryan",
+        "🇸🇬 新加坡 (Singapore) 29 - ryan",
+        "🇸🇬 新加坡 (Singapore) 30 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

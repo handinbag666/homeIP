@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - ryan
-  server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
   server: 192.145.31.5
   port: 8443
   udp: true
@@ -20,49 +13,63 @@ proxies:
   tls: true
   servername: neth9.lunariai.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: edge
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
-  server: neth9.lunariai.ru
-  port: 443
+  server: 213.183.63.60
+  port: 9085
   udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth9.lunariai.ru
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
-  server: 108.165.233.223
-  port: 443
+  server: 213.183.63.60
+  port: 9028
   udp: true
-  type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000001
-  tls: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - ryan
-  server: 104.152.48.248
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - ryan
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - ryan
+  server: 213.183.63.60
+  port: 9061
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - ryan
+  server: 193.148.59.178
   port: 443
   udp: true
   type: vless
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  flow: xtls-rprx-vision
   tls: true
-  servername: kkkk-8oc.pages.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
+    short-id: e3daad69
+  servername: www.apple.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: kkkk-8oc.pages.dev
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - ryan
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - ryan
   server: 144.31.50.236
   port: 443
   udp: true
@@ -74,7 +81,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +93,9 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 05 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 06 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,5 +107,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 05 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 06 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - ryan
 rules:
 - MATCH,PROXIES

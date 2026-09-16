@@ -6,30 +6,21 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - ryan",
-      "server": "172.67.151.77",
-      "server_port": 443,
-      "uuid": "73796e63-0000-4000-8000-000000000000",
-      "tls": {
-        "enabled": true,
-        "server_name": "nahan-core.fatitelegram.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "162.159.39.218",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "nahan-core.fatitelegram.workers.dev"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan",
-      "server": "r3mrcg001286ek2.cybervena.com",
+      "server": "61.231.19.116",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
@@ -37,14 +28,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan",
-      "server": "r3mrcg00129437x.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
       "server": "r3mrcg001287h3p.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
@@ -52,38 +35,34 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
-      "server": "dog-tw.kunlun01dns.com",
-      "server_port": 21034,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 06 (家宽) - ryan",
-      "server": "49.254.204.134",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - ryan",
-      "server": "118.167.212.163",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
+      "server": "82259754d625.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+        "server_name": "82259754d625.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "82259754d625.oylfmxz.cn"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - ryan",
+      "server": "1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "591ac730-bd6f-11ed-a8bf-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "1e6f6f22-tlsio0-tmt4ym-ezjz.nw4.hyhuawei.com",
+        "insecure": true
       }
     },
     {
@@ -95,9 +74,7 @@
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
-        "🇰🇷 韩国 (South Korea) 06 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - ryan"
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - ryan"
       ]
     },
     {
@@ -108,9 +85,7 @@
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
-        "🇰🇷 韩国 (South Korea) 06 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - ryan"
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

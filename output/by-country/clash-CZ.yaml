@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - ryan
-  server: 188.114.97.6
-  port: 2082
+- name: 🇨🇿 捷克 (Czech) 01 - ryan
+  server: vless.herogoing.top
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: trojan
+  password: bpb-trojan
+  sni: vless.herogoing.top
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+    path: /tr?ed=2560
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - ryan
+  - 🇨🇿 捷克 (Czech) 01 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - ryan
+  - 🇨🇿 捷克 (Czech) 01 - ryan
 rules:
 - MATCH,PROXIES
