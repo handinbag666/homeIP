@@ -5,6 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - ryan
+  server: 104.17.169.13
+  port: 2053
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  tls: true
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
+- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
+  server: 104.17.147.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000003
+  tls: true
+  servername: relay.lunetcloud.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
+  server: tr.curry-load.rutube.info
+  port: 443
+  udp: true
+  type: vless
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8
+    short-id: 08
+  servername: dw.b-cdn.net
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - ryan
   server: 156.67.63.231
   port: 443
   udp: true
@@ -17,41 +60,47 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
-  server: 151.241.226.201
-  port: 2053
+- name: 🇹🇷 土耳其 (Turkey) 05 - ryan
+  server: 93.114.98.212
+  port: 443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
   tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
-  server: 13.143.137.164
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
-    short-id: e336c9a786fae301
-  servername: plaincanvas.videoclothing.xyz
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - ryan
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
+  servername: kkkk-xcd.pages.dev
   skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: kkkk-xcd.pages.dev
+- name: 🇹🇷 土耳其 (Turkey) 06 - ryan
+  server: 172.67.134.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  tls: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 07 - ryan
+  server: live.tonblack.app
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 59634425-46d9-4bf5-be50-f5bf28c94f93
+  tls: true
+  reality-opts:
+    public-key: ob1ZMMs7d9_42peetKcRKHRvv5qVSPe0nReMRW9n20Y
+    short-id: 191bcea0
+  servername: play.google.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +110,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
   - 🇹🇷 土耳其 (Turkey) 04 - ryan
+  - 🇹🇷 土耳其 (Turkey) 05 - ryan
+  - 🇹🇷 土耳其 (Turkey) 06 - ryan
+  - 🇹🇷 土耳其 (Turkey) 07 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,5 +122,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
   - 🇹🇷 土耳其 (Turkey) 04 - ryan
+  - 🇹🇷 土耳其 (Turkey) 05 - ryan
+  - 🇹🇷 土耳其 (Turkey) 06 - ryan
+  - 🇹🇷 土耳其 (Turkey) 07 - ryan
 rules:
 - MATCH,PROXIES

@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - ryan
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: true
+- name: 🇸🇪 瑞典 (Sweden) 02 - ryan
   server: 143.246.193.215
   port: 443
   udp: true
@@ -15,25 +23,9 @@ proxies:
   reality-opts:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
   servername: www.blocket.se
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 02 - ryan
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  skip-cert-verify: false
+  client-fingerprint: randomized
 - name: 🇸🇪 瑞典 (Sweden) 03 - ryan
-  server: svip.skycon808.com
-  port: 60005
-  udp: true
-  type: anytls
-  password: 13f0acfa-38c1-4e82-a758-583aa31740df
-  sni: xjp18.2uuzhe.com
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 04 - ryan
-  server: 79.141.174.147
+  server: 193.42.39.10
   port: 33743
   udp: true
   type: vless
@@ -54,7 +46,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - ryan
   - 🇸🇪 瑞典 (Sweden) 02 - ryan
   - 🇸🇪 瑞典 (Sweden) 03 - ryan
-  - 🇸🇪 瑞典 (Sweden) 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +54,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - ryan
   - 🇸🇪 瑞典 (Sweden) 02 - ryan
   - 🇸🇪 瑞典 (Sweden) 03 - ryan
-  - 🇸🇪 瑞典 (Sweden) 04 - ryan
 rules:
 - MATCH,PROXIES
