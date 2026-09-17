@@ -5,61 +5,54 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - ryan
-  server: 15.188.219.10
-  port: 22224
+  server: 15.224.71.221
+  port: 22222
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇫🇷 法国 (France) 02 - ryan
-  server: 15.237.218.241
+  server: 15.237.137.134
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇫🇷 法国 (France) 03 - ryan
+  server: 15.224.71.221
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 04 - ryan
   server: 13.39.233.161
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇫🇷 法国 (France) 04 - ryan
-  server: 13.38.76.125
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇫🇷 法国 (France) 05 - ryan
-  server: 51.77.217.70
-  port: 2053
-  udp: true
-  type: vless
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  tls: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 06 - ryan
   server: 35.181.166.40
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-fr-002.fastervpn.world
+  sni: 35.181.166.40
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 07 - ryan
-  server: 152.228.162.19
-  port: 80
+- name: 🇫🇷 法国 (France) 06 - ryan
+  server: 15.237.252.23
+  port: 443
   udp: true
-  type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  network: ws
-  ws-opts:
-    path: /vless/
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 07 - ryan
+  server: 62.210.147.2
+  port: 43115
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 08 - ryan
   server: 62.210.91.2
   port: 23576
@@ -72,48 +65,35 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇫🇷 法国 (France) 09 - ryan
-  server: 31.77.61.62
-  port: 50051
+  server: 62.210.7.139
+  port: 60111
   udp: true
-  type: vless
-  uuid: 4141d4ab-dba8-4da5-a4e6-dc89c34ded3e
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: cd1dd1e4a801f54b
-  servername: jobinvest.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: google.com
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 10 - ryan
-  server: 62.210.91.10
-  port: 23576
+  server: 51.77.217.70
+  port: 2053
   udp: true
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   tls: true
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 11 - ryan
-  server: 145.223.68.58
-  port: 443
-  udp: true
-  type: vless
-  uuid: edb50d20-2d3e-4c1e-8a75-a17168a89aa5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg
-    short-id: a44ff7d2e80213c2
-  servername: www.cloudflare.com
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 11 - ryan
+  server: 151.247.197.253
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: 151.247.197.253
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 12 - ryan
   server: 162.19.10.99
   port: 443
@@ -126,28 +106,33 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 13 - ryan
-  server: 151.247.197.253
-  port: 36723
+  server: 62.210.91.10
+  port: 23576
   udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 151.247.197.253
-  skip-cert-verify: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 14 - ryan
-  server: 173.212.201.85
+  server: vpn-fr-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.docker.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-002.fastervpn.world
   skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 15 - ryan
-  server: 62.210.7.139
-  port: 60111
+  server: 62.210.124.146
+  port: 22000
   udp: true
   type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 16 - ryan
   server: 54.37.136.194
@@ -160,9 +145,23 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
     short-id: 50ba05992b05c1c3
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 17 - ryan
-  server: 172.67.231.254
+  server: 52.47.212.72
+  port: 22224
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 18 - ryan
+  server: 173.212.201.85
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.docker.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 19 - ryan
+  server: 45.205.0.6
   port: 443
   udp: true
   type: trojan
@@ -194,6 +193,8 @@ proxy-groups:
   - 🇫🇷 法国 (France) 15 - ryan
   - 🇫🇷 法国 (France) 16 - ryan
   - 🇫🇷 法国 (France) 17 - ryan
+  - 🇫🇷 法国 (France) 18 - ryan
+  - 🇫🇷 法国 (France) 19 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -216,5 +217,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 15 - ryan
   - 🇫🇷 法国 (France) 16 - ryan
   - 🇫🇷 法国 (France) 17 - ryan
+  - 🇫🇷 法国 (France) 18 - ryan
+  - 🇫🇷 法国 (France) 19 - ryan
 rules:
 - MATCH,PROXIES

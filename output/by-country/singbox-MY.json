@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇱 AL 01 - ryan",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
+      "type": "hysteria2",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - ryan",
+      "server": "mszz.mangshe.xyz",
+      "server_port": 20563,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "tls": {
+        "enabled": true,
+        "server_name": "mlxy.mangshe.xyz",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - ryan"
+        "🇲🇾 马来西亚 (Malaysia) 01 - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - ryan"
+        "🇲🇾 马来西亚 (Malaysia) 01 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
