@@ -4,31 +4,88 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
+      "server": "r3mrcg001286ek2.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - ryan",
+      "server": "49.254.204.134",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - ryan",
-      "server": "108.162.198.178",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - ryan",
+      "server": "hg.zhujue.us",
+      "server_port": 11000,
+      "uuid": "0e46345c-f33b-4f9b-b8ec-90e7c986af7e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 (家宽) - ryan",
-      "server": "172.64.52.6",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "tag": "🇯🇵 日本 (Japan) 04 (家宽) - ryan",
+      "server": "45.142.166.211",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls",
+        "path": "/knowledge?ed=2560fp=chrome",
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "cdn8848.776676.xyz"
         }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
+      "server": "6ivh.pnuqcnp.cn",
+      "server_port": 443,
+      "password": "9sK2mP8xQ7vL3nZ6",
+      "tls": {
+        "enabled": true,
+        "server_name": "6ivh.pnuqcnp.cn",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan",
+      "server": "7dba81fc3a0b.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "7dba81fc3a0b.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -36,16 +93,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - ryan",
-        "🇺🇸 美国 (United States) 02 (家宽) - ryan"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - ryan",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - ryan",
+        "🇯🇵 日本 (Japan) 04 (家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - ryan",
-        "🇺🇸 美国 (United States) 02 (家宽) - ryan"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - ryan",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - ryan",
+        "🇯🇵 日本 (Japan) 04 (家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

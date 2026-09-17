@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - ryan
-  server: 91.228.227.211
-  port: 23957
-  udp: true
-  type: vmess
-  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
   server: 156.67.63.231
   port: 443
   udp: true
@@ -24,25 +16,27 @@ proxies:
     public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
-  server: max.karmatel.ir
-  port: 55519
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: play-apps-features.googleusercontent.com
-- name: 🇹🇷 土耳其 (Turkey) 04 - ryan
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
   server: 139.28.240.68
-  port: 1080
+  port: 2086
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +45,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
-  - 🇹🇷 土耳其 (Turkey) 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +53,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
-  - 🇹🇷 土耳其 (Turkey) 04 - ryan
 rules:
 - MATCH,PROXIES
