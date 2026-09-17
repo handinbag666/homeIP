@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - ryan
-  server: 206.1.97.61
-  port: 13323
+  server: 91.228.227.211
+  port: 23957
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: XyodFtypR0xCFHyWW9gxqp15oU78njiX
+  type: vmess
+  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
+  alterId: 0
+  cipher: auto
 - name: 🇹🇷 土耳其 (Turkey) 02 - ryan
   server: 156.67.63.231
   port: 443
@@ -25,17 +26,23 @@ proxies:
   servername: sync-bridge.org
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 03 - ryan
-  server: 206.1.97.61
-  port: 443
+  server: max.karmatel.ir
+  port: 55519
   udp: true
   type: vless
-  uuid: 35026d61-f0b6-45a2-837e-be433f0d8e0e
-  tls: true
-  reality-opts:
-    public-key: GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE
-    short-id: d7397feef49deef9
-  servername: Miro.com
-  client-fingerprint: chrome
+  uuid: a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play-apps-features.googleusercontent.com
+- name: 🇹🇷 土耳其 (Turkey) 04 - ryan
+  server: 139.28.240.68
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +51,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +60,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 - ryan
 rules:
 - MATCH,PROXIES

@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - ryan",
-      "server": "82.198.246.37",
+      "server": "82.198.246.250",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
@@ -14,20 +14,13 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - ryan",
-      "server": "188.130.207.30",
-      "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "server": "172.105.169.70",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
+        "server_name": "172.105.169.70",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/m?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
       }
     },
     {
@@ -42,35 +35,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - ryan",
-      "server": "au1.gsafevpnapi.com",
-      "server_port": 20270,
-      "uuid": "2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE",
-          "short_id": "e6a5a4a9115456de"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - ryan",
         "🇦🇺 澳大利亚 (Australia) 02 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 03 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 04 - ryan"
+        "🇦🇺 澳大利亚 (Australia) 03 - ryan"
       ]
     },
     {
@@ -79,8 +50,7 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - ryan",
         "🇦🇺 澳大利亚 (Australia) 02 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 03 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 04 - ryan"
+        "🇦🇺 澳大利亚 (Australia) 03 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
