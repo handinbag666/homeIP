@@ -5,6 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - ryan
+  server: 139.28.240.68
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
+  server: 153.52.92.81
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
+- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
+  server: 91.228.227.211
+  port: 23957
+  udp: true
+  type: vmess
+  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 04 - ryan
   server: 156.67.63.231
   port: 443
   udp: true
@@ -16,20 +38,54 @@ proxies:
     public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
-  server: 151.241.226.201
-  port: 2053
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - ryan
+  server: tur11.zavqeron.ir
+  port: 8443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: fafd0278-71ba-4809-8137-3c87e7d8dd58
   tls: true
   reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
+    public-key: t5qC-Lzm_NKsc6nQ8ORzyivswiRPlbPLK0hS4d3FxTY
+    short-id: a2eb2b8f0f0a88b1
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: qq
+- name: 🇹🇷 土耳其 (Turkey) 06 - ryan
+  server: 172.67.134.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  tls: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 07 - ryan
+  server: jsv-ir2.jmovies.ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: c26fe2f0-5c69-0015-8a1a-bf116ceb9215
+  tls: true
+  reality-opts:
+    public-key: fwS6bEyF28VsSapBZZ2vz6LJmVismH0NYupk6STFRWc
+    short-id: f373df45a687eaff
+  servername: aparat.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
+- name: 🇹🇷 土耳其 (Turkey) 08 - ryan
+  server: 153.52.92.81
+  port: 2086
+  udp: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 09 - ryan
   server: 139.28.240.68
   port: 2086
   udp: true
@@ -45,6 +101,12 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 - ryan
+  - 🇹🇷 土耳其 (Turkey) 05 - ryan
+  - 🇹🇷 土耳其 (Turkey) 06 - ryan
+  - 🇹🇷 土耳其 (Turkey) 07 - ryan
+  - 🇹🇷 土耳其 (Turkey) 08 - ryan
+  - 🇹🇷 土耳其 (Turkey) 09 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +115,11 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 - ryan
+  - 🇹🇷 土耳其 (Turkey) 05 - ryan
+  - 🇹🇷 土耳其 (Turkey) 06 - ryan
+  - 🇹🇷 土耳其 (Turkey) 07 - ryan
+  - 🇹🇷 土耳其 (Turkey) 08 - ryan
+  - 🇹🇷 土耳其 (Turkey) 09 - ryan
 rules:
 - MATCH,PROXIES
