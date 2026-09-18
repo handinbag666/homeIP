@@ -4,61 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - ryan",
-      "server": "91.228.227.211",
-      "server_port": 23957,
-      "uuid": "92987ab8-0a53-4a16-8d6c-295d5df86404",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - ryan",
-      "server": "153.52.92.81",
-      "server_port": 2086,
-      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - ryan",
-      "server": "31.214.152.140",
-      "server_port": 443,
-      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dw.b-cdn.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
-          "short_id": "08"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - ryan",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-      "tls": {
-        "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - ryan",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -77,15 +24,20 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - ryan",
+      "server": "139.28.240.68",
+      "server_port": 2086,
+      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - ryan",
-        "🇹🇷 土耳其 (Turkey) 02 - ryan",
-        "🇹🇷 土耳其 (Turkey) 03 - ryan",
-        "🇹🇷 土耳其 (Turkey) 04 - ryan",
-        "🇹🇷 土耳其 (Turkey) 05 - ryan"
+        "🇹🇷 土耳其 (Turkey) 02 - ryan"
       ]
     },
     {
@@ -93,10 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - ryan",
-        "🇹🇷 土耳其 (Turkey) 02 - ryan",
-        "🇹🇷 土耳其 (Turkey) 03 - ryan",
-        "🇹🇷 土耳其 (Turkey) 04 - ryan",
-        "🇹🇷 土耳其 (Turkey) 05 - ryan"
+        "🇹🇷 土耳其 (Turkey) 02 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

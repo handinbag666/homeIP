@@ -5,7 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - ryan
-  server: 84.32.215.117
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - ryan
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - ryan
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - ryan
+  server: lt.aether-runet.top
   port: 443
   udp: true
   type: vless
@@ -16,18 +37,24 @@ proxies:
     public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
     short-id: 4fa44664f6a566d3
   servername: lt.aether-runet.top
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 02 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 03 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 02 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 03 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 04 - ryan
 rules:
 - MATCH,PROXIES
