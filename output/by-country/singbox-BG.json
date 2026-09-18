@@ -35,24 +35,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - ryan",
-      "server": "213.183.63.60",
-      "server_port": 9098,
-      "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
-    },
-    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - ryan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
       "server": "193.148.59.178",
       "server_port": 443,
       "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
@@ -72,8 +56,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - ryan",
+      "server": "213.183.63.60",
+      "server_port": 9049,
+      "method": "aes-256-cfb",
+      "password": "PRBf4BS2HvJqtWxY"
+    },
+    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - ryan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - ryan",
       "server": "144.31.50.236",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
@@ -101,8 +93,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 02 - ryan",
         "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
         "🇧🇬 保加利亚 (Bulgaria) 04 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 06 - ryan"
+        "🇧🇬 保加利亚 (Bulgaria) 05 - ryan"
       ]
     },
     {
@@ -113,8 +104,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 02 - ryan",
         "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
         "🇧🇬 保加利亚 (Bulgaria) 04 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 06 - ryan"
+        "🇧🇬 保加利亚 (Bulgaria) 05 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

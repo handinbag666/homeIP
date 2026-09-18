@@ -5,40 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - ryan
-  server: 139.28.240.68
-  port: 1080
+  server: 91.228.227.211
+  port: 23957
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vmess
+  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
+  alterId: 0
+  cipher: auto
 - name: 🇹🇷 土耳其 (Turkey) 02 - ryan
-  server: 156.67.63.231
+  server: 153.52.92.81
+  port: 2086
+  udp: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
+  server: 31.214.152.140
   port: 443
   udp: true
   type: vless
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
-    short-id: 5606d4a25c99e7af
-  servername: sync-bridge.org
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
-  server: 104.17.147.22
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000003
-  tls: true
-  servername: relay.lunetcloud.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /lunetnetwork
-    headers:
-      Host: relay.lunetcloud.ir
+    public-key: bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8
+    short-id: 08
+  servername: dw.b-cdn.net
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - ryan
   server: me17.msjia8844.site
   port: 7443
@@ -50,12 +44,17 @@ proxies:
   obfs: salamander
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 - name: 🇹🇷 土耳其 (Turkey) 05 - ryan
-  server: 153.52.92.81
-  port: 1080
+  server: 151.241.226.201
+  port: 2053
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

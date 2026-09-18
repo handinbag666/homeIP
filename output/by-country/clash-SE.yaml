@@ -14,7 +14,15 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 02 - ryan
-  server: 193.42.39.10
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 03 - ryan
+  server: 79.141.174.147
   port: 33743
   udp: true
   type: vless
@@ -23,26 +31,10 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 03 - ryan
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 04 - ryan
-  server: svip.skycon808.com
-  port: 60005
-  udp: true
-  type: anytls
-  password: 13f0acfa-38c1-4e82-a758-583aa31740df
-  sni: xjp18.2uuzhe.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +43,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - ryan
   - 🇸🇪 瑞典 (Sweden) 02 - ryan
   - 🇸🇪 瑞典 (Sweden) 03 - ryan
-  - 🇸🇪 瑞典 (Sweden) 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +51,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - ryan
   - 🇸🇪 瑞典 (Sweden) 02 - ryan
   - 🇸🇪 瑞典 (Sweden) 03 - ryan
-  - 🇸🇪 瑞典 (Sweden) 04 - ryan
 rules:
 - MATCH,PROXIES

@@ -8,7 +8,7 @@
       "tag": "🇦🇪 阿联酋 (UAE) 01 - ryan",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "5a398cfd-f7a1-4d7a-886a-6b72377f7f4f",
+      "uuid": "c36f62cc-ba6c-4f39-9bcc-b8a0ff01d21b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -27,6 +27,43 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - ryan",
+      "server": "78.40.195.140",
+      "server_port": 443,
+      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.booking.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo",
+          "short_id": "98096455d963bdbb"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - ryan",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - ryan",
       "server": "31.56.189.27",
       "server_port": 2087,
       "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
@@ -46,47 +83,8 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - ryan",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - ryan",
-      "server": "104.17.147.22",
-      "server_port": 443,
-      "uuid": "5ef04ae8-8d7c-0a66-13f4-6e3f00000005",
-      "tls": {
-        "enabled": true,
-        "server_name": "relay.lunetcloud.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lunetnetwork",
-        "headers": {
-          "Host": "relay.lunetcloud.ir"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - ryan",
-      "server": "85.204.107.175",
+      "server": "85.204.107.174",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
@@ -110,6 +108,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - ryan",
+      "server": "89.125.147.199",
+      "server_port": 443,
+      "uuid": "cabd9303-ae32-4d25-86b9-26b312d0f044",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg",
+          "short_id": "f6c7c139b9c938db"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -119,7 +137,8 @@
         "🇦🇪 阿联酋 (UAE) 03 - ryan",
         "🇦🇪 阿联酋 (UAE) 04 - ryan",
         "🇦🇪 阿联酋 (UAE) 05 - ryan",
-        "🇦🇪 阿联酋 (UAE) 06 - ryan"
+        "🇦🇪 阿联酋 (UAE) 06 - ryan",
+        "🇦🇪 阿联酋 (UAE) 07 - ryan"
       ]
     },
     {
@@ -131,7 +150,8 @@
         "🇦🇪 阿联酋 (UAE) 03 - ryan",
         "🇦🇪 阿联酋 (UAE) 04 - ryan",
         "🇦🇪 阿联酋 (UAE) 05 - ryan",
-        "🇦🇪 阿联酋 (UAE) 06 - ryan"
+        "🇦🇪 阿联酋 (UAE) 06 - ryan",
+        "🇦🇪 阿联酋 (UAE) 07 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

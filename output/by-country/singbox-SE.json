@@ -15,9 +15,21 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - ryan",
-      "server": "193.42.39.10",
+      "server": "se-node.rumedia-cdn.com",
+      "server_port": 25443,
+      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf2.rumedia-cdn.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - ryan",
+      "server": "79.141.174.147",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -25,7 +37,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -39,38 +51,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - ryan",
-      "server": "se-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf2.rumedia-cdn.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - ryan",
-      "server": "svip.skycon808.com",
-      "server_port": 60005,
-      "password": "13f0acfa-38c1-4e82-a758-583aa31740df",
-      "tls": {
-        "enabled": true,
-        "server_name": "xjp18.2uuzhe.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - ryan",
         "🇸🇪 瑞典 (Sweden) 02 - ryan",
-        "🇸🇪 瑞典 (Sweden) 03 - ryan",
-        "🇸🇪 瑞典 (Sweden) 04 - ryan"
+        "🇸🇪 瑞典 (Sweden) 03 - ryan"
       ]
     },
     {
@@ -79,8 +66,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - ryan",
         "🇸🇪 瑞典 (Sweden) 02 - ryan",
-        "🇸🇪 瑞典 (Sweden) 03 - ryan",
-        "🇸🇪 瑞典 (Sweden) 04 - ryan"
+        "🇸🇪 瑞典 (Sweden) 03 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

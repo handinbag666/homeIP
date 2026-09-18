@@ -4,54 +4,39 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - ryan",
-      "server": "139.28.240.68",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rSeYcig_XBy8q3k33NpK3A"
+      "server": "91.228.227.211",
+      "server_port": 23957,
+      "uuid": "92987ab8-0a53-4a16-8d6c-295d5df86404",
+      "security": "auto"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - ryan",
-      "server": "156.67.63.231",
-      "server_port": 443,
-      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sync-bridge.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
-          "short_id": "5606d4a25c99e7af"
-        }
-      }
+      "server": "153.52.92.81",
+      "server_port": 2086,
+      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
+      "security": "auto"
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - ryan",
-      "server": "104.17.147.22",
+      "server": "31.214.152.140",
       "server_port": 443,
-      "uuid": "5ef04ae8-8d7c-0a66-13f4-6e3f00000003",
+      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "relay.lunetcloud.ir",
-        "insecure": false,
+        "server_name": "dw.b-cdn.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lunetnetwork",
-        "headers": {
-          "Host": "relay.lunetcloud.ir"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
+          "short_id": "08"
         }
       }
     },
@@ -72,12 +57,24 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 05 - ryan",
-      "server": "153.52.92.81",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IXa3ylzS_jBOAsQy071tIQ"
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
+        }
+      }
     },
     {
       "type": "selector",
