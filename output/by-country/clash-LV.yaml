@@ -13,33 +13,47 @@ proxies:
   password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - ryan
   server: 185.135.86.175
-  port: 9034
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - ryan
-  server: 185.135.86.175
   port: 9033
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: UTJA57ypk2XKQpnm
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - ryan
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - ryan
   server: 185.135.86.175
-  port: 9017
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - ryan
+  server: 185.135.86.175
+  port: 9034
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - ryan
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - ryan
   server: 185.135.86.175
   port: 9082
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 45xgMgm386pjWjTx
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - ryan
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - ryan
+  server: 185.135.86.175
+  port: 9007
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: kSPmvwdFzGMMW5pY
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - ryan
   server: 138.124.180.137
   port: 443
   udp: true
@@ -52,19 +66,26 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - ryan
-  server: 185.255.179.11
-  port: 9443
+- name: 🇱🇻 拉脱维亚 (Latvia) 09 - ryan
+  server: 185.135.86.175
+  port: 9094
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
+- name: 🇱🇻 拉脱维亚 (Latvia) 10 - ryan
+  server: sql.popmintxo.cc
+  port: 443
   udp: true
   type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
+  flow: xtls-rprx-vision
   tls: true
-  servername: hub-lv-01.hanvpn.cc
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: lv01-grpc-8e47a
+  reality-opts:
+    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
+    short-id: b558b9305a0b
+  servername: www.microsoft.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +98,9 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 05 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 06 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 07 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 08 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 09 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 10 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,5 +113,8 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 05 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 06 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 07 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 08 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 09 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 10 - ryan
 rules:
 - MATCH,PROXIES

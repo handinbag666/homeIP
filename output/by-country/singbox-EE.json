@@ -4,11 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - ryan",
+      "server": "212.87.190.124",
+      "server_port": 99,
+      "method": "chacha20-ietf-poly1305",
+      "password": "6nQnSKAxCLJSZbg7KA94QA"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - ryan",
       "server": "94.183.170.147",
       "server_port": 8443,
-      "uuid": "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1",
+      "uuid": "66ac188b-bd8d-4218-b9ba-0bad0e152cd0",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -29,37 +37,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - ryan",
-      "server": "185.174.135.250",
-      "server_port": 443,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - ryan",
       "server": "94.183.170.135",
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "ws"
       }
     },
     {
@@ -107,6 +90,22 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - ryan",
+      "server": "ee1.sferavpn.pro",
+      "server_port": 443,
+      "password": "cd74c0a406664a5bc0bac098220a2468",
+      "tls": {
+        "enabled": true,
+        "server_name": "ee1.sferavpn.pro",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -116,7 +115,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - ryan",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - ryan"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - ryan",
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - ryan"
       ]
     },
     {
@@ -128,7 +128,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - ryan",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - ryan"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - ryan",
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
