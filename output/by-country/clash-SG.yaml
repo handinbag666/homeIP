@@ -5,20 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - ryan
-  server: 139.180.220.175
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: qpSevKaUXYQKvSjp
-- name: 🇸🇬 新加坡 (Singapore) 02 - ryan
-  server: 138.2.71.128
+  server: 168.107.68.192
   port: 56927
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: mYD6SNVk6rYfSsNcRE54unnYKlp5hRZk+XTtDnjEzjY=
-- name: 🇸🇬 新加坡 (Singapore) 03 - ryan
+  password: 3wYtGhROca1p818RFgftCeodooVes1HaskrJVHZoF3c=
+- name: 🇸🇬 新加坡 (Singapore) 02 - ryan
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -26,20 +19,28 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 04 - ryan
-  server: 167.150.100.115
-  port: 27755
+- name: 🇸🇬 新加坡 (Singapore) 03 - ryan
+  server: 149.88.23.207
+  port: 18000
   udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
-- name: 🇸🇬 新加坡 (Singapore) 05 - ryan
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 04 - ryan
   server: 167.150.100.93
   port: 29824
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
+- name: 🇸🇬 新加坡 (Singapore) 05 - ryan
+  server: 129.150.59.192
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2t7ioVN2zeH8TORMF3lxl8mKAb+1Db7YlFKCQBS424k=
 - name: 🇸🇬 新加坡 (Singapore) 06 - ryan
   server: 194.233.74.160
   port: 2342
@@ -48,63 +49,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: XV4bvaJIWoxl3IYEC1e6W7
 - name: 🇸🇬 新加坡 (Singapore) 07 - ryan
-  server: 206.206.76.75
-  port: 443
+  server: 167.150.100.115
+  port: 27755
   udp: true
-  type: vless
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
 - name: 🇸🇬 新加坡 (Singapore) 08 - ryan
-  server: 146.235.16.130
-  port: 19825
-  udp: true
-  type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 09 - ryan
-  server: vpn-sg-001.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 10 - ryan
-  server: 138.2.89.249
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d042d150716709bb778cc73889cddb02
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-- name: 🇸🇬 新加坡 (Singapore) 11 - ryan
-  server: 3.0.111.82
-  port: 17623
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇸🇬 新加坡 (Singapore) 12 - ryan
   server: 146.235.16.130
   port: 33738
   udp: true
@@ -117,7 +68,185 @@ proxies:
   udp-relay-mode: quic
   alpn:
   - h3
+- name: 🇸🇬 新加坡 (Singapore) 09 - ryan
+  server: 91.193.58.27
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 10 - ryan
+  server: 152.69.221.1
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BtRfc5wkVnMKTOR55w5GmEnPpoDs+cm++PGpJvjMHkk=
+- name: 🇸🇬 新加坡 (Singapore) 11 - ryan
+  server: 161.118.253.238
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 1027576c-c4df-4277-b3ef-38d3213b6574
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 12 - ryan
+  server: 104.17.70.206
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 395d040e-a04a-43d7-a1e9-8635f545879a
+  tls: true
+  servername: shalana.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /shalana
+    headers:
+      Host: shalana.xyz
 - name: 🇸🇬 新加坡 (Singapore) 13 - ryan
+  server: 8.219.144.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: 867e835d-b5a8-4ab2-aa93-ab8a7cc80470
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qbsLW0C_w5YhxXuCO42VQU3wjmJu93mpAGBBbcfMLSM
+    short-id: 0c09d9bb1f10bc4d
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 14 - ryan
+  server: 146.235.16.130
+  port: 19825
+  udp: true
+  type: vless
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 15 - ryan
+  server: 217.217.254.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  tls: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 16 - ryan
+  server: 138.2.89.249
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d042d150716709bb778cc73889cddb02
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
+- name: 🇸🇬 新加坡 (Singapore) 17 - ryan
+  server: 206.206.76.75
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 18 - ryan
+  server: 83.147.15.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /v/pic/archives?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 19 - ryan
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 20 - ryan
+  server: 3.0.111.82
+  port: 10574
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 21 - ryan
+  server: 3.0.111.82
+  port: 17623
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 22 - ryan
+  server: 109.66.88.158
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /details?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 23 - ryan
+  server: msjp.mangshe.xyz
+  port: 20562
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 24 - ryan
   server: 140.235.38.206
   port: 443
   udp: true
@@ -132,143 +261,6 @@ proxies:
     path: /channels/act?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 14 - ryan
-  server: 109.66.88.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 15 - ryan
-  server: 103.136.146.73
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /url/archives?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 16 - ryan
-  server: 91.193.58.231
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  tls: true
-  servername: free-server.techsonic.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 17 - ryan
-  server: 151.242.189.162
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /chat?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 18 - ryan
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - ryan
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 20 - ryan
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /act/company/intro
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 21 - ryan
-  server: 170.114.46.6
-  port: 80
-  udp: true
-  type: vless
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  network: ws
-  ws-opts:
-    path: /shalana
-    headers:
-      Host: shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 22 - ryan
-  server: 3.0.111.82
-  port: 12972
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 23 - ryan
-  server: 170.114.46.6
-  port: 80
-  udp: true
-  type: vless
-  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 24 - ryan
-  server: 217.217.254.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  tls: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 25 - ryan
   server: 43.175.131.30
   port: 443
@@ -285,6 +277,56 @@ proxies:
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 26 - ryan
+  server: 3.0.111.82
+  port: 12972
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 27 - ryan
+  server: 170.114.45.6
+  port: 80
+  udp: true
+  type: vless
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 28 - ryan
+  server: support.zoom.us
+  port: 80
+  udp: true
+  type: vless
+  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
+  network: ws
+  ws-opts:
+    path: /shalana
+    headers:
+      Host: shalana.xyz
+- name: 🇸🇬 新加坡 (Singapore) 29 - ryan
+  server: 152.67.101.72
+  port: 23010
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /books?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 30 - ryan
   server: 152.70.76.104
   port: 46000
   udp: true
@@ -299,8 +341,8 @@ proxies:
     path: /acg/series/help?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 27 - ryan
-  server: 104.16.3.98
+- name: 🇸🇬 新加坡 (Singapore) 31 - ryan
+  server: 104.19.32.166
   port: 443
   udp: true
   type: vless
@@ -314,33 +356,104 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 28 - ryan
-  server: support.zoom.us
-  port: 80
+- name: 🇸🇬 新加坡 (Singapore) 32 - ryan
+  server: 103.190.178.195
+  port: 443
   udp: true
   type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /topic/htm?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 33 - ryan
+  server: 43.159.4.80
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /episode/files?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 34 - ryan
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 29 - ryan
-  server: 104.17.70.206
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 35 - ryan
+  server: 140.245.38.33
   port: 2096
   udp: true
   type: vless
-  uuid: 395d040e-a04a-43d7-a1e9-8635f545879a
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: shalana.xyz
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /shalana
+    path: /
     headers:
-      Host: shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 30 - ryan
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 36 - ryan
+  server: 8.222.84.103
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /member/discount?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 37 - ryan
+  server: vpn-sg-001.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 38 - ryan
+  server: 23.249.18.144
+  port: 8581
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 39 - ryan
   server: 141.193.213.20
   port: 8443
   udp: true
@@ -355,21 +468,7 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 31 - ryan
-  server: 8.222.84.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 32 - ryan
+- name: 🇸🇬 新加坡 (Singapore) 40 - ryan
   server: cloud.lakshan.us
   port: 119
   udp: true
@@ -414,6 +513,14 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 30 - ryan
   - 🇸🇬 新加坡 (Singapore) 31 - ryan
   - 🇸🇬 新加坡 (Singapore) 32 - ryan
+  - 🇸🇬 新加坡 (Singapore) 33 - ryan
+  - 🇸🇬 新加坡 (Singapore) 34 - ryan
+  - 🇸🇬 新加坡 (Singapore) 35 - ryan
+  - 🇸🇬 新加坡 (Singapore) 36 - ryan
+  - 🇸🇬 新加坡 (Singapore) 37 - ryan
+  - 🇸🇬 新加坡 (Singapore) 38 - ryan
+  - 🇸🇬 新加坡 (Singapore) 39 - ryan
+  - 🇸🇬 新加坡 (Singapore) 40 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -451,5 +558,13 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 30 - ryan
   - 🇸🇬 新加坡 (Singapore) 31 - ryan
   - 🇸🇬 新加坡 (Singapore) 32 - ryan
+  - 🇸🇬 新加坡 (Singapore) 33 - ryan
+  - 🇸🇬 新加坡 (Singapore) 34 - ryan
+  - 🇸🇬 新加坡 (Singapore) 35 - ryan
+  - 🇸🇬 新加坡 (Singapore) 36 - ryan
+  - 🇸🇬 新加坡 (Singapore) 37 - ryan
+  - 🇸🇬 新加坡 (Singapore) 38 - ryan
+  - 🇸🇬 新加坡 (Singapore) 39 - ryan
+  - 🇸🇬 新加坡 (Singapore) 40 - ryan
 rules:
 - MATCH,PROXIES

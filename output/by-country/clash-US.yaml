@@ -5,36 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - ryan
-  server: 162.159.0.169
-  port: 8880
+  server: 216.106.183.35
+  port: 22324
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
 - name: 🇺🇸 美国 (United States) 02 - ryan
-  server: 37.19.198.236
+  server: 198.98.53.130
   port: 443
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
 - name: 🇺🇸 美国 (United States) 03 - ryan
-  server: 162.159.43.187
-  port: 2052
+  server: 188.114.97.6
+  port: 2086
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 🇺🇸 美国 (United States) 04 - ryan
-  server: 172.64.154.8
+  server: 104.18.34.14
   port: 2052
   udp: true
   type: vless
@@ -45,8 +42,8 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇺🇸 美国 (United States) 05 - ryan
-  server: 172.64.154.8
-  port: 8880
+  server: 162.159.0.169
+  port: 80
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -56,151 +53,7 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇺🇸 美国 (United States) 06 - ryan
-  server: 108.162.198.178
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 07 - ryan
-  server: 172.64.229.170
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 08 - ryan
-  server: 104.18.34.14
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 09 - ryan
-  server: 162.159.0.53
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 10 - ryan
-  server: 137.184.218.169
-  port: 36925
-  udp: true
-  type: vless
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇺🇸 美国 (United States) 11 - ryan
-  server: 162.159.39.218
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 12 - ryan
-  server: 104.18.46.46
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 13 - ryan
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 14 - ryan
-  server: 172.64.229.170
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 15 - ryan
-  server: 104.18.46.234
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 16 - ryan
-  server: 104.18.46.234
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 17 - ryan
-  server: 172.64.32.103
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 18 - ryan
-  server: 188.114.97.6
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: '/?ed=2560 '
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 19 - ryan
-  server: 104.18.39.218
+  server: 172.64.154.8
   port: 2086
   udp: true
   type: vless
@@ -210,23 +63,18 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 20 - ryan
-  server: 31.43.179.87
-  port: 443
+- name: 🇺🇸 美国 (United States) 07 - ryan
+  server: 162.35.96.21
+  port: 8081
   udp: true
   type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  skip-cert-verify: false
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇺🇸 美国 (United States) 21 - ryan
-  server: 162.159.43.187
-  port: 2082
+    path: /vless-test
+- name: 🇺🇸 美国 (United States) 08 - ryan
+  server: 172.64.42.85
+  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -235,8 +83,20 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 22 - ryan
-  server: 172.64.32.108
+- name: 🇺🇸 美国 (United States) 09 - ryan
+  server: 159.89.87.21
+  port: 28190
+  udp: true
+  type: vless
+  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+  servername: aws.amazon.com
+  client-fingerprint: ''
+- name: 🇺🇸 美国 (United States) 10 - ryan
+  server: 162.159.38.127
   port: 2052
   udp: true
   type: vless
@@ -246,16 +106,8 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 23 - ryan
-  server: 216.106.183.35
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 24 - ryan
-  server: 162.159.45.19
+- name: 🇺🇸 美国 (United States) 11 - ryan
+  server: 172.64.42.85
   port: 80
   udp: true
   type: vless
@@ -265,8 +117,140 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 25 - ryan
+- name: 🇺🇸 美国 (United States) 12 - ryan
+  server: 172.64.229.170
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 13 - ryan
+  server: 172.64.42.85
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 14 - ryan
+  server: 172.64.32.103
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 15 - ryan
+  server: 15.204.247.175
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇸 美国 (United States) 16 - ryan
+  server: 172.64.229.170
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 17 - ryan
+  server: 159.223.157.129
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g
+  sni: 159.223.157.129
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 18 - ryan
+  server: 162.159.0.169
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 19 - ryan
   server: 104.18.46.234
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 20 - ryan
+  server: 172.64.53.55
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 21 - ryan
+  server: 37.19.198.244
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 22 - ryan
+  server: 172.64.32.103
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 23 - ryan
+  server: 162.159.38.127
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 24 - ryan
+  server: 162.159.24.131
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 25 - ryan
+  server: 108.162.198.178
   port: 8080
   udp: true
   type: vless
@@ -277,142 +261,18 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇺🇸 美国 (United States) 26 - ryan
-  server: 172.64.158.146
-  port: 2082
+  server: 104.18.46.46
+  port: 2095
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: '/?ed=2560security=tls '
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇺🇸 美国 (United States) 27 - ryan
-  server: 159.223.157.129
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g
-  sni: 159.223.157.129
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 28 - ryan
-  server: 162.159.43.187
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 29 - ryan
-  server: 104.18.34.14
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 30 - ryan
-  server: 169.40.42.104
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 31 - ryan
-  server: 172.64.32.103
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 32 - ryan
-  server: 37.19.198.160
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 33 - ryan
-  server: 45.131.6.249
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇺🇸 美国 (United States) 34 - ryan
-  server: 169.40.42.95
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 35 - ryan
-  server: 104.16.111.193
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇺🇸 美国 (United States) 36 - ryan
-  server: 195.26.229.127
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇺🇸 美国 (United States) 37 - ryan
-  server: 37.19.198.243
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 38 - ryan
-  server: 104.18.34.14
+  server: 172.64.229.170
   port: 8880
   udp: true
   type: vless
@@ -422,22 +282,648 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 39 - ryan
-  server: 8.35.211.236
+- name: 🇺🇸 美国 (United States) 28 - ryan
+  server: 172.64.158.146
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 29 - ryan
+  server: 172.64.154.8
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 30 - ryan
+  server: 162.159.48.32
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 31 - ryan
+  server: 104.18.46.234
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 32 - ryan
+  server: 104.18.47.113
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 33 - ryan
+  server: 188.114.97.6
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 34 - ryan
+  server: 172.64.229.2
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 35 - ryan
+  server: 137.184.218.169
+  port: 36925
+  udp: true
+  type: vless
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 36 - ryan
+  server: 45.131.6.205
   port: 443
   udp: true
   type: vless
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  uuid: b2593749-691c-428c-9481-14979cba3446
   tls: true
-  servername: kkkk-bq7.pages.dev
+  servername: xi.tbv.ccwu.cc
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 37 - ryan
+  server: 162.159.48.32
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 38 - ryan
+  server: 172.64.158.146
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 39 - ryan
+  server: 47.253.226.114
+  port: 443
+  udp: true
+  type: vless
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 40 - ryan
+  server: 162.159.43.187
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 41 - ryan
+  server: 172.64.52.6
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 42 - ryan
+  server: 172.64.154.8
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 43 - ryan
+  server: 104.18.46.234
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: kkkk-bq7.pages.dev
-- name: 🇺🇸 美国 (United States) 40 - ryan
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 44 - ryan
+  server: 162.159.38.127
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 45 - ryan
+  server: 108.162.198.178
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 46 - ryan
+  server: 162.159.0.53
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 47 - ryan
+  server: 104.18.47.113
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 48 - ryan
+  server: 162.159.43.187
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 49 - ryan
+  server: 104.18.47.113
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 50 - ryan
+  server: 104.21.34.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 51 - ryan
+  server: 172.64.145.202
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 52 - ryan
+  server: 169.40.42.90
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 53 - ryan
+  server: 162.159.0.53
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 54 - ryan
+  server: 162.159.0.53
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 55 - ryan
+  server: 162.159.48.32
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 56 - ryan
+  server: 169.40.42.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 57 - ryan
+  server: 79.141.172.154
+  port: 10453
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇺🇸 美国 (United States) 58 - ryan
+  server: 172.64.158.146
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 59 - ryan
+  server: 172.64.154.8
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 60 - ryan
+  server: 195.26.229.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 61 - ryan
+  server: 45.131.5.241
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 62 - ryan
+  server: 104.18.47.113
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tlssecurity=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 63 - ryan
+  server: 104.18.39.218
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 64 - ryan
+  server: 104.18.34.14
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 65 - ryan
+  server: 162.159.39.218
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 66 - ryan
+  server: 162.159.24.131
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 67 - ryan
+  server: 162.159.0.53
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 68 - ryan
+  server: 162.159.0.169
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 69 - ryan
+  server: 37.19.198.236
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 70 - ryan
+  server: 172.64.158.146
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 71 - ryan
+  server: 162.159.45.19
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 72 - ryan
+  server: 212.104.128.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 73 - ryan
+  server: 3.145.36.155
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 74 - ryan
+  server: 104.18.26.90
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+  tls: true
+  servername: vip.868068.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: vip.868068.xyz
+- name: 🇺🇸 美国 (United States) 75 - ryan
+  server: 104.18.39.218
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tlssecurity=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 76 - ryan
+  server: 212.104.128.244
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 77 - ryan
+  server: 45.131.4.181
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 78 - ryan
+  server: 45.131.4.41
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 79 - ryan
+  server: 104.18.46.46
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 80 - ryan
+  server: 195.123.235.177
+  port: 443
+  udp: true
+  type: vless
+  uuid: 729dd5f2-f5ff-4070-8c10-863eceded0b1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI
+    short-id: c85d029f5e8eb393
+  servername: gateway.icloud.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 81 - ryan
+  server: 172.64.53.55
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 82 - ryan
+  server: 172.64.32.108
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 83 - ryan
   server: 172.64.147.104
   port: 8443
   udp: true
@@ -452,288 +938,7 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: vip.868068.xyz
-- name: 🇺🇸 美国 (United States) 41 - ryan
-  server: 172.64.229.2
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 42 - ryan
-  server: 162.159.45.19
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 43 - ryan
-  server: 104.18.39.218
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 44 - ryan
-  server: 104.18.46.234
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 45 - ryan
-  server: 162.159.0.53
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 46 - ryan
-  server: 172.64.52.6
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 47 - ryan
-  server: 104.18.40.152
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
-  tls: true
-  servername: vip.868068.xyz
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: vip.868068.xyz
-- name: 🇺🇸 美国 (United States) 48 - ryan
-  server: 156.146.38.167
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 49 - ryan
-  server: 156.146.38.170
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 50 - ryan
-  server: 172.64.53.55
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 51 - ryan
-  server: 212.104.128.152
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇺🇸 美国 (United States) 52 - ryan
-  server: 162.159.38.127
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 53 - ryan
-  server: 195.211.98.43
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
-    short-id: 9c56fddf237e8eaf
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 54 - ryan
-  server: 162.159.39.218
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 55 - ryan
-  server: 15.204.233.41
-  port: 8882
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇺🇸 美国 (United States) 56 - ryan
-  server: 162.159.38.127
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 57 - ryan
-  server: 139.64.235.225
-  port: 443
-  udp: true
-  type: vless
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  tls: true
-  servername: nb.lovecf.ggff.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇺🇸 美国 (United States) 58 - ryan
-  server: 162.159.48.32
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 59 - ryan
-  server: 198.98.53.130
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-- name: 🇺🇸 美国 (United States) 60 - ryan
-  server: 147.182.212.232
-  port: 56565
-  udp: true
-  type: vless
-  uuid: 7b188eea-b08f-42c2-bac7-d3b0e74218b8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY
-  servername: www.paypal.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 61 - ryan
-  server: 167.17.69.171
-  port: 443
-  udp: true
-  type: vless
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
-    short-id: 0990d22f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 62 - ryan
-  server: 138.199.42.68
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 63 - ryan
-  server: 169.40.42.182
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 64 - ryan
-  server: 38.110.1.246
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 65 - ryan
-  server: 172.64.154.8
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 66 - ryan
-  server: 104.234.24.13
-  port: 8088
-  udp: true
-  type: vless
-  uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
-  network: ws
-  ws-opts:
-    path: /api
-    headers:
-      Host: queuev4.vk.com
-- name: 🇺🇸 美国 (United States) 67 - ryan
+- name: 🇺🇸 美国 (United States) 84 - ryan
   server: 45.131.5.80
   port: 443
   udp: true
@@ -747,168 +952,8 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇺🇸 美国 (United States) 68 - ryan
-  server: 212.104.128.68
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇺🇸 美国 (United States) 69 - ryan
-  server: 3.141.200.225
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 70 - ryan
-  server: 172.64.158.146
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 71 - ryan
-  server: 104.18.47.113
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 72 - ryan
-  server: 108.162.198.178
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 73 - ryan
-  server: 169.40.42.223
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 74 - ryan
-  server: 91.209.253.109
-  port: 443
-  udp: true
-  type: vless
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  tls: true
-  servername: nb.lovecf.ggff.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇺🇸 美国 (United States) 75 - ryan
-  server: 169.40.42.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 76 - ryan
-  server: 79.141.172.154
-  port: 10453
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
-  servername: www.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇺🇸 美国 (United States) 77 - ryan
-  server: 38.180.135.156
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YHtesZ0qvgtg
-- name: 🇺🇸 美国 (United States) 78 - ryan
-  server: 172.64.42.85
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 79 - ryan
-  server: 104.18.47.113
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 80 - ryan
-  server: 162.159.48.32
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 81 - ryan
-  server: 162.159.43.187
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 82 - ryan
-  server: 162.159.0.169
+- name: 🇺🇸 美国 (United States) 85 - ryan
+  server: 104.18.34.14
   port: 2086
   udp: true
   type: vless
@@ -918,31 +963,22 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 83 - ryan
-  server: 188.114.97.6
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 84 - ryan
-  server: 169.40.42.35
+- name: 🇺🇸 美国 (United States) 86 - ryan
+  server: 91.209.253.25
   port: 443
   udp: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
+  servername: nb.lovecf.ggff.net
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 85 - ryan
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇺🇸 美国 (United States) 87 - ryan
   server: 178.156.196.52
   port: 443
   udp: true
@@ -950,359 +986,15 @@ proxies:
   password: 468bcf0cdf5a68d8b8035d5bb8d149acf9eb129bcbc7689c
   sni: 178.156.196.52
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 86 - ryan
-  server: 104.18.46.46
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 87 - ryan
-  server: 162.159.24.131
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇺🇸 美国 (United States) 88 - ryan
-  server: 162.159.45.19
-  port: 2086
+  server: 138.199.42.68
+  port: 8080
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇺🇸 美国 (United States) 89 - ryan
-  server: 45.131.5.248
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇺🇸 美国 (United States) 90 - ryan
-  server: 169.40.42.235
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 91 - ryan
-  server: 172.64.53.55
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 92 - ryan
-  server: 156.146.38.168
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 93 - ryan
-  server: 162.159.0.53
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 94 - ryan
-  server: 82.198.246.250
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 95 - ryan
-  server: 172.64.229.170
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 96 - ryan
-  server: 169.40.42.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 97 - ryan
-  server: 162.159.0.53
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 98 - ryan
-  server: 3.15.206.99
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 99 - ryan
-  server: 38.180.242.205
-  port: 13779
-  udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: edge
-- name: 🇺🇸 美国 (United States) 100 - ryan
-  server: 67.220.73.204
-  port: 16016
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 101 - ryan
-  server: 169.40.42.16
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 102 - ryan
-  server: 169.40.42.52
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 103 - ryan
-  server: 47.85.188.30
-  port: 12004
-  udp: true
-  type: vmess
-  uuid: 8b5552bd-4cc7-4cac-af08-81c21686fd4f
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 104 - ryan
-  server: 67.220.95.3
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 105 - ryan
-  server: 169.40.42.133
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 106 - ryan
-  server: 129.146.5.155
-  port: 50356
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: weY5SuElMZv3cFUuqwueCsMJOtulfSGK+49UclgGrog=
-- name: 🇺🇸 美国 (United States) 107 - ryan
-  server: 172.64.154.211
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
-  tls: true
-  servername: vip.868068.xyz
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.868068.xyz
-- name: 🇺🇸 美国 (United States) 108 - ryan
-  server: 172.64.229.2
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 109 - ryan
-  server: 129.146.75.221
-  port: 50356
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ko88AO1Lj50PH3xGQ/SzJChWovcD99np3GwLcJwj/Eo=
-- name: 🇺🇸 美国 (United States) 110 - ryan
-  server: 172.64.32.103
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 111 - ryan
-  server: 169.40.42.229
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 112 - ryan
-  server: 3.135.191.150
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 113 - ryan
-  server: 172.64.42.85
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 114 - ryan
-  server: 172.64.158.146
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 115 - ryan
-  server: 169.40.42.225
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 116 - ryan
-  server: 172.64.154.8
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 117 - ryan
-  server: 212.104.128.45
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇺🇸 美国 (United States) 118 - ryan
-  server: 188.114.97.6
+  server: 139.64.235.174
   port: 443
   udp: true
   type: vless
@@ -1310,143 +1002,13 @@ proxies:
   tls: true
   servername: nb.lovecf.ggff.net
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇺🇸 美国 (United States) 119 - ryan
-  server: 173.244.56.9
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 120 - ryan
-  server: 198.251.78.29
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
-  tls: true
-  reality-opts:
-    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
-    short-id: b5d625695ec82c7e
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 121 - ryan
-  server: 108.162.198.178
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 122 - ryan
-  server: 38.54.6.46
-  port: 36712
-  udp: true
-  type: hysteria2
-  password: CompanyHy2_2026!
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 123 - ryan
-  server: 198.46.159.171
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: EkkoHY2_2024!
-  sni: 198.46.159.171
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 124 - ryan
-  server: 172.64.52.6
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 125 - ryan
-  server: 169.40.42.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 126 - ryan
-  server: 129.146.77.248
-  port: 39495
-  udp: true
-  type: vmess
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: 🇺🇸 美国 (United States) 127 - ryan
-  server: 172.64.229.170
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 128 - ryan
-  server: 104.18.42.54
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
-  tls: true
-  servername: vip.868068.xyz
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: vip.868068.xyz
-- name: 🇺🇸 美国 (United States) 129 - ryan
-  server: 216.227.161.95
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-  tls: true
-  reality-opts:
-    public-key: uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM
-    short-id: 48d5cf47
-  servername: media3.abvphelp.cc
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇺🇸 美国 (United States) 130 - ryan
-  server: 23.150.248.20
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qB2Cv9VIlujj
-- name: 🇺🇸 美国 (United States) 131 - ryan
+- name: 🇺🇸 美国 (United States) 90 - ryan
   server: 104.18.46.234
   port: 80
   udp: true
@@ -1457,76 +1019,9 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 132 - ryan
-  server: 173.244.56.6
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 133 - ryan
-  server: 108.181.57.93
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: RSo52SbxW40r
-- name: 🇺🇸 美国 (United States) 134 - ryan
-  server: 172.64.158.146
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 135 - ryan
-  server: 156.146.38.169
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 136 - ryan
-  server: 67.220.72.237
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 137 - ryan
-  server: 216.106.185.141
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 138 - ryan
-  server: 162.159.24.131
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 139 - ryan
-  server: 84.17.41.2
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 140 - ryan
-  server: 162.159.39.218
-  port: 2086
+- name: 🇺🇸 美国 (United States) 91 - ryan
+  server: 104.18.34.14
+  port: 2095
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -1535,325 +1030,7 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 141 - ryan
-  server: kz3.zuoai.cf
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇺🇸 美国 (United States) 142 - ryan
-  server: 172.64.32.103
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 143 - ryan
-  server: 172.64.158.146
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 144 - ryan
-  server: 169.40.42.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 145 - ryan
-  server: 82.198.246.233
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 146 - ryan
-  server: 3.145.36.155
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 147 - ryan
-  server: 47.251.108.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 148 - ryan
-  server: 169.40.42.90
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 149 - ryan
-  server: openai.com
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free-claude-api.asshole.us.ci
-- name: 🇺🇸 美国 (United States) 150 - ryan
-  server: 138.199.43.159
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 151 - ryan
-  server: 188.114.97.6
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 152 - ryan
-  server: 172.235.43.210
-  port: 53957
-  udp: true
-  type: vless
-  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
-    short-id: 44e82fd7b97b14
-  servername: www.nvidia.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 153 - ryan
-  server: hy2.123266.xyz
-  port: 33333
-  udp: true
-  type: hysteria2
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  sni: hy2.123266.xyz
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 154 - ryan
-  server: 31.58.50.200
-  port: 8443
-  udp: true
-  type: vless
-  uuid: ec83e1b5-f535-4219-b530-49fdab9ca1ef
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 155 - ryan
-  server: 45.149.172.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: 77dc177b-79d9-49ac-92e1-2f1011faa5e3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: U3L2Aed8YfC7Aw2sRv_DJDnbOXVP-XUiyxQe3_h7LT8
-    short-id: 626d38f0ea642e3b
-  servername: www.logitech.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 156 - ryan
-  server: 15.204.97.197
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 157 - ryan
-  server: hy2.561891.xyz
-  port: 44356
-  udp: true
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: hy2.561891.xyz
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 158 - ryan
-  server: 15.204.97.216
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 159 - ryan
-  server: 45.91.138.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
-    short-id: 169fc2df88419465
-  servername: us05.shifor01.life
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 160 - ryan
-  server: 15.204.97.198
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 161 - ryan
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇺🇸 美国 (United States) 162 - ryan
-  server: 15.204.246.132
-  port: 7307
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: 🇺🇸 美国 (United States) 163 - ryan
-  server: 15.204.97.219
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  servername: fuck.rkn
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 164 - ryan
-  server: 172.233.139.46
-  port: 53734
-  udp: true
-  type: vless
-  uuid: 56a1b253-cde4-490f-9c5e-09a523882bdd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JAG5rl6KEt7KAV0y8Z2x6orWHymCXRSX49SkEnEftWU
-    short-id: a56d7d8da977f860
-  servername: www.tesla.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 165 - ryan
-  server: 47.251.25.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: 18805ff3-b420-45de-af18-93be14024ae8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 166 - ryan
-  server: 15.204.97.206
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  servername: fuck.rkn
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 167 - ryan
-  server: 195.85.23.252
-  port: 443
-  udp: true
-  type: vless
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  tls: true
-  servername: nb.lovecf.ggff.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇺🇸 美国 (United States) 168 - ryan
-  server: 194.55.189.249
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
-  tls: true
-  reality-opts:
-    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
-    short-id: aae8
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 169 - ryan
+- name: 🇺🇸 美国 (United States) 92 - ryan
   server: 104.18.33.45
   port: 2087
   udp: true
@@ -1868,19 +1045,816 @@ proxies:
     path: /
     headers:
       Host: vip.868068.xyz
-- name: 🇺🇸 美国 (United States) 170 - ryan
-  server: 51.81.203.63
+- name: 🇺🇸 美国 (United States) 93 - ryan
+  server: 139.64.235.1
   port: 443
   udp: true
   type: vless
-  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  tls: true
+  servername: nb.lovecf.ggff.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇺🇸 美国 (United States) 94 - ryan
+  server: 172.64.53.55
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 95 - ryan
+  server: 88.216.195.13
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c48b5f5-7766-4896-874e-b3ba1860e83a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-    short-id: 4477382ff6d3d41c
-  servername: www.icloud.com
+    public-key: 4VzPARgETZ4lJIffknTNqmfkP567FqYV94A18Be8vxQ
+    short-id: 837f454e9c8a7e19
+  servername: w-mebel.pro
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 96 - ryan
+  server: 195.211.98.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
+    short-id: 9c56fddf237e8eaf
+  servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 97 - ryan
+  server: 162.159.0.53
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 98 - ryan
+  server: aws.bossonlineshop.info
+  port: 80
+  udp: true
+  type: vless
+  uuid: f657645c-406a-48d6-bb62-f6da673f6a7c
+- name: 🇺🇸 美国 (United States) 99 - ryan
+  server: 156.146.38.169
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 100 - ryan
+  server: 66.235.200.101
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 101 - ryan
+  server: 104.234.24.13
+  port: 8088
+  udp: true
+  type: vless
+  uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
+  network: ws
+  ws-opts:
+    path: /api
+    headers:
+      Host: queuev4.vk.com
+- name: 🇺🇸 美国 (United States) 102 - ryan
+  server: 3.21.98.132
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 103 - ryan
+  server: 37.19.198.160
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 104 - ryan
+  server: vpn-us-003.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-003.fastervpn.world
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 105 - ryan
+  server: 169.40.42.168
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 106 - ryan
+  server: 167.17.69.171
+  port: 443
+  udp: true
+  type: vless
+  uuid: 00144519-7e0d-476b-8d28-435576af9262
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
+    short-id: 0990d22f
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 107 - ryan
+  server: 37.19.198.243
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 108 - ryan
+  server: 162.159.0.53
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 109 - ryan
+  server: 108.162.198.178
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 110 - ryan
+  server: 195.26.229.222
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 111 - ryan
+  server: 172.64.32.108
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 112 - ryan
+  server: 31.43.179.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 113 - ryan
+  server: 104.19.32.166
+  port: 443
+  udp: true
+  type: vless
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  tls: true
+  servername: nb.lovecf.ggff.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇺🇸 美国 (United States) 114 - ryan
+  server: 104.18.46.46
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 115 - ryan
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 116 - ryan
+  server: 172.64.229.170
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 117 - ryan
+  server: 162.159.24.131
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 118 - ryan
+  server: 169.40.42.184
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 119 - ryan
+  server: 104.21.34.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  tls: true
+  servername: nb.lovecf.ggff.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇺🇸 美国 (United States) 120 - ryan
+  server: 162.159.43.187
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 121 - ryan
+  server: 156.146.38.170
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 122 - ryan
+  server: 188.114.97.6
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 123 - ryan
+  server: 169.40.42.182
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 124 - ryan
+  server: 156.146.38.167
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 125 - ryan
+  server: 3.15.206.99
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 126 - ryan
+  server: 23.150.248.20
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qB2Cv9VIlujj
+- name: 🇺🇸 美国 (United States) 127 - ryan
+  server: 67.220.95.3
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 128 - ryan
+  server: 162.159.24.131
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 129 - ryan
+  server: 108.162.198.178
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 130 - ryan
+  server: 169.40.42.52
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 131 - ryan
+  server: vpn-us-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 132 - ryan
+  server: 188.114.97.6
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 133 - ryan
+  server: 38.91.107.49
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 134 - ryan
+  server: 38.180.135.156
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YHtesZ0qvgtg
+- name: 🇺🇸 美国 (United States) 135 - ryan
+  server: 162.159.39.218
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 136 - ryan
+  server: 169.40.42.202
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 137 - ryan
+  server: 169.40.42.212
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 138 - ryan
+  server: 169.40.42.231
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 139 - ryan
+  server: 156.146.38.168
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 140 - ryan
+  server: 38.110.1.246
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 141 - ryan
+  server: 104.18.46.46
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 142 - ryan
+  server: 173.244.56.9
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 143 - ryan
+  server: 129.146.75.221
+  port: 50356
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ko88AO1Lj50PH3xGQ/SzJChWovcD99np3GwLcJwj/Eo=
+- name: 🇺🇸 美国 (United States) 144 - ryan
+  server: 172.64.42.85
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 145 - ryan
+  server: 169.40.42.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 146 - ryan
+  server: 198.251.78.29
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  tls: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+    short-id: b5d625695ec82c7e
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 147 - ryan
+  server: 129.146.5.155
+  port: 50356
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: weY5SuElMZv3cFUuqwueCsMJOtulfSGK+49UclgGrog=
+- name: 🇺🇸 美国 (United States) 148 - ryan
+  server: 172.64.153.88
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇺🇸 美国 (United States) 149 - ryan
+  server: 3.135.191.150
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 150 - ryan
+  server: 3.145.43.38
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 151 - ryan
+  server: 162.159.43.187
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 152 - ryan
+  server: 108.181.57.93
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: RSo52SbxW40r
+- name: 🇺🇸 美国 (United States) 153 - ryan
+  server: 3.141.200.225
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 154 - ryan
+  server: 107.173.254.27
+  port: 15311
+  udp: true
+  type: vmess
+  uuid: ad78d02b-873f-4cff-8d4a-673f53d6ce0f
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 155 - ryan
+  server: 3.148.195.154
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 156 - ryan
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ne4d3.thir.mn8.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 157 - ryan
+  server: 173.244.56.6
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 158 - ryan
+  server: 162.35.96.18
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇺🇸 美国 (United States) 159 - ryan
+  server: 169.40.42.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 160 - ryan
+  server: 162.159.38.127
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 161 - ryan
+  server: 169.40.42.223
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 162 - ryan
+  server: 169.40.42.232
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 163 - ryan
+  server: 169.40.42.229
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 164 - ryan
+  server: 216.227.161.95
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  tls: true
+  reality-opts:
+    public-key: uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM
+    short-id: 48d5cf47
+  servername: media3.abvphelp.cc
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇺🇸 美国 (United States) 165 - ryan
+  server: 198.46.159.171
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: EkkoHY2_2024!
+  sni: 198.46.159.171
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 166 - ryan
+  server: 38.54.6.46
+  port: 36712
+  udp: true
+  type: hysteria2
+  password: CompanyHy2_2026!
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 167 - ryan
+  server: 67.220.72.237
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 168 - ryan
+  server: 129.146.143.80
+  port: 48111
+  udp: true
+  type: vmess
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 169 - ryan
+  server: 169.40.42.133
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 170 - ryan
+  server: 216.106.185.141
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: 🇺🇸 美国 (United States) 171 - ryan
   server: 67.220.73.204
   port: 18662
@@ -1895,6 +1869,113 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 172 - ryan
+  server: sa1.zuoai.cf
+  port: 443
+  udp: true
+  type: vless
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  tls: true
+  servername: nb.lovecf.ggff.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇺🇸 美国 (United States) 173 - ryan
+  server: 151.101.56.56
+  port: 443
+  udp: true
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸 美国 (United States) 174 - ryan
+  server: 195.85.23.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  tls: true
+  servername: nb.lovecf.ggff.net
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇺🇸 美国 (United States) 175 - ryan
+  server: 104.21.45.133
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  tls: true
+  servername: 3-backend-infra-m20.g000g.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
+    headers:
+      Host: 3-backend-infra-m20.g000g.ccwu.cc
+- name: 🇺🇸 美国 (United States) 176 - ryan
+  server: 104.18.40.152
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+  tls: true
+  servername: vip.868068.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: vip.868068.xyz
+- name: 🇺🇸 美国 (United States) 177 - ryan
+  server: 108.162.198.178
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 178 - ryan
+  server: 172.235.43.210
+  port: 53957
+  udp: true
+  type: vless
+  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
+    short-id: 44e82fd7b97b14
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 179 - ryan
+  server: 15.204.97.197
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 180 - ryan
   server: 15.204.97.195
   port: 23576
   udp: true
@@ -1907,37 +1988,33 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 173 - ryan
-  server: 15.204.97.214
-  port: 23576
+- name: 🇺🇸 美国 (United States) 181 - ryan
+  server: 45.149.172.74
+  port: 443
   udp: true
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: b2f2d18f-7a9d-411c-aa4e-5a20fe06defe
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
+    public-key: U3L2Aed8YfC7Aw2sRv_DJDnbOXVP-XUiyxQe3_h7LT8
+    short-id: 626d38f0ea642e3b
+  servername: www.logitech.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 174 - ryan
-  server: 107.151.182.197
-  port: 8080
+- name: 🇺🇸 美国 (United States) 182 - ryan
+  server: openai.com
+  port: 2095
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 175 - ryan
-  server: 67.220.85.46
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 176 - ryan
-  server: 104.18.46.46
-  port: 2082
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free-claude-api.asshole.us.ci
+- name: 🇺🇸 美国 (United States) 183 - ryan
+  server: 162.159.45.19
+  port: 80
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -1946,103 +2023,21 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 177 - ryan
+- name: 🇺🇸 美国 (United States) 184 - ryan
+  server: 84.17.41.2
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 185 - ryan
   server: 163.192.14.135
   port: 50160
   udp: true
   type: hysteria2
   password: 099830134df5ac3a04a4b21d39b8c395
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 178 - ryan
-  server: 88.216.195.13
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c48b5f5-7766-4896-874e-b3ba1860e83a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4VzPARgETZ4lJIffknTNqmfkP567FqYV94A18Be8vxQ
-    short-id: 837f454e9c8a7e19
-  servername: w-mebel.pro
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 179 - ryan
-  server: 107.172.67.52
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: maintell
-- name: 🇺🇸 美国 (United States) 180 - ryan
-  server: 89.125.147.199
-  port: 443
-  udp: true
-  type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  tls: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-    short-id: f6c7c139b9c938db
-  servername: maps.apple.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 181 - ryan
-  server: cf6.danfeng.eu.org
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
-  tls: true
-  servername: vip.868068.xyz
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: vip.868068.xyz
-- name: 🇺🇸 美国 (United States) 182 - ryan
-  server: 172.64.145.202
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
-  tls: true
-  servername: vip.868068.xyz
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.868068.xyz
-- name: 🇺🇸 美国 (United States) 183 - ryan
-  server: 80.91.65.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 1851679956395a09f6afc10eb3f3751b
-  sni: 80.91.65.89
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a
-- name: 🇺🇸 美国 (United States) 184 - ryan
-  server: 3.142.197.111
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 185 - ryan
-  server: 64.188.98.171
-  port: 443
-  udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: germany3.h2corp.local
+  sni: whatsapp.com
   skip-cert-verify: true
 - name: 🇺🇸 美国 (United States) 186 - ryan
   server: 15.204.97.209
@@ -2058,41 +2053,59 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 187 - ryan
-  server: 31.43.179.8
+  server: us10.zuoai.cf
   port: 443
   udp: true
   type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   tls: true
-  servername: xi.tbv.ccwu.cc
+  servername: nb.lovecf.ggff.net
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /proxyip=us.xiabibi.cf
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: nb.lovecf.ggff.net
 - name: 🇺🇸 美国 (United States) 188 - ryan
-  server: 100.42.228.109
+  server: 195.123.240.65
   port: 443
   udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: 100.42.228.109
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 189 - ryan
-  server: 198.200.42.129
-  port: 52977
-  udp: true
   type: vless
-  uuid: 2f6f1856-5466-4078-b1f0-d3f977211ada
+  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: X-DQShHbh23E3SeJjZzC-WStkChJU0lxgktpGalzjw4
-    short-id: 0fb9c965
-  servername: apple.com
-  client-fingerprint: chrome
+    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
+    short-id: 19296c9f1bf9c7b1
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 189 - ryan
+  server: 34.19.91.203
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9d0395c0-016f-453e-b0be-fc66f1ee1d80
+  tls: true
+  reality-opts:
+    public-key: aGm3egxU7SVqVw-oxqXbJ0u4ctldnmTjwaDh4Mao2EE
+    short-id: bd4aa541e5306ba2
+  servername: www.cloudflare.com
+  client-fingerprint: ios
 - name: 🇺🇸 美国 (United States) 190 - ryan
+  server: 47.251.108.158
+  port: 443
+  udp: true
+  type: vless
+  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
+    short-id: 896f52ba2cfca903
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 191 - ryan
   server: 31.77.8.97
   port: 110
   udp: true
@@ -2100,47 +2113,30 @@ proxies:
   uuid: e8758bf0-c234-4809-89f7-25fd868316d0
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 (United States) 191 - ryan
-  server: 82.198.246.97
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: 🇺🇸 美国 (United States) 192 - ryan
-  server: cdn.snobvpn.online
-  port: 80
+  server: 31.58.50.200
+  port: 8443
   udp: true
   type: vless
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: cdn.snobvpn.online
-- name: 🇺🇸 美国 (United States) 193 - ryan
-  server: 5.34.178.120
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9063f9fb-e88a-4ee0-b4a4-a92ca7316a9f
+  uuid: 8ed35e81-16b9-4316-bcb4-4be6c4db4449
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: EVhq2BxKuw2Cody1DmF_HPvUYKwzdXbHP47blUv-eRM
-    short-id: 55ab5559e3a6d10a
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 194 - ryan
-  server: vpn-us-006.fastervpn.world
-  port: 443
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 193 - ryan
+  server: 129.146.77.248
+  port: 39495
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-us-006.fastervpn.world
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 195 - ryan
+  type: vmess
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇺🇸 美国 (United States) 194 - ryan
   server: 162.35.104.143
   port: 443
   udp: true
@@ -2153,142 +2149,175 @@ proxies:
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 196 - ryan
-  server: 50.7.226.174
-  port: 443
+- name: 🇺🇸 美国 (United States) 195 - ryan
+  server: 172.233.139.46
+  port: 53734
   udp: true
   type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: en-new.moriarty-web.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 197 - ryan
-  server: vpn-us-003.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 198 - ryan
-  server: 2.27.244.177
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  uuid: 56a1b253-cde4-490f-9c5e-09a523882bdd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: polacondr.ggisopi.su
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 199 - ryan
-  server: 66.94.121.46
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 66.94.121.46
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 200 - ryan
-  server: 162.35.96.21
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇺🇸 美国 (United States) 201 - ryan
-  server: 169.40.42.232
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 202 - ryan
-  server: 172.235.38.85
-  port: 42942
-  udp: true
-  type: vless
-  uuid: bca46025-bf43-40c0-895b-054a6fbcfd32
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU
+    public-key: JAG5rl6KEt7KAV0y8Z2x6orWHymCXRSX49SkEnEftWU
     short-id: a56d7d8da977f860
   servername: www.tesla.com
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 203 - ryan
-  server: 5.78.159.97
-  port: 443
+- name: 🇺🇸 美国 (United States) 196 - ryan
+  server: 15.204.97.198
+  port: 23576
   udp: true
   type: vless
-  uuid: b88a54a0-501c-4acf-930b-305354452f4e
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: XB7peN-a_9j_WGBHvs3DIMDlsOzJAOehGnziOE9OvwE
-    short-id: 884dffd8e62a5c48
-  servername: www.yahoo.com
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 204 - ryan
-  server: 186.246.19.79
-  port: 40443
+- name: 🇺🇸 美国 (United States) 197 - ryan
+  server: 169.197.142.22
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 198 - ryan
+  server: 15.204.97.216
+  port: 23576
   udp: true
   type: vless
-  uuid: 5e3f974b-06fc-4555-907a-6681391b7c17
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: oc9uweln_cqyaJnlRMnhhhKrGNP7RrYOsuYtaIOIQDE
-    short-id: 2bc0
-  servername: deepl.com
-  client-fingerprint: edge
-- name: 🇺🇸 美国 (United States) 205 - ryan
-  server: 34.19.91.203
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9d0395c0-016f-453e-b0be-fc66f1ee1d80
-  tls: true
-  reality-opts:
-    public-key: aGm3egxU7SVqVw-oxqXbJ0u4ctldnmTjwaDh4Mao2EE
-    short-id: bd4aa541e5306ba2
-  servername: www.cloudflare.com
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 206 - ryan
-  server: us4.xiaoliyu.cyou
-  port: 4433
+- name: 🇺🇸 美国 (United States) 199 - ryan
+  server: hy2.123266.xyz
+  port: 33333
   udp: true
   type: hysteria2
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  sni: 127.0.0.1
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: hy2.123266.xyz
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 200 - ryan
+  server: 107.172.67.52
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 207 - ryan
-  server: 72.56.41.33
-  port: 40443
+  obfs: salamander
+  obfs-password: maintell
+- name: 🇺🇸 美国 (United States) 201 - ryan
+  server: us13.vipjiedian.sbs
+  port: 21333
+  udp: true
+  type: anytls
+  password: 2d7bda32-a8b5-4416-a1ea-4559ff98f86e
+  sni: apple.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 202 - ryan
+  server: hy2.561891.xyz
+  port: 44356
+  udp: true
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: hy2.561891.xyz
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 203 - ryan
+  server: 15.204.97.214
+  port: 23576
   udp: true
   type: vless
-  uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
-    short-id: ee33
-  servername: deepl.com
-  client-fingerprint: firefox
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 204 - ryan
+  server: 15.204.97.206
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 205 - ryan
+  server: 198.200.42.129
+  port: 52977
+  udp: true
+  type: vless
+  uuid: 2f6f1856-5466-4078-b1f0-d3f977211ada
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: X-DQShHbh23E3SeJjZzC-WStkChJU0lxgktpGalzjw4
+    short-id: 0fb9c965
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 206 - ryan
+  server: 150.241.102.181
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7cad038-0c3f-4cce-8f8a-36464aaf66c0
+  tls: true
+  reality-opts:
+    public-key: 6KP5Xi1ao0hD5M3FGmco7NgKxU8z5gQVHwsvrQJVFS0
+    short-id: 8f3e2b1a
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: speedtest-grpc
+- name: 🇺🇸 美国 (United States) 207 - ryan
+  server: 89.125.147.199
+  port: 443
+  udp: true
+  type: vless
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  tls: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+    short-id: f6c7c139b9c938db
+  servername: maps.apple.com
+  client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 208 - ryan
-  server: cf3.danfeng.eu.org
-  port: 8443
+  server: 172.64.53.55
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 209 - ryan
+  server: 100.42.228.109
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2fripaojiedian
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 210 - ryan
+  server: cf9.danfeng.eu.org
+  port: 2096
   udp: true
   type: vless
   uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
@@ -2301,31 +2330,349 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: vip.868068.xyz
-- name: 🇺🇸 美国 (United States) 209 - ryan
-  server: us13.vipjiedian.sbs
-  port: 21333
+- name: 🇺🇸 美国 (United States) 211 - ryan
+  server: 138.199.43.159
+  port: 8080
   udp: true
-  type: anytls
-  password: 2d7bda32-a8b5-4416-a1ea-4559ff98f86e
-  sni: apple.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 210 - ryan
-  server: 213.171.25.178
-  port: 9830
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 212 - ryan
+  server: 169.40.42.104
+  port: 443
   udp: true
   type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  servername: dl.google.com
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇺🇸 美国 (United States) 211 - ryan
-  server: 91.193.17.156
+- name: 🇺🇸 美国 (United States) 213 - ryan
+  server: vpn-us-006.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-006.fastervpn.world
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 214 - ryan
+  server: 47.251.25.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: 18805ff3-b420-45de-af18-93be14024ae8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 215 - ryan
+  server: 194.55.189.249
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
+  tls: true
+  reality-opts:
+    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
+    short-id: aae8
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 216 - ryan
+  server: de1.edge-9d7c.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
+    short-id: 9d84de9d9f7b85e9
+  servername: de1.edge-9d7c.com
+  client-fingerprint: safari
+- name: 🇺🇸 美国 (United States) 217 - ryan
+  server: 50.7.227.252
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: uk-dedic.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 218 - ryan
+  server: www.wto.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: true
+  servername: cnmfangbinxingnmsl.asshole.us.ci
+  skip-cert-verify: false
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.asshole.us.ci
+- name: 🇺🇸 美国 (United States) 219 - ryan
+  server: 38.180.242.205
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 220 - ryan
+  server: cdn.snobvpn.online
+  port: 80
+  udp: true
+  type: vless
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  network: ws
+  ws-opts:
+    path: /snob-ws
+- name: 🇺🇸 美国 (United States) 221 - ryan
+  server: 66.94.121.46
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 66.94.121.46
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 222 - ryan
+  server: 91.196.32.163
+  port: 443
+  udp: true
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: germany3.h2corp.local
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 223 - ryan
+  server: 2.27.244.177
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: polacondr.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 224 - ryan
+  server: 188.166.49.168
+  port: 2083
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇺🇸 美国 (United States) 225 - ryan
+  server: 64.188.98.171
+  port: 443
+  udp: true
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: germany3.h2corp.local
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 226 - ryan
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇺🇸 美国 (United States) 227 - ryan
+  server: 107.151.182.197
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 228 - ryan
+  server: 51.81.203.63
+  port: 443
+  udp: true
+  type: vless
+  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
+    short-id: 4477382ff6d3d41c
+  servername: www.icloud.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 229 - ryan
+  server: starlink-ft.251313.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: https://xship.2fa.cat
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 230 - ryan
+  server: 15.204.247.206
+  port: 4444
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇺🇸 美国 (United States) 231 - ryan
+  server: de5.edge-9d7c.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
+    short-id: 9d84de9d9f7b85e9
+  servername: de5.edge-9d7c.com
+  client-fingerprint: safari
+- name: 🇺🇸 美国 (United States) 232 - ryan
+  server: 15.204.233.41
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇺🇸 美国 (United States) 233 - ryan
+  server: us4.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 234 - ryan
+  server: 31.59.46.140
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /travel/intro?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇺🇸 美国 (United States) 235 - ryan
+  server: 104.18.42.54
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+  tls: true
+  servername: vip.868068.xyz
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: vip.868068.xyz
+- name: 🇺🇸 美国 (United States) 236 - ryan
+  server: hyhkup.mervi.icu
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EEMZb6c0SADcplLXt8-rTAZYaH-s0o9pXG1daNegzww
+    short-id: 18b63521daeda630
+  servername: hyhkup.mervi.icu
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 237 - ryan
+  server: 132.243.203.207
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /lives?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇺🇸 美国 (United States) 238 - ryan
+  server: 15.204.97.219
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 239 - ryan
+  server: 5.78.159.97
+  port: 443
+  udp: true
+  type: vless
+  uuid: b88a54a0-501c-4acf-930b-305354452f4e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XB7peN-a_9j_WGBHvs3DIMDlsOzJAOehGnziOE9OvwE
+    short-id: 884dffd8e62a5c48
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 240 - ryan
+  server: 67.220.85.46
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 241 - ryan
+  server: 150.241.101.80
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 47d9b534-8a0a-4bd2-90f1-1d6ade14427e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: yandex.net
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 242 - ryan
+  server: 91.193.17.234
   port: 9460
   udp: true
   type: vless
@@ -2334,11 +2681,11 @@ proxies:
   reality-opts:
     public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇺🇸 美国 (United States) 212 - ryan
+- name: 🇺🇸 美国 (United States) 243 - ryan
   server: 176.108.246.58
   port: 9881
   udp: true
@@ -2348,28 +2695,102 @@ proxies:
   reality-opts:
     public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
   servername: dl.google.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇺🇸 美国 (United States) 244 - ryan
+  server: 2.56.124.241
+  port: 443
+  udp: true
+  type: vless
+  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw
+    short-id: 72104d27a0f5f62e
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 245 - ryan
+  server: 2.27.210.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+  servername: latisha.loozerp.wiki
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 246 - ryan
+  server: 176.108.246.110
+  port: 9830
+  udp: true
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  servername: dl.google.com
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 🇺🇸 美国 (United States) 213 - ryan
-  server: 15.204.247.206
-  port: 4444
+- name: 🇺🇸 美国 (United States) 247 - ryan
+  server: 186.246.21.156
+  port: 40443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-- name: 🇺🇸 美国 (United States) 214 - ryan
-  server: nl1.sferavpn.pro
+  type: vless
+  uuid: 17d29827-7cf1-4115-b40d-548e10ec355d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bjOGTQ4xsiFbyCPM_WzoK53L130rW5vZJtuYDJx_pkM
+    short-id: aa3c
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇺🇸 美国 (United States) 248 - ryan
+  server: 2.27.249.79
   port: 443
   udp: true
   type: hysteria2
   password: cd74c0a406664a5bc0bac098220a2468
   sni: nl1.sferavpn.pro
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇺🇸 美国 (United States) 215 - ryan
+- name: 🇺🇸 美国 (United States) 249 - ryan
+  server: 186.246.19.79
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 5e3f974b-06fc-4555-907a-6681391b7c17
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oc9uweln_cqyaJnlRMnhhhKrGNP7RrYOsuYtaIOIQDE
+    short-id: 2bc0
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 250 - ryan
+  server: 172.67.212.14
+  port: 443
+  udp: true
+  type: vless
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  tls: true
+  servername: 0-m19.souTH-AFRiCA-oNlInE.Ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /CjBjB9sn5pCvaSwScc
+    headers:
+      Host: 0-M19.SoUtH-afrICA-ONline.CcWu.CC
+- name: 🇺🇸 美国 (United States) 251 - ryan
   server: 85.208.86.91
   port: 9872
   udp: true
@@ -2379,27 +2800,42 @@ proxies:
   reality-opts:
     public-key: sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc
   servername: dl.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 🇺🇸 美国 (United States) 216 - ryan
-  server: www.shopify.com
+- name: 🇺🇸 美国 (United States) 252 - ryan
+  server: 31.76.5.124
   port: 443
   udp: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
   tls: true
-  servername: guanwang.awsno.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 217 - ryan
+  servername: norway-2.failspace.top
+  skip-cert-verify: true
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 253 - ryan
+  server: 18.188.105.92
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 254 - ryan
+  server: 169.40.42.225
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 255 - ryan
   server: 188.114.97.6
   port: 443
   udp: true
@@ -2413,36 +2849,33 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🇺🇸 美国 (United States) 218 - ryan
-  server: 169.197.142.22
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 219 - ryan
-  server: 129.146.143.80
-  port: 48111
-  udp: true
-  type: vmess
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 220 - ryan
-  server: sql.popmintxo.cc
+- name: 🇺🇸 美国 (United States) 256 - ryan
+  server: 31.76.5.156
   port: 443
   udp: true
   type: vless
-  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
-    short-id: b558b9305a0b
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 221 - ryan
+  servername: norw.failspace.top
+  skip-cert-verify: true
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 257 - ryan
+  server: 15.204.246.132
+  port: 7307
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇺🇸 美国 (United States) 258 - ryan
+  server: awefd2313fefarg23fr24.pnuqcnp.cn
+  port: 443
+  udp: true
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 259 - ryan
   server: 77.91.68.70
   port: 55983
   udp: true
@@ -2454,25 +2887,39 @@ proxies:
     short-id: 0e
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 222 - ryan
-  server: 15.204.246.107
-  port: 8888
+- name: 🇺🇸 美国 (United States) 260 - ryan
+  server: 121.46.230.139
+  port: 65443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇺🇸 美国 (United States) 223 - ryan
-  server: 144.31.49.138
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇺🇸 美国 (United States) 261 - ryan
+  server: norw-mori-3.failspace.top
   port: 443
   udp: true
-  type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: ru1.sferavpn.pro
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇺🇸 美国 (United States) 224 - ryan
-  server: 172.67.167.78
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: norw-mori-3.failspace.top
+  skip-cert-verify: true
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 262 - ryan
+  server: 72.56.40.97
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
+    short-id: ee33
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇺🇸 美国 (United States) 263 - ryan
+  server: www.nextkyc.com
   port: 8443
   udp: true
   type: vmess
@@ -2487,55 +2934,13 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🇺🇸 美国 (United States) 225 - ryan
-  server: 38.91.107.49
-  port: 18000
+- name: 🇺🇸 美国 (United States) 264 - ryan
+  server: 15.204.247.124
+  port: 2375
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 226 - ryan
-  server: 195.123.240.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
-    short-id: 19296c9f1bf9c7b1
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 227 - ryan
-  server: 104.25.30.10
-  port: 443
-  udp: true
-  type: vless
-  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
-  tls: true
-  servername: de14.69lover.my
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/v2/6c316c769ad6853c/stream
-    headers:
-      Host: de14.69lover.my
-- name: 🇺🇸 美国 (United States) 228 - ryan
-  server: 186.246.21.156
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 17d29827-7cf1-4115-b40d-548e10ec355d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bjOGTQ4xsiFbyCPM_WzoK53L130rW5vZJtuYDJx_pkM
-    short-id: aa3c
-  servername: deepl.com
-  client-fingerprint: qq
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
 proxy-groups:
 - name: PROXIES
   type: select
@@ -2769,6 +3174,42 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 226 - ryan
   - 🇺🇸 美国 (United States) 227 - ryan
   - 🇺🇸 美国 (United States) 228 - ryan
+  - 🇺🇸 美国 (United States) 229 - ryan
+  - 🇺🇸 美国 (United States) 230 - ryan
+  - 🇺🇸 美国 (United States) 231 - ryan
+  - 🇺🇸 美国 (United States) 232 - ryan
+  - 🇺🇸 美国 (United States) 233 - ryan
+  - 🇺🇸 美国 (United States) 234 - ryan
+  - 🇺🇸 美国 (United States) 235 - ryan
+  - 🇺🇸 美国 (United States) 236 - ryan
+  - 🇺🇸 美国 (United States) 237 - ryan
+  - 🇺🇸 美国 (United States) 238 - ryan
+  - 🇺🇸 美国 (United States) 239 - ryan
+  - 🇺🇸 美国 (United States) 240 - ryan
+  - 🇺🇸 美国 (United States) 241 - ryan
+  - 🇺🇸 美国 (United States) 242 - ryan
+  - 🇺🇸 美国 (United States) 243 - ryan
+  - 🇺🇸 美国 (United States) 244 - ryan
+  - 🇺🇸 美国 (United States) 245 - ryan
+  - 🇺🇸 美国 (United States) 246 - ryan
+  - 🇺🇸 美国 (United States) 247 - ryan
+  - 🇺🇸 美国 (United States) 248 - ryan
+  - 🇺🇸 美国 (United States) 249 - ryan
+  - 🇺🇸 美国 (United States) 250 - ryan
+  - 🇺🇸 美国 (United States) 251 - ryan
+  - 🇺🇸 美国 (United States) 252 - ryan
+  - 🇺🇸 美国 (United States) 253 - ryan
+  - 🇺🇸 美国 (United States) 254 - ryan
+  - 🇺🇸 美国 (United States) 255 - ryan
+  - 🇺🇸 美国 (United States) 256 - ryan
+  - 🇺🇸 美国 (United States) 257 - ryan
+  - 🇺🇸 美国 (United States) 258 - ryan
+  - 🇺🇸 美国 (United States) 259 - ryan
+  - 🇺🇸 美国 (United States) 260 - ryan
+  - 🇺🇸 美国 (United States) 261 - ryan
+  - 🇺🇸 美国 (United States) 262 - ryan
+  - 🇺🇸 美国 (United States) 263 - ryan
+  - 🇺🇸 美国 (United States) 264 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -3002,5 +3443,41 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 226 - ryan
   - 🇺🇸 美国 (United States) 227 - ryan
   - 🇺🇸 美国 (United States) 228 - ryan
+  - 🇺🇸 美国 (United States) 229 - ryan
+  - 🇺🇸 美国 (United States) 230 - ryan
+  - 🇺🇸 美国 (United States) 231 - ryan
+  - 🇺🇸 美国 (United States) 232 - ryan
+  - 🇺🇸 美国 (United States) 233 - ryan
+  - 🇺🇸 美国 (United States) 234 - ryan
+  - 🇺🇸 美国 (United States) 235 - ryan
+  - 🇺🇸 美国 (United States) 236 - ryan
+  - 🇺🇸 美国 (United States) 237 - ryan
+  - 🇺🇸 美国 (United States) 238 - ryan
+  - 🇺🇸 美国 (United States) 239 - ryan
+  - 🇺🇸 美国 (United States) 240 - ryan
+  - 🇺🇸 美国 (United States) 241 - ryan
+  - 🇺🇸 美国 (United States) 242 - ryan
+  - 🇺🇸 美国 (United States) 243 - ryan
+  - 🇺🇸 美国 (United States) 244 - ryan
+  - 🇺🇸 美国 (United States) 245 - ryan
+  - 🇺🇸 美国 (United States) 246 - ryan
+  - 🇺🇸 美国 (United States) 247 - ryan
+  - 🇺🇸 美国 (United States) 248 - ryan
+  - 🇺🇸 美国 (United States) 249 - ryan
+  - 🇺🇸 美国 (United States) 250 - ryan
+  - 🇺🇸 美国 (United States) 251 - ryan
+  - 🇺🇸 美国 (United States) 252 - ryan
+  - 🇺🇸 美国 (United States) 253 - ryan
+  - 🇺🇸 美国 (United States) 254 - ryan
+  - 🇺🇸 美国 (United States) 255 - ryan
+  - 🇺🇸 美国 (United States) 256 - ryan
+  - 🇺🇸 美国 (United States) 257 - ryan
+  - 🇺🇸 美国 (United States) 258 - ryan
+  - 🇺🇸 美国 (United States) 259 - ryan
+  - 🇺🇸 美国 (United States) 260 - ryan
+  - 🇺🇸 美国 (United States) 261 - ryan
+  - 🇺🇸 美国 (United States) 262 - ryan
+  - 🇺🇸 美国 (United States) 263 - ryan
+  - 🇺🇸 美国 (United States) 264 - ryan
 rules:
 - MATCH,PROXIES
