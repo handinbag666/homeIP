@@ -6,47 +6,34 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - ryan",
-      "server": "188.114.97.6",
+      "server": "148.113.5.44",
       "server_port": 443,
-      "uuid": "f6ec3ac9-fb0f-4bce-86bb-26cdb9933a60",
+      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "zaintest.vuclip.com.r3xxe.eu.cc",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/in-do",
-        "headers": {
-          "Host": "zaintest.vuclip.com.r3xxe.eu.cc"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
+          "short_id": "221873918e0bb74d"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇮🇳 印度 (India) 02 - ryan",
-      "server": "104.21.69.118",
+      "server": "13.207.151.141",
       "server_port": 443,
-      "uuid": "1443b7a1-7ba9-4ec9-b904-2e867367b5d7",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "odd-violet-5440.asdgrweeee13.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "odd-violet-5440.asdgrweeee13.workers.dev"
-        }
+        "server_name": "vpn-in-001.fastervpn.world",
+        "insecure": true
       }
     },
     {
@@ -70,21 +57,9 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 04 - ryan",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 05 - ryan",
-      "server": "13.207.151.141",
+      "tag": "🇮🇳 印度 (India) 04 - ryan",
+      "server": "35.154.58.87",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
@@ -94,33 +69,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 06 - ryan",
-      "server": "148.113.5.44",
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 05 - ryan",
+      "server": "hyfuuf6.wsone.icu",
       "server_port": 443,
-      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
-      "flow": "xtls-rprx-vision",
+      "password": "M7v%w11Se*",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "hyfuuf6.wsone.icu",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
-          "short_id": "221873918e0bb74d"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 07 - ryan",
-      "server": "139.84.166.47",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "selector",
@@ -131,9 +93,7 @@
         "🇮🇳 印度 (India) 02 - ryan",
         "🇮🇳 印度 (India) 03 - ryan",
         "🇮🇳 印度 (India) 04 - ryan",
-        "🇮🇳 印度 (India) 05 - ryan",
-        "🇮🇳 印度 (India) 06 - ryan",
-        "🇮🇳 印度 (India) 07 - ryan"
+        "🇮🇳 印度 (India) 05 - ryan"
       ]
     },
     {
@@ -144,9 +104,7 @@
         "🇮🇳 印度 (India) 02 - ryan",
         "🇮🇳 印度 (India) 03 - ryan",
         "🇮🇳 印度 (India) 04 - ryan",
-        "🇮🇳 印度 (India) 05 - ryan",
-        "🇮🇳 印度 (India) 06 - ryan",
-        "🇮🇳 印度 (India) 07 - ryan"
+        "🇮🇳 印度 (India) 05 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

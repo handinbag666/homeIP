@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - ryan",
-      "server": "82.198.246.97",
+      "server": "82.198.246.37",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
@@ -14,109 +14,6 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - ryan",
-      "server": "188.114.97.6",
-      "server_port": 80,
-      "uuid": "e51453d3-7972-44d7-a657-ed89520f48b6",
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "web.whatsapp.com.r3xxe.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - ryan",
-      "server": "208.103.161.5",
-      "server_port": 443,
-      "uuid": "d042a74a-c305-4eec-a89f-39a348022c92",
-      "tls": {
-        "enabled": true,
-        "server_name": "dry-butterfly-8eb9.tmpgnacio83.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - ryan",
-      "server": "185.18.250.252",
-      "server_port": 443,
-      "password": "74480619-b6a8-4ab8-94e1-1132fc18b2fa",
-      "tls": {
-        "enabled": true,
-        "server_name": "unnes.ac.id.r3xxe.eu.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/au-mt",
-        "headers": {
-          "Host": "unnes.ac.id.r3xxe.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - ryan",
-      "server": "104.18.155.229",
-      "server_port": 443,
-      "uuid": "42026ed0-7d74-4585-8e46-0fe6aa4d665a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.genflix.co.id.r3xxe.eu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "www.genflix.co.id.r3xxe.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - ryan",
-      "server": "82.115.31.187",
-      "server_port": 36900,
-      "password": "ap5201314",
-      "tls": {
-        "enabled": true,
-        "server_name": "82.115.31.187",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 07 - ryan",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 08 - ryan",
       "server": "172.105.169.70",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -128,7 +25,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 09 - ryan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - ryan",
+      "server": "103.75.119.126",
+      "server_port": 2087,
+      "uuid": "731f177e-00aa-480c-b935-661456139a32",
+      "transport": {
+        "type": "ws",
+        "path": "/7586c69d3dc9"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - ryan",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -149,18 +57,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 10 - ryan",
-      "server": "103.75.119.126",
-      "server_port": 2087,
-      "uuid": "731f177e-00aa-480c-b935-661456139a32",
-      "transport": {
-        "type": "ws",
-        "path": "/7586c69d3dc9"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 11 - ryan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - ryan",
       "server": "34.87.244.111",
       "server_port": 443,
       "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
@@ -179,40 +76,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 12 - ryan",
-      "server": "152.67.115.203",
-      "server_port": 443,
-      "password": "633bc3be486b646190661ac2387c150a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 13 - ryan",
-      "server": "152.67.101.72",
-      "server_port": 23010,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -221,15 +84,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - ryan",
         "🇦🇺 澳大利亚 (Australia) 03 - ryan",
         "🇦🇺 澳大利亚 (Australia) 04 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 05 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 06 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 07 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 08 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 09 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 10 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 11 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 12 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 13 - ryan"
+        "🇦🇺 澳大利亚 (Australia) 05 - ryan"
       ]
     },
     {
@@ -240,15 +95,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - ryan",
         "🇦🇺 澳大利亚 (Australia) 03 - ryan",
         "🇦🇺 澳大利亚 (Australia) 04 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 05 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 06 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 07 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 08 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 09 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 10 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 11 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 12 - ryan",
-        "🇦🇺 澳大利亚 (Australia) 13 - ryan"
+        "🇦🇺 澳大利亚 (Australia) 05 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
