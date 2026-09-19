@@ -5,24 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - ryan",
-      "server": "104.17.117.137",
-      "server_port": 443,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-      "tls": {
-        "enabled": true,
-        "server_name": "u.srilankangrill.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - ryan",
+      "server": "50.62.91.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "u.srilankangrill.online"
+          "Host": "vms.lifetime28.workers.dev"
         }
       }
     },
@@ -31,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - ryan"
+        "🇮🇪 爱尔兰 (Ireland) 01 - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - ryan"
+        "🇮🇪 爱尔兰 (Ireland) 01 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
