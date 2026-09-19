@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - ryan",
-      "server": "104.16.10.104",
+      "server": "104.16.10.234",
       "server_port": 443,
       "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
       "tls": {
@@ -27,55 +27,9 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - ryan",
-      "server": "104.16.10.104",
-      "server_port": 443,
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 03 - ryan",
-      "server": "104.16.10.104",
-      "server_port": 443,
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 04 - ryan",
-      "server": "104.16.72.50",
+      "tag": "🌐 其他地区 (Other) 02 - ryan",
+      "server": "172.64.152.23",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -93,14 +47,41 @@
     },
     {
       "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 05 - ryan",
-      "server": "104.16.72.50",
+      "tag": "🌐 其他地区 (Other) 03 - ryan",
+      "server": "172.64.152.23",
       "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "104.16.72.50",
+        "server_name": "www.multiplydose.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 04 - ryan",
+      "server": "172.64.152.23",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
       }
     },
     {
@@ -111,8 +92,7 @@
         "🌐 其他地区 (Other) 01 - ryan",
         "🌐 其他地区 (Other) 02 - ryan",
         "🌐 其他地区 (Other) 03 - ryan",
-        "🌐 其他地区 (Other) 04 - ryan",
-        "🌐 其他地区 (Other) 05 - ryan"
+        "🌐 其他地区 (Other) 04 - ryan"
       ]
     },
     {
@@ -122,8 +102,7 @@
         "🌐 其他地区 (Other) 01 - ryan",
         "🌐 其他地区 (Other) 02 - ryan",
         "🌐 其他地区 (Other) 03 - ryan",
-        "🌐 其他地区 (Other) 04 - ryan",
-        "🌐 其他地区 (Other) 05 - ryan"
+        "🌐 其他地区 (Other) 04 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

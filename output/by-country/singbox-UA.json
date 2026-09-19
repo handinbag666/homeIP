@@ -4,28 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇺🇦 乌克兰 (Ukraine) 01 - ryan",
-      "server": "199.232.78.101",
+      "server": "md-kiv-2.blook.network",
       "server_port": 443,
-      "password": "mitivpn",
+      "uuid": "4715152e-d226-4d14-8cfd-f3f0463dff3a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "md-kiv-2.blook.network",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
-        "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SqYAVrG01Mk0KXzlkmckO6lxvv6iZBJJvxE6PvD2vD0",
+          "short_id": "db26"
         }
       }
     },

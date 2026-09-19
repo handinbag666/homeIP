@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - ryan",
-      "server": "213.183.63.60",
-      "server_port": 9054,
-      "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
-    },
-    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - ryan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - ryan",
       "server": "192.145.31.5",
       "server_port": 443,
       "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
@@ -23,20 +15,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - ryan",
+      "server": "192.145.31.5",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth9.lunariai.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
       "server": "213.183.63.60",
-      "server_port": 9098,
+      "server_port": 9054,
       "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
+      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - ryan",
       "server": "213.183.63.60",
-      "server_port": 9064,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
+      "password": "PRBf4BS2HvJqtWxY"
     },
     {
       "type": "vless",
@@ -62,59 +70,6 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - ryan",
-      "server": "neth9.lunariai.ru",
-      "server_port": 8443,
-      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
-      "tls": {
-        "enabled": true,
-        "server_name": "neth9.lunariai.ru",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - ryan",
-      "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - ryan",
-      "server": "213.183.63.60",
-      "server_port": 9061,
-      "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - ryan",
-      "server": "87.120.196.212",
-      "server_port": 443,
-      "uuid": "5561acfb-0adc-4c76-bfbf-767a76c7cbf0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "holo-stream.videocactus.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - ryan",
       "server": "144.31.50.236",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
@@ -124,7 +79,7 @@
         "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -143,11 +98,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
         "🇧🇬 保加利亚 (Bulgaria) 04 - ryan",
         "🇧🇬 保加利亚 (Bulgaria) 05 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 06 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 09 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 10 - ryan"
+        "🇧🇬 保加利亚 (Bulgaria) 06 - ryan"
       ]
     },
     {
@@ -159,11 +110,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
         "🇧🇬 保加利亚 (Bulgaria) 04 - ryan",
         "🇧🇬 保加利亚 (Bulgaria) 05 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 06 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 09 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 10 - ryan"
+        "🇧🇬 保加利亚 (Bulgaria) 06 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

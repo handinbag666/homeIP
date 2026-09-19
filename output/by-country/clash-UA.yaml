@@ -5,16 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01 - ryan
-  server: 199.232.78.101
+  server: md-kiv-2.blook.network
   port: 443
   udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+  type: vless
+  uuid: 4715152e-d226-4d14-8cfd-f3f0463dff3a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SqYAVrG01Mk0KXzlkmckO6lxvv6iZBJJvxE6PvD2vD0
+    short-id: db26
+  servername: md-kiv-2.blook.network
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

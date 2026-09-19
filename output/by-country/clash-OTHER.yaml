@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - ryan
-  server: 104.16.10.104
+  server: 104.16.10.234
   port: 443
   udp: true
   type: vless
@@ -20,37 +20,7 @@ proxies:
     headers:
       Host: u.srilankangrill.online
 - name: 🌐 其他地区 (Other) 02 - ryan
-  server: 104.16.10.104
-  port: 443
-  udp: true
-  type: vless
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: unsafe
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🌐 其他地区 (Other) 03 - ryan
-  server: 104.16.10.104
-  port: 443
-  udp: true
-  type: vless
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: unsafe
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🌐 其他地区 (Other) 04 - ryan
-  server: 104.16.72.50
+  server: 172.64.152.23
   port: 443
   udp: true
   type: trojan
@@ -60,14 +30,28 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🌐 其他地区 (Other) 05 - ryan
-  server: 104.16.72.50
+- name: 🌐 其他地区 (Other) 03 - ryan
+  server: 172.64.152.23
   port: 443
   udp: true
   type: trojan
   password: humanity
-  sni: 104.16.72.50
+  sni: www.multiplydose.com
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐 其他地区 (Other) 04 - ryan
+  server: 172.64.152.23
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,7 +61,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 02 - ryan
   - 🌐 其他地区 (Other) 03 - ryan
   - 🌐 其他地区 (Other) 04 - ryan
-  - 🌐 其他地区 (Other) 05 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,6 +70,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 02 - ryan
   - 🌐 其他地区 (Other) 03 - ryan
   - 🌐 其他地区 (Other) 04 - ryan
-  - 🌐 其他地区 (Other) 05 - ryan
 rules:
 - MATCH,PROXIES

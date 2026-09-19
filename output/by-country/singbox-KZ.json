@@ -6,30 +6,6 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - ryan",
-      "server": "62.233.39.9",
-      "server_port": 8443,
-      "uuid": "b2141c97-76af-ff6f-839b-70a53e23aad9",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.dell.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan",
       "server": "83.222.23.81",
       "server_port": 38065,
       "uuid": "4b9063e0-3288-44e9-9aac-80fbfce323a0",
@@ -48,22 +24,17 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - ryan",
-      "server": "109.248.170.119",
-      "server_port": 13447,
-      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
-          "short_id": "83"
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan",
+      "server": "3h-kazakhstan1.09vpn.com",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "3h-kazakhstan1.09vpn.com"
         }
       }
     },
@@ -73,8 +44,7 @@
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - ryan",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - ryan"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan"
       ]
     },
     {
@@ -82,8 +52,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - ryan",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - ryan"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
