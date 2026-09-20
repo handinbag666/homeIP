@@ -17,6 +17,18 @@ proxies:
   servername: deepl.com
   client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - ryan
+  server: 194.59.245.250
+  port: 40443
+  udp: true
+  type: vless
+  uuid: e4371581-c418-4770-b09a-d630f18290a6
+  tls: true
+  reality-opts:
+    public-key: WFvn-RRJzpt2qV4xwj_R93gDr6dduIjkQKO3De3Y2Hc
+    short-id: 5d96
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - ryan
   server: 2.56.124.241
   port: 443
   udp: true
@@ -36,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - ryan
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - ryan
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - ryan
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - ryan
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - ryan
 rules:
 - MATCH,PROXIES

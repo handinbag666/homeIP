@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - ryan
-  server: 104.143.223.50
-  port: 2089
+  server: 104.143.223.80
+  port: 2085
   udp: true
   type: vless
-  uuid: d144d943-46bd-41ce-af2c-06358c845616
+  uuid: 38ffee35-b305-41ba-89e0-78e62d95b99c
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -18,7 +18,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 98983e4e-31df-4061-bc86-1d6ade4b551b
+  uuid: 62a096ea-03a4-43a7-920f-50cb0c0a6f42
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -32,7 +32,7 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - ryan
@@ -62,13 +62,13 @@ proxies:
   servername: dzen.ru
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 06 - ryan
-  server: 85.204.107.174
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇦🇪 阿联酋 (UAE) 07 - ryan
   server: 84.235.244.108
   port: 22573

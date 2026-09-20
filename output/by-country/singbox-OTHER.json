@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - ryan",
-      "server": "104.16.10.191",
+      "server": "104.16.10.198",
       "server_port": 443,
       "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
       "tls": {
@@ -29,7 +29,7 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - ryan",
-      "server": "104.16.10.191",
+      "server": "104.16.10.198",
       "server_port": 443,
       "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
       "tls": {
@@ -50,20 +50,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 03 - ryan",
-      "server": "104.16.10.191",
-      "server_port": 443,
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - ryan",
-        "🌐 其他地区 (Other) 02 - ryan",
-        "🌐 其他地区 (Other) 03 - ryan"
+        "🌐 其他地区 (Other) 02 - ryan"
       ]
     },
     {
@@ -71,8 +63,7 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - ryan",
-        "🌐 其他地区 (Other) 02 - ryan",
-        "🌐 其他地区 (Other) 03 - ryan"
+        "🌐 其他地区 (Other) 02 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
