@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - ryan",
-      "server": "87.121.47.179",
+      "server": "aotocon.ggisopi.su",
       "server_port": 443,
       "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
       "flow": "xtls-rprx-vision",
@@ -25,68 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 02 - ryan",
-      "server": "147.90.26.37",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/web?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 03 - ryan",
-      "server": "134.209.194.199",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/jumping/files/videos?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - ryan",
-        "🇦🇲 亚美尼亚 (Armenia) 02 - ryan",
-        "🇦🇲 亚美尼亚 (Armenia) 03 - ryan"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - ryan",
-        "🇦🇲 亚美尼亚 (Armenia) 02 - ryan",
-        "🇦🇲 亚美尼亚 (Armenia) 03 - ryan"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

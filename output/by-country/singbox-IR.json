@@ -6,13 +6,24 @@
     {
       "type": "vless",
       "tag": "🇮🇷 IR 01 - ryan",
-      "server": "simia.northforex.ir",
-      "server_port": 8443,
-      "uuid": "22ac8d19-9eec-493d-a492-e024cdba594b",
+      "server": "188.166.75.64",
+      "server_port": 2087,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "simia.northforex.ir",
-        "insecure": false
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/seller/library?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
       }
     },
     {
