@@ -6,9 +6,20 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - ryan",
+      "server": "104.143.223.50",
+      "server_port": 2089,
+      "uuid": "d144d943-46bd-41ce-af2c-06358c845616",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - ryan",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "67018597-36a2-40f2-aa72-a253d0ad438b",
+      "uuid": "98983e4e-31df-4061-bc86-1d6ade4b551b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -26,7 +37,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - ryan",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - ryan",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -42,7 +53,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - ryan",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - ryan",
+      "server": "78.40.195.140",
+      "server_port": 443,
+      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.booking.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo",
+          "short_id": "98096455d963bdbb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - ryan",
       "server": "94.183.224.45",
       "server_port": 443,
       "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
@@ -63,8 +95,8 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - ryan",
-      "server": "85.204.107.183",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - ryan",
+      "server": "85.204.107.174",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
@@ -75,7 +107,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - ryan",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - ryan",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -96,7 +128,9 @@
         "🇦🇪 阿联酋 (UAE) 02 - ryan",
         "🇦🇪 阿联酋 (UAE) 03 - ryan",
         "🇦🇪 阿联酋 (UAE) 04 - ryan",
-        "🇦🇪 阿联酋 (UAE) 05 - ryan"
+        "🇦🇪 阿联酋 (UAE) 05 - ryan",
+        "🇦🇪 阿联酋 (UAE) 06 - ryan",
+        "🇦🇪 阿联酋 (UAE) 07 - ryan"
       ]
     },
     {
@@ -107,7 +141,9 @@
         "🇦🇪 阿联酋 (UAE) 02 - ryan",
         "🇦🇪 阿联酋 (UAE) 03 - ryan",
         "🇦🇪 阿联酋 (UAE) 04 - ryan",
-        "🇦🇪 阿联酋 (UAE) 05 - ryan"
+        "🇦🇪 阿联酋 (UAE) 05 - ryan",
+        "🇦🇪 阿联酋 (UAE) 06 - ryan",
+        "🇦🇪 阿联酋 (UAE) 07 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

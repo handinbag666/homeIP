@@ -4,38 +4,75 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - ryan",
-      "server": "www.shopify.com",
+      "server": "104.16.10.191",
       "server_port": 443,
-      "uuid": "3aa71202-a099-49c1-99fc-6662f3335369",
-      "security": "auto",
+      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
       "tls": {
         "enabled": true,
-        "server_name": "yoga-suggesting-recording-calls.trycloudflare.com",
-        "insecure": false
+        "server_name": "u.srilankangrill.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/3aa71202-a099-49c1-99fc-6662f3335369-vm",
+        "path": "/",
         "headers": {
-          "Host": "yoga-suggesting-recording-calls.trycloudflare.com"
+          "Host": "u.srilankangrill.online"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - ryan",
+      "server": "104.16.10.191",
+      "server_port": 443,
+      "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
+      "tls": {
+        "enabled": true,
+        "server_name": "cfvvv-ev1.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cfvvv-ev1.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - ryan",
+      "server": "104.16.10.191",
+      "server_port": 443,
+      "uuid": "44eae030-290b-4083-8102-6f8bab05701b"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - ryan"
+        "🌐 其他地区 (Other) 01 - ryan",
+        "🌐 其他地区 (Other) 02 - ryan",
+        "🌐 其他地区 (Other) 03 - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - ryan"
+        "🌐 其他地区 (Other) 01 - ryan",
+        "🌐 其他地区 (Other) 02 - ryan",
+        "🌐 其他地区 (Other) 03 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

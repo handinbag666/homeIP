@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - ryan
-  server: 153.76.185.84
+  server: 153.76.185.144
   port: 3090
   udp: true
   type: vless
-  uuid: 995b4d19-8c0d-4f81-a199-35a4f1d7744e
+  uuid: a9a813b7-13ea-45f4-b8de-922b9bdd2db2
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -24,7 +24,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
-  client-fingerprint: chrome
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select

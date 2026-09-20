@@ -6,9 +6,9 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - ryan",
-      "server": "153.76.185.84",
+      "server": "153.76.185.144",
       "server_port": 3090,
-      "uuid": "995b4d19-8c0d-4f81-a199-35a4f1d7744e",
+      "uuid": "a9a813b7-13ea-45f4-b8de-922b9bdd2db2",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -26,7 +26,7 @@
         "server_name": "de.oblaco.bet",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,

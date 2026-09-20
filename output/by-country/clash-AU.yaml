@@ -5,44 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - ryan
-  server: 82.198.246.37
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇦🇺 澳大利亚 (Australia) 02 - ryan
-  server: 132.243.251.194
+  server: 172.105.169.70
   port: 443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: 172.105.169.70
   skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /topics?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇦🇺 澳大利亚 (Australia) 03 - ryan
-  server: 132.243.203.207
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /lives?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇦🇺 澳大利亚 (Australia) 04 - ryan
+- name: 🇦🇺 澳大利亚 (Australia) 02 - ryan
   server: 34.87.244.111
   port: 443
   udp: true
@@ -53,25 +24,8 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇦🇺 澳大利亚 (Australia) 05 - ryan
-  server: 103.75.119.126
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 731f177e-00aa-480c-b935-661456139a32
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
-- name: 🇦🇺 澳大利亚 (Australia) 06 - ryan
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 07 - ryan
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 03 - ryan
   server: 34.87.229.148
   port: 443
   udp: true
@@ -83,6 +37,41 @@ proxies:
     short-id: 8a7d5e0248cdb1b1
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 04 - ryan
+  server: 51.161.204.244
+  port: 443
+  udp: true
+  type: vless
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇦🇺 澳大利亚 (Australia) 05 - ryan
+  server: 152.67.101.72
+  port: 23010
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇦🇺 澳大利亚 (Australia) 06 - ryan
+  server: 82.198.246.37
+  port: 180
+  udp: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,7 +83,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 04 - ryan
   - 🇦🇺 澳大利亚 (Australia) 05 - ryan
   - 🇦🇺 澳大利亚 (Australia) 06 - ryan
-  - 🇦🇺 澳大利亚 (Australia) 07 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,6 +94,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 04 - ryan
   - 🇦🇺 澳大利亚 (Australia) 05 - ryan
   - 🇦🇺 澳大利亚 (Australia) 06 - ryan
-  - 🇦🇺 澳大利亚 (Australia) 07 - ryan
 rules:
 - MATCH,PROXIES

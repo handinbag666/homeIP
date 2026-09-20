@@ -5,18 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - ryan
+  server: 104.143.223.50
+  port: 2089
+  udp: true
+  type: vless
+  uuid: d144d943-46bd-41ce-af2c-06358c845616
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 02 - ryan
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: 67018597-36a2-40f2-aa72-a253d0ad438b
+  uuid: 98983e4e-31df-4061-bc86-1d6ade4b551b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - ryan
+- name: 🇦🇪 阿联酋 (UAE) 03 - ryan
   server: 130.49.161.70
   port: 443
   udp: true
@@ -26,7 +35,20 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - ryan
+- name: 🇦🇪 阿联酋 (UAE) 04 - ryan
+  server: 78.40.195.140
+  port: 443
+  udp: true
+  type: vless
+  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
+    short-id: 98096455d963bdbb
+  servername: www.booking.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - ryan
   server: 94.183.224.45
   port: 443
   udp: true
@@ -39,15 +61,15 @@ proxies:
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 04 - ryan
-  server: 85.204.107.183
+- name: 🇦🇪 阿联酋 (UAE) 06 - ryan
+  server: 85.204.107.174
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - ryan
+- name: 🇦🇪 阿联酋 (UAE) 07 - ryan
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -68,6 +90,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - ryan
   - 🇦🇪 阿联酋 (UAE) 04 - ryan
   - 🇦🇪 阿联酋 (UAE) 05 - ryan
+  - 🇦🇪 阿联酋 (UAE) 06 - ryan
+  - 🇦🇪 阿联酋 (UAE) 07 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +102,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - ryan
   - 🇦🇪 阿联酋 (UAE) 04 - ryan
   - 🇦🇪 阿联酋 (UAE) 05 - ryan
+  - 🇦🇪 阿联酋 (UAE) 06 - ryan
+  - 🇦🇪 阿联酋 (UAE) 07 - ryan
 rules:
 - MATCH,PROXIES
