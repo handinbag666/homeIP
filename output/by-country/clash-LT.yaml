@@ -5,67 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - ryan
-  server: 195.238.126.84
-  port: 9039
+  server: 195.238.126.20
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - ryan
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - ryan
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   server: 195.238.126.20
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - ryan
-  server: 103.139.51.21
-  port: 443
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - ryan
+  server: 195.238.126.20
+  port: 9012
   udp: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: auth.figmafound.org
-  client-fingerprint: chrome
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - ryan
-  server: 103.139.51.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: cloud.figmafound.org
-  client-fingerprint: edge
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - ryan
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - ryan
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - ryan
   server: lt.aether-runet.top
   port: 443
   udp: true
@@ -88,9 +55,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 03 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 05 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 06 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 07 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 08 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,8 +65,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 03 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 05 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 06 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 07 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 08 - ryan
 rules:
 - MATCH,PROXIES

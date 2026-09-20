@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - ryan
-  server: 109.206.241.10
-  port: 449
+  server: 94.183.170.135
+  port: 443
   udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
-  skip-cert-verify: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - ryan
   server: 94.183.170.147
   port: 8443
@@ -28,25 +31,14 @@ proxies:
   grpc-opts:
     grpc-service-name: 9d30d49278
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - ryan
-  server: 94.183.170.135
-  port: 443
+  server: 109.206.241.10
+  port: 449
   udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - ryan
-  server: ee1.sferavpn.pro
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: ee1.sferavpn.pro
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - ryan
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -56,7 +48,25 @@ proxies:
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - ryan
+  server: 217.60.182.79
+  port: 443
+  udp: true
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 06 - ryan
+  server: ee1.sferavpn.pro
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ee1.sferavpn.pro
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - ryan
   server: 95.85.224.17
   port: 443
   udp: true
@@ -68,7 +78,15 @@ proxies:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - ryan
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - ryan
+  server: tishina-axe.dedyn.io
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 319ed24b1c7203aa
+  sni: tishina-axe.dedyn.io
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - ryan
   server: estomin1.vodniki.monster
   port: 443
   udp: true
@@ -80,15 +98,7 @@ proxies:
     public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
     short-id: d98e7afec9c0c359
   servername: estomin1.vodniki.monster
-  client-fingerprint: edge
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - ryan
-  server: tishina-axe.dedyn.io
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 319ed24b1c7203aa
-  sni: tishina-axe.dedyn.io
-  skip-cert-verify: true
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,6 +112,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - ryan
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - ryan
   - 🇪🇪 爱沙尼亚 (Estonia) 08 - ryan
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -115,5 +126,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - ryan
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - ryan
   - 🇪🇪 爱沙尼亚 (Estonia) 08 - ryan
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 - ryan
 rules:
 - MATCH,PROXIES

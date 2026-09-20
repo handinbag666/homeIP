@@ -4,18 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - ryan",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
-      "tls": {
-        "enabled": true,
-        "server_name": "109.206.241.10",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "estproxy4.lockdwn.com"
         }
       }
     },
@@ -44,19 +42,52 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - ryan",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "russiapower.accesscam.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - ryan",
       "server": "94.183.170.135",
-      "server_port": 443,
+      "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws",
-        "path": "/"
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - ryan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - ryan",
+      "server": "217.60.182.79",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "tls": {
+        "enabled": true,
+        "server_name": "cabinet.wwwinternetvideo.click",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - ryan",
       "server": "ee1.sferavpn.pro",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
@@ -72,23 +103,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - ryan",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - ryan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - ryan",
       "server": "95.85.224.17",
       "server_port": 443,
       "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
@@ -108,27 +123,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - ryan",
-      "server": "estomin1.vodniki.monster",
-      "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "estomin1.vodniki.monster",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk",
-          "short_id": "d98e7afec9c0c359"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - ryan",
       "server": "tishina-axe.dedyn.io",
@@ -138,6 +132,27 @@
         "enabled": true,
         "server_name": "tishina-axe.dedyn.io",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 09 - ryan",
+      "server": "estomin1.vodniki.monster",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "estomin1.vodniki.monster",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk",
+          "short_id": "d98e7afec9c0c359"
+        }
       }
     },
     {
@@ -152,7 +167,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 05 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 06 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 07 - ryan",
-        "🇪🇪 爱沙尼亚 (Estonia) 08 - ryan"
+        "🇪🇪 爱沙尼亚 (Estonia) 08 - ryan",
+        "🇪🇪 爱沙尼亚 (Estonia) 09 - ryan"
       ]
     },
     {
@@ -166,7 +182,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 05 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 06 - ryan",
         "🇪🇪 爱沙尼亚 (Estonia) 07 - ryan",
-        "🇪🇪 爱沙尼亚 (Estonia) 08 - ryan"
+        "🇪🇪 爱沙尼亚 (Estonia) 08 - ryan",
+        "🇪🇪 爱沙尼亚 (Estonia) 09 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
