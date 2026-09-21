@@ -47,21 +47,9 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - ryan",
-      "server": "172.67.151.109",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
-      "tls": {
-        "enabled": true,
-        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
-        "headers": {
-          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
-        }
-      }
+      "server": "turkeynewvdflvvjfkdsjvlk3jvoijuvoisdfjvoi3ju2voisfjdoivodfsiv.nevoxa.ir",
+      "server_port": 32210,
+      "uuid": "24051e17-a1c9-4566-a331-789e6b681007"
     },
     {
       "type": "selector",

@@ -6,29 +6,6 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - ryan",
-      "server": "103.31.77.108",
-      "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/channels/act",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - ryan",
       "server": "hk3n.wxgqlfx.vip",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
@@ -48,23 +25,21 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - ryan",
-      "server": "clhkzzzdbgwxxndnlm.cfooov.xyz",
-      "server_port": 17594,
-      "uuid": "17ab31f7-c021-4aec-83b2-ab48de8886bd",
-      "flow": "xtls-rprx-vision",
+      "type": "trojan",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - ryan",
+      "server": "45.130.125.75",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "www.lamer.com.hk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9wkREVS6QxqFyds7LzwRsS546sEPYykf9IFQDoCzmjA",
-          "short_id": "383e976fcf298029"
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -74,8 +49,7 @@
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - ryan",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - ryan",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - ryan"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - ryan"
       ]
     },
     {
@@ -83,8 +57,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - ryan",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - ryan",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - ryan"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
