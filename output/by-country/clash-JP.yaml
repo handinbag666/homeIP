@@ -5,42 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - ryan
+  server: 168.110.60.104
+  port: 18112
+  udp: true
+  type: vmess
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 02 - ryan
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 02 - ryan
-  server: 18.181.165.254
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇯🇵 日本 (Japan) 03 - ryan
-  server: 45.32.57.118
-  port: 4433
-  udp: true
-  type: vmess
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 04 - ryan
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 05 - ryan
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 06 - ryan
   server: 154.31.114.248
   port: 50159
   udp: true
@@ -52,74 +31,8 @@ proxies:
     public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
     short-id: 091e1c5db8451757
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 07 - ryan
-  server: xxxnodeakjp1.jumpernode.online
-  port: 19012
-  udp: true
-  type: vless
-  uuid: 05453546-201f-4e8d-97ae-fd70da0e951f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xSSSjzSFrsCyp3t5I39sgWFd6a2zKdsLt6vEwCWPKFk
-    short-id: d09eb5a304f8a989
-  servername: www.sony.bg
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 08 - ryan
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 09 - ryan
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - ryan
-  server: 18.183.215.124
-  port: 28573
-  udp: true
-  type: vless
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 11 - ryan
-  server: 3.114.220.22
-  port: 18007
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 12 - ryan
-  server: jpga01.jumperservice.com
-  port: 19001
-  udp: true
-  type: vless
-  uuid: 0709ba80-f353-4636-85ce-43b82990ac2d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
-  servername: www.speedtest.org
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 13 - ryan
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 04 - ryan
   server: xxxnodeakjp1.jumpernode.online
   port: 19011
   udp: true
@@ -132,8 +45,122 @@ proxies:
     short-id: 0e7472e0ef2dc0a2
   servername: www.sony.co.nz
   client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 05 - ryan
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 06 - ryan
+  server: 103.75.118.228
+  port: 11452
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 07 - ryan
+  server: 18.183.215.124
+  port: 28573
+  udp: true
+  type: vless
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 08 - ryan
+  server: 38.207.130.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: e4cd263b-c5c7-4410-bf61-8893179ec429
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
+    short-id: 6d962e8d8a0dce
+  servername: amazon.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 09 - ryan
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10 - ryan
+  server: 47.74.3.200
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7fb42fab-ea8a-4f0f-af9e-55df8ae6cb1d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kb1uhDsBcfsCD6acCuFcVERW29dscNGIjKPd67NArVk
+    short-id: ab3b914f0c9d9de5
+  servername: www.logitech.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 11 - ryan
+  server: jpga01.jumperservice.com
+  port: 19001
+  udp: true
+  type: vless
+  uuid: 61646a3c-e3e6-494b-8ae0-a98370ccff69
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
+  servername: www.speedtest.org
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 12 - ryan
+  server: xxxnodeakjp1.jumpernode.online
+  port: 19012
+  udp: true
+  type: vless
+  uuid: 05453546-201f-4e8d-97ae-fd70da0e951f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xSSSjzSFrsCyp3t5I39sgWFd6a2zKdsLt6vEwCWPKFk
+    short-id: d09eb5a304f8a989
+  servername: www.sony.bg
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 13 - ryan
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 14 - ryan
-  server: 45.77.180.114
+  server: 207.148.94.254
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /library?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 15 - ryan
+  server: 45.8.173.197
   port: 443
   udp: true
   type: vless
@@ -144,62 +171,31 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /intro/mall?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 15 - ryan
-  server: 207.148.94.254
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /library?ed=2560
+    path: /content/task?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 16 - ryan
-  server: 207.148.99.230
-  port: 443
+  server: 3.114.220.22
+  port: 18007
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /test/company/library?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 17 - ryan
-  server: 104.238.149.30
+  server: 84.247.155.196
   port: 443
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /redirect.php/comic?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 18 - ryan
-  server: oc.imfun.fun
-  port: 18112
-  udp: true
-  type: vmess
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 19 - ryan
-  server: 45.76.206.46
+  server: 92.113.124.253
   port: 443
   udp: true
   type: vless
@@ -210,7 +206,22 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tags/go/groups?ed=2560fp=chrome
+    path: /redirect.html/list/episode?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 19 - ryan
+  server: 108.160.136.71
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /doc/products/view?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 20 - ryan
@@ -229,23 +240,22 @@ proxies:
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 21 - ryan
-  server: 45.8.173.197
+  server: 64.176.60.226
   port: 443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /content/task?ed=2560
+    path: /
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 22 - ryan
-  server: 108.160.136.71
-  port: 443
+  server: 138.2.59.96
+  port: 10129
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -255,27 +265,12 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /doc/products/view?ed=2560
+    path: /movie/help/events?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 23 - ryan
-  server: 172.67.156.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 24 - ryan
-  server: 103.115.18.54
-  port: 443
+  server: 203.137.165.164
+  port: 57554
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -288,21 +283,20 @@ proxies:
     path: /
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 25 - ryan
-  server: 151.241.129.79
-  port: 443
+- name: 🇯🇵 日本 (Japan) 24 - ryan
+  server: 3.114.220.22
+  port: 10583
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /docs/gif?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 26 - ryan
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 25 - ryan
   server: 210.152.85.154
   port: 19364
   udp: true
@@ -316,21 +310,7 @@ proxies:
     path: /collect/user/products?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 27 - ryan
-  server: 104.238.148.149
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /about?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 28 - ryan
+- name: 🇯🇵 日本 (Japan) 26 - ryan
   server: 206.251.53.91
   port: 8443
   udp: true
@@ -344,48 +324,8 @@ proxies:
     path: /settings?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 29 - ryan
-  server: 138.2.59.96
-  port: 10129
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 30 - ryan
-  server: 92.113.124.253
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /redirect.html/list/episode?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 31 - ryan
-  server: 172.111.146.64
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 🇯🇵 日本 (Japan) 32 - ryan
-  server: 64.176.60.226
+- name: 🇯🇵 日本 (Japan) 27 - ryan
+  server: 104.238.149.30
   port: 443
   udp: true
   type: vless
@@ -396,59 +336,76 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /documents?ed=2560
+    path: /redirect.php/comic?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 33 - ryan
-  server: 167.179.114.75
-  port: 2053
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /anime/payment?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 34 - ryan
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /p/docs/soft?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 35 - ryan
-  server: 137.220.221.179
+- name: 🇯🇵 日本 (Japan) 28 - ryan
+  server: 45.76.206.46
   port: 443
   udp: true
   type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 36 - ryan
-  server: 3.114.220.22
-  port: 10583
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tags/go/groups?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 29 - ryan
+  server: 13.231.19.51
+  port: 11690
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  servername: www.tesla.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 37 - ryan
+- name: 🇯🇵 日本 (Japan) 30 - ryan
+  server: 151.241.129.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /docs/gif?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 31 - ryan
+  server: 45.32.57.118
+  port: 4433
+  udp: true
+  type: vmess
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 32 - ryan
+  server: 103.115.18.54
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /episode/files?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 33 - ryan
   server: 92.113.124.40
   port: 443
   udp: true
@@ -462,7 +419,13 @@ proxies:
     path: /star/manhua/p?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 38 - ryan
+- name: 🇯🇵 日本 (Japan) 34 - ryan
+  server: 137.220.221.179
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 (Japan) 35 - ryan
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -475,51 +438,27 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 39 - ryan
-  server: 64.83.39.176
+- name: 🇯🇵 日本 (Japan) 36 - ryan
+  server: 172.67.156.147
   port: 443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: jp3.yohototo.top
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /seller?ed=2560
+    path: /tyxyws
     headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 40 - ryan
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 37 - ryan
   server: msjp1.mangshe.xyz
   port: 20561
   udp: true
   type: hysteria2
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 41 - ryan
-  server: 161.34.39.108
-  port: 443
-  udp: true
-  type: trojan
-  password: tsuchiya
-  sni: aa.ccmusic.jp
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 42 - ryan
-  server: 161.34.39.108
-  port: 443
-  udp: true
-  type: trojan
-  password: tsuchiya
-  sni: 161.34.39.108
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 43 - ryan
-  server: 161.34.39.108
-  port: 443
-  udp: true
-  type: trojan
-  password: tsuchiya
-  sni: aa.ccmusic.jp
+  sni: msjp1.mangshe.xyz
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -563,12 +502,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 35 - ryan
   - 🇯🇵 日本 (Japan) 36 - ryan
   - 🇯🇵 日本 (Japan) 37 - ryan
-  - 🇯🇵 日本 (Japan) 38 - ryan
-  - 🇯🇵 日本 (Japan) 39 - ryan
-  - 🇯🇵 日本 (Japan) 40 - ryan
-  - 🇯🇵 日本 (Japan) 41 - ryan
-  - 🇯🇵 日本 (Japan) 42 - ryan
-  - 🇯🇵 日本 (Japan) 43 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -611,11 +544,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 35 - ryan
   - 🇯🇵 日本 (Japan) 36 - ryan
   - 🇯🇵 日本 (Japan) 37 - ryan
-  - 🇯🇵 日本 (Japan) 38 - ryan
-  - 🇯🇵 日本 (Japan) 39 - ryan
-  - 🇯🇵 日本 (Japan) 40 - ryan
-  - 🇯🇵 日本 (Japan) 41 - ryan
-  - 🇯🇵 日本 (Japan) 42 - ryan
-  - 🇯🇵 日本 (Japan) 43 - ryan
 rules:
 - MATCH,PROXIES

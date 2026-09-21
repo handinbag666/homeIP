@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - ryan
+  server: 172.233.14.17
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇧🇷 巴西 (Brazil) 02 - ryan
+  server: 31.58.76.68
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /new/dh?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇧🇷 巴西 (Brazil) 03 - ryan
   server: 34.39.174.220
   port: 443
   udp: true
@@ -22,11 +45,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - ryan
+  - 🇧🇷 巴西 (Brazil) 02 - ryan
+  - 🇧🇷 巴西 (Brazil) 03 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - ryan
+  - 🇧🇷 巴西 (Brazil) 02 - ryan
+  - 🇧🇷 巴西 (Brazil) 03 - ryan
 rules:
 - MATCH,PROXIES

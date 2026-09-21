@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - ryan
-  server: 194.145.119.14
-  port: 8443
-  udp: true
-  type: ss
-  cipher: xchacha20-ietf-poly1305
-  password: wgn8q15i9o9z12kk
-- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -22,35 +15,18 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
-  server: 31.214.152.140
-  port: 443
-  udp: true
-  type: vless
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8
-    short-id: 08
-  servername: dw.b-cdn.net
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
-  - 🇹🇷 土耳其 (Turkey) 02 - ryan
-  - 🇹🇷 土耳其 (Turkey) 03 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
-  - 🇹🇷 土耳其 (Turkey) 02 - ryan
-  - 🇹🇷 土耳其 (Turkey) 03 - ryan
 rules:
 - MATCH,PROXIES

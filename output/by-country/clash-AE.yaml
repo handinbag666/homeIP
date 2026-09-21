@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: d5f1aa27-43d0-4f2e-bca2-140f3ec2aa62
+  uuid: 04dc7739-5b33-49c9-bf16-3c6919a6498f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -23,7 +23,7 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - ryan
@@ -40,7 +40,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 04 - ryan
-  server: 85.204.107.183
+  server: 85.204.107.173
   port: 8080
   udp: true
   type: hysteria2
