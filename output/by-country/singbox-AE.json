@@ -8,14 +8,14 @@
       "tag": "🇦🇪 阿联酋 (UAE) 01 - ryan",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "315adcfd-5eab-4041-b876-f9cc8e2aa6c2",
+      "uuid": "d5f1aa27-43d0-4f2e-bca2-140f3ec2aa62",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -64,7 +64,7 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - ryan",
-      "server": "85.204.107.171",
+      "server": "85.204.107.183",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {

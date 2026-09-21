@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 智利 (Chile) 01 - ryan
-  server: 34.176.98.128
+- name: 🇧🇷 巴西 (Brazil) 01 - ryan
+  server: 34.39.174.220
   port: 443
   udp: true
   type: vless
-  uuid: 4fe7ceb2-160c-4564-89e6-8f5fd0b05cd5
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
   tls: true
   reality-opts:
-    public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
-    short-id: d7676b6a468a03b3
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+    short-id: b62a4da6cd1c4dd6
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 智利 (Chile) 01 - ryan
+  - 🇧🇷 巴西 (Brazil) 01 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 智利 (Chile) 01 - ryan
+  - 🇧🇷 巴西 (Brazil) 01 - ryan
 rules:
 - MATCH,PROXIES

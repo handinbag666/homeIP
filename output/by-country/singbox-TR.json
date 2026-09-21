@@ -4,25 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - ryan",
-      "server": "31.214.152.140",
-      "server_port": 443,
-      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dw.b-cdn.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
-          "short_id": "08"
-        }
-      }
+      "server": "194.145.119.14",
+      "server_port": 8443,
+      "method": "xchacha20-ietf-poly1305",
+      "password": "wgn8q15i9o9z12kk"
     },
     {
       "type": "vless",
@@ -47,9 +34,23 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - ryan",
-      "server": "turkeynewvdflvvjfkdsjvlk3jvoijuvoisdfjvoi3ju2voisfjdoivodfsiv.nevoxa.ir",
-      "server_port": 32210,
-      "uuid": "24051e17-a1c9-4566-a331-789e6b681007"
+      "server": "31.214.152.140",
+      "server_port": 443,
+      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dw.b-cdn.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
+          "short_id": "08"
+        }
+      }
     },
     {
       "type": "selector",

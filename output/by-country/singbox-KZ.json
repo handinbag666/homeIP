@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - ryan",
-      "server": "3h-kazakhstan1.09vpn.com",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/"
+      "server": "edge-kz1.lovely.my",
+      "server_port": 443,
+      "uuid": "416b35f4-7cba-4023-a915-b22af73cd0c2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "edge-kz1.lovely.my",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nNeAdcF__Tg3jBFRRPgpmKPNJGfqMGy4rG3Z3eO-T24",
+          "short_id": "24fc325b440818ce"
+        }
       }
     },
     {
@@ -36,37 +45,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - ryan",
-      "server": "89.106.88.6",
-      "server_port": 8443,
-      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
-      "tls": {
-        "enabled": true,
-        "server_name": "dest1.cdn-update.rutube.info",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4",
-          "short_id": "08"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - ryan",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - ryan"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan"
       ]
     },
     {
@@ -74,8 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - ryan",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - ryan"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

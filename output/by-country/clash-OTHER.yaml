@@ -5,23 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - ryan
-  server: 172.67.161.144
-  port: 8443
+  server: www.speedtest.net
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
+    path: /assignment
 - name: 🌐 其他地区 (Other) 02 - ryan
-  server: 188.114.98.0
+  server: www.speedtest.net
   port: 443
   udp: true
   type: trojan
@@ -32,12 +27,28 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🌐 其他地区 (Other) 03 - ryan
-  server: 188.114.98.0
+  server: www.speedtest.net
   port: 443
   udp: true
   type: trojan
   password: humanity
-  sni: www.calmlunch.com
+  sni: www.speedtest.net
+  skip-cert-verify: false
+- name: 🌐 其他地区 (Other) 04 - ryan
+  server: www.speedtest.net
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.speedtest.net
+  skip-cert-verify: false
+- name: 🌐 其他地区 (Other) 05 - ryan
+  server: www.speedtest.net
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -50,6 +61,8 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - ryan
   - 🌐 其他地区 (Other) 02 - ryan
   - 🌐 其他地区 (Other) 03 - ryan
+  - 🌐 其他地区 (Other) 04 - ryan
+  - 🌐 其他地区 (Other) 05 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +71,7 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - ryan
   - 🌐 其他地区 (Other) 02 - ryan
   - 🌐 其他地区 (Other) 03 - ryan
+  - 🌐 其他地区 (Other) 04 - ryan
+  - 🌐 其他地区 (Other) 05 - ryan
 rules:
 - MATCH,PROXIES
