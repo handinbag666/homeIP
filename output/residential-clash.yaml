@@ -5,93 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - ryan
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇯🇵 日本 (Japan) 02 (家宽) - ryan
-  server: 128.241.25.11
-  port: 30021
+  server: 172.64.229.170
+  port: 2086
   udp: true
   type: vless
-  uuid: 40ca0d8c-0641-4e2d-a701-9fd8330daf6d
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /?ed=2560security=tls
     headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
-  server: 36.224.141.124
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
-  server: dog-tw.kunlun01dns.com
-  port: 21034
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
-  server: hinet1.2yly.com
-  port: 24215
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 02 (家宽) - ryan
+  server: 162.159.0.53
+  port: 2086
   udp: true
   type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan
-  server: 654168416355441.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 654168416355441.oylfmxz.cn
-  skip-cert-verify: false
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: 654168416355441.oylfmxz.cn
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - ryan
-  - 🇯🇵 日本 (Japan) 02 (家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan
+  - 🇺🇸 美国 (United States) 02 (家宽) - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - ryan
-  - 🇯🇵 日本 (Japan) 02 (家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan
+  - 🇺🇸 美国 (United States) 02 (家宽) - ryan
 rules:
 - MATCH,PROXIES
