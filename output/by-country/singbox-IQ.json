@@ -1,0 +1,57 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "🇮🇶 IQ 01 - ryan",
+      "server": "172.67.158.158",
+      "server_port": 443,
+      "password": "Siw3_iSte@ulOTO,-",
+      "tls": {
+        "enabled": true,
+        "server_name": "4zgcCBcB10PQYIbnWMM4nvznJ4.rOyAEhmAn5.WorKers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/3BEU3jR06ZEdPc6FBekHFztK?ed=2560",
+        "headers": {
+          "Host": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇶 IQ 01 - ryan"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇶 IQ 01 - ryan"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
