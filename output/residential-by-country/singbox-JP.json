@@ -4,18 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇶 IQ 01 - ryan",
-      "server": "172.67.158.158",
-      "server_port": 443,
-      "password": "Siw3_iSte@ulOTO,-",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - ryan",
+      "server": "128.241.25.11",
+      "server_port": 30021,
+      "uuid": "40ca0d8c-0641-4e2d-a701-9fd8330daf6d",
       "tls": {
         "enabled": true,
-        "server_name": "4zgcCBcB10PQYIbnWMM4nvznJ4.rOyAEhmAn5.WorKers.dev",
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/tr/3BEU3jR06ZEdPc6FBekHFztK?ed=2560",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev"
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
         }
       }
     },
@@ -34,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - ryan"
+        "🇯🇵 日本 (Japan) 01 (家宽) - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - ryan"
+        "🇯🇵 日本 (Japan) 01 (家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

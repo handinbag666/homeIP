@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: ce55737c-243b-497f-9d9a-38700f327894
+  uuid: c4783cc5-aeec-4473-855b-1c98965949dd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -40,7 +40,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 04 - ryan
-  server: 85.204.107.181
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
@@ -48,7 +48,20 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - ryan
-  server: 84.235.244.108
+  server: bgr.accessgate.link
+  port: 2443
+  udp: true
+  type: vless
+  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: c_42sYo1oPuFy6MmGKVkFxnNmDOZ0WoIiFGg8UJ12Aw
+    short-id: b0d8c9a285c70f6f
+  servername: unpkg.com
+  client-fingerprint: edge
+- name: 🇦🇪 阿联酋 (UAE) 06 - ryan
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -58,6 +71,21 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - ryan
+  server: 69.46.46.124
+  port: 443
+  udp: true
+  type: vless
+  uuid: b79f78f6-ca4e-bad4-029f-4f9c43b6b6d9
+  tls: true
+  servername: norl-production.up.railway.app
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/b79f78f6-ca4e-bad4-029f-4f9c43b6b6d9
+    headers:
+      Host: norl-production.up.railway.app
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +96,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - ryan
   - 🇦🇪 阿联酋 (UAE) 04 - ryan
   - 🇦🇪 阿联酋 (UAE) 05 - ryan
+  - 🇦🇪 阿联酋 (UAE) 06 - ryan
+  - 🇦🇪 阿联酋 (UAE) 07 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +108,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - ryan
   - 🇦🇪 阿联酋 (UAE) 04 - ryan
   - 🇦🇪 阿联酋 (UAE) 05 - ryan
+  - 🇦🇪 阿联酋 (UAE) 06 - ryan
+  - 🇦🇪 阿联酋 (UAE) 07 - ryan
 rules:
 - MATCH,PROXIES
