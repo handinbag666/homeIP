@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 01 - ryan",
-      "server": "85.90.217.42",
+      "server": "66.163.118.73",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
       "security": "auto"
@@ -20,16 +20,8 @@
       "password": "qItG8SueYQcP"
     },
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - ryan",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - ryan",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - ryan",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -37,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - ryan",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - ryan",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -57,7 +49,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - ryan",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - ryan",
       "server": "mygptagent.org",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -72,6 +64,27 @@
         "path": "/linkvws",
         "headers": {
           "Host": "mygptagent.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - ryan",
+      "server": "46.28.71.247",
+      "server_port": 443,
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
         }
       }
     },
