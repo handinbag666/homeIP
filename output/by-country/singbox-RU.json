@@ -4,80 +4,79 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - ryan",
-      "server": "162.159.43.187",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - ryan",
-      "server": "162.159.43.187",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tlssecurity=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - ryan",
-      "server": "104.18.34.14",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - ryan",
-      "server": "46.8.200.91",
+      "server": "151.101.56.7",
       "server_port": 443,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "password": "MITIVpN",
       "tls": {
         "enabled": true,
-        "server_name": "cf3.rumedia-cdn.com",
+        "server_name": "ssl.fastly.com",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/casc",
         "headers": {
-          "Host": "cf3.rumedia-cdn.com"
+          "Host": "mitivpn---ss--s---mitivpn-22e.global.ssl.fastly.net"
         }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - ryan",
+      "server": "195.133.23.200",
+      "server_port": 10081,
+      "method": "aes-256-gcm",
+      "password": "81a20429165df87e"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - ryan",
+      "server": "62.113.41.165",
+      "server_port": 888,
+      "method": "chacha20-ietf-poly1305",
+      "password": "hF-qqin2wYhP7zS47SyR0Q"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - ryan",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - ryan",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "itsallproxy.quattro-tech.ru",
+        "server_name": "hy.quattro-tech.ru",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - ryan",
+      "server": "xinnusvpn.duckdns.org",
+      "server_port": 8443,
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "xinnusvpn.duckdns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wsnl",
+        "headers": {
+          "Host": "xinnusvpn.duckdns.org"
+        }
       }
     },
     {
