@@ -7,21 +7,45 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - ryan",
       "server": "185.135.86.175",
-      "server_port": 9086,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - ryan",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "HAVAdE3nXhqA5nHp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - ryan",
+      "server": "185.135.86.175",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - ryan",
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - ryan",
+      "server": "185.135.86.175",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - ryan",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - ryan",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -41,34 +65,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - ryan",
-      "server": "185.135.86.175",
-      "server_port": 9007,
-      "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - ryan",
-      "server": "138.124.183.18",
-      "server_port": 9443,
-      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
-      "tls": {
-        "enabled": true,
-        "server_name": "hub-lv-01.hanvpn.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "lv01-grpc-8e47a"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -77,7 +73,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 02 - ryan",
         "🇱🇻 拉脱维亚 (Latvia) 03 - ryan",
         "🇱🇻 拉脱维亚 (Latvia) 04 - ryan",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - ryan"
+        "🇱🇻 拉脱维亚 (Latvia) 05 - ryan",
+        "🇱🇻 拉脱维亚 (Latvia) 06 - ryan"
       ]
     },
     {
@@ -88,7 +85,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 02 - ryan",
         "🇱🇻 拉脱维亚 (Latvia) 03 - ryan",
         "🇱🇻 拉脱维亚 (Latvia) 04 - ryan",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - ryan"
+        "🇱🇻 拉脱维亚 (Latvia) 05 - ryan",
+        "🇱🇻 拉脱维亚 (Latvia) 06 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

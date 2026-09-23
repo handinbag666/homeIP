@@ -7,14 +7,14 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9078,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - ryan",
-      "server": "lt.aether-runet.top",
+      "server": "84.32.215.5",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -23,7 +23,7 @@
         "server_name": "lt.aether-runet.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -33,21 +33,12 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - ryan",
-      "server": "195.238.126.20",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 02 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 03 - ryan"
+        "🇱🇹 立陶宛 (Lithuania) 02 - ryan"
       ]
     },
     {
@@ -55,8 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 02 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 03 - ryan"
+        "🇱🇹 立陶宛 (Lithuania) 02 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

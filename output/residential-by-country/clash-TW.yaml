@@ -17,7 +17,7 @@ proxies:
   udp: true
   type: anytls
   password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
+  sni: 6ivh.pnuqcnp.cn
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
   server: hinet1.2yly.com

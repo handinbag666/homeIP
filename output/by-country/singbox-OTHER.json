@@ -6,14 +6,28 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - ryan",
-      "server": "104.18.39.218",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "server": "104.21.55.123",
+      "server_port": 80,
+      "uuid": "95de071f-747c-dc07-36ac-5c0854a9e50e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls",
+        "path": "/sync",
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "restless-boat-ebf2.moha102030.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - ryan",
+      "server": "restless-boat-ebf2.moha102030.workers.dev",
+      "server_port": 80,
+      "uuid": "95de071f-747c-dc07-36ac-5c0854a9e50e",
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "restless-boat-ebf2.moha102030.workers.dev"
         }
       }
     },
@@ -22,14 +36,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - ryan"
+        "🌐 其他地区 (Other) 01 - ryan",
+        "🌐 其他地区 (Other) 02 - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - ryan"
+        "🌐 其他地区 (Other) 01 - ryan",
+        "🌐 其他地区 (Other) 02 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
