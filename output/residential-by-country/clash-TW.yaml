@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
-  server: r3mrcg001286ek2.cybervena.com
+  server: 36.224.141.124
   port: 50099
   udp: true
   type: ss
@@ -20,16 +20,13 @@ proxies:
   sni: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
-  server: hinet1.2yly.com
-  port: 24215
+  server: 6ivh.pnuqcnp.cn
+  port: 443
   udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - ryan
-  server: 104.18.14.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
-  tls: true
-  servername: server9.9966338.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /imnotarealherox
-    headers:
-      Host: server9.9966338.xyz
-- name: 🌐 其他地区 (Other) 02 - ryan
   server: ccs2g.pai50288.uk
   port: 443
   udp: true
@@ -32,49 +17,17 @@ proxies:
   network: ws
   ws-opts:
     path: /pai50288
-- name: 🌐 其他地区 (Other) 03 - ryan
-  server: 104.18.15.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
-  tls: true
-  servername: server9.9966338.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /imnotarealherox
-    headers:
-      Host: server9.9966338.xyz
-- name: 🌐 其他地区 (Other) 04 - ryan
-  server: 104.16.71.213
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - ryan
-  - 🌐 其他地区 (Other) 02 - ryan
-  - 🌐 其他地区 (Other) 03 - ryan
-  - 🌐 其他地区 (Other) 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - ryan
-  - 🌐 其他地区 (Other) 02 - ryan
-  - 🌐 其他地区 (Other) 03 - ryan
-  - 🌐 其他地区 (Other) 04 - ryan
 rules:
 - MATCH,PROXIES
