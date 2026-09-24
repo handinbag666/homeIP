@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
+  server: 36.224.141.124
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan
+  server: dog-tw.kunlun01dns.com
+  port: 21034
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: 6ivh.pnuqcnp.cn
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
   server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
   port: 443
   udp: true
@@ -12,8 +35,8 @@ proxies:
   password: 9sK2mP8xQ7vL3nZ6
   sni: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan
-  server: hinet1.2yly.com
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
+  server: 118.167.206.152
   port: 24215
   udp: true
   type: vless
@@ -30,6 +53,9 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +63,8 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
 rules:
 - MATCH,PROXIES
