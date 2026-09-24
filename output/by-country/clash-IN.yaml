@@ -17,6 +17,30 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - ryan
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇮🇳 印度 (India) 03 - ryan
+  server: 148.113.5.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
+    short-id: 221873918e0bb74d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 - ryan
   server: 35.154.58.87
   port: 443
   udp: true
@@ -24,7 +48,15 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-in-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 03 - ryan
+- name: 🇮🇳 印度 (India) 05 - ryan
+  server: tttyder.wsone.icu
+  port: 443
+  udp: true
+  type: trojan
+  password: M7v%w11Se*
+  sni: tttyder.wsone.icu
+  skip-cert-verify: false
+- name: 🇮🇳 印度 (India) 06 - ryan
   server: hyfuuf6.wsone.icu
   port: 443
   udp: true
@@ -40,6 +72,9 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - ryan
   - 🇮🇳 印度 (India) 02 - ryan
   - 🇮🇳 印度 (India) 03 - ryan
+  - 🇮🇳 印度 (India) 04 - ryan
+  - 🇮🇳 印度 (India) 05 - ryan
+  - 🇮🇳 印度 (India) 06 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +83,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - ryan
   - 🇮🇳 印度 (India) 02 - ryan
   - 🇮🇳 印度 (India) 03 - ryan
+  - 🇮🇳 印度 (India) 04 - ryan
+  - 🇮🇳 印度 (India) 05 - ryan
+  - 🇮🇳 印度 (India) 06 - ryan
 rules:
 - MATCH,PROXIES

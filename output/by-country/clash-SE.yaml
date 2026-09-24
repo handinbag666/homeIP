@@ -5,34 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - ryan
-  server: 13.61.0.108
+  server: 13.48.104.64
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 02 - ryan
+  server: 13.61.0.108
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 03 - ryan
   server: 70.34.212.124
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
-- name: 🇸🇪 瑞典 (Sweden) 03 - ryan
-  server: 16.170.163.124
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 04 - ryan
-  server: 16.170.221.224
+  server: 16.170.214.108
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 05 - ryan
+  server: 16.170.163.124
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 06 - ryan
   server: 143.246.195.98
   port: 8081
   udp: true
@@ -41,13 +48,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 06 - ryan
-  server: 172.238.244.13
-  port: 17000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 - name: 🇸🇪 瑞典 (Sweden) 07 - ryan
   server: se-node.rumedia-cdn.com
   port: 25443
@@ -57,7 +57,15 @@ proxies:
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 08 - ryan
-  server: surstreming.vvzzkontaktezzvv.garden
+  server: svip.skycon808.com
+  port: 60005
+  udp: true
+  type: anytls
+  password: 13f0acfa-38c1-4e82-a758-583aa31740df
+  sni: xjp18.2uuzhe.com
+  skip-cert-verify: true
+- name: 🇸🇪 瑞典 (Sweden) 09 - ryan
+  server: 5.157.10.148
   port: 443
   udp: true
   type: vless
@@ -69,6 +77,36 @@ proxies:
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: ios
+- name: 🇸🇪 瑞典 (Sweden) 10 - ryan
+  server: 143.246.194.60
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 11 - ryan
+  server: 172.238.244.13
+  port: 17000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+- name: 🇸🇪 瑞典 (Sweden) 12 - ryan
+  server: 193.42.39.10
+  port: 33743
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +120,10 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - ryan
   - 🇸🇪 瑞典 (Sweden) 07 - ryan
   - 🇸🇪 瑞典 (Sweden) 08 - ryan
+  - 🇸🇪 瑞典 (Sweden) 09 - ryan
+  - 🇸🇪 瑞典 (Sweden) 10 - ryan
+  - 🇸🇪 瑞典 (Sweden) 11 - ryan
+  - 🇸🇪 瑞典 (Sweden) 12 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,5 +137,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - ryan
   - 🇸🇪 瑞典 (Sweden) 07 - ryan
   - 🇸🇪 瑞典 (Sweden) 08 - ryan
+  - 🇸🇪 瑞典 (Sweden) 09 - ryan
+  - 🇸🇪 瑞典 (Sweden) 10 - ryan
+  - 🇸🇪 瑞典 (Sweden) 11 - ryan
+  - 🇸🇪 瑞典 (Sweden) 12 - ryan
 rules:
 - MATCH,PROXIES

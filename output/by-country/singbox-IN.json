@@ -24,8 +24,41 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 02 - ryan",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 03 - ryan",
+      "server": "148.113.5.44",
+      "server_port": 443,
+      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
+          "short_id": "221873918e0bb74d"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇮🇳 印度 (India) 04 - ryan",
       "server": "35.154.58.87",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -37,7 +70,23 @@
     },
     {
       "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 03 - ryan",
+      "tag": "🇮🇳 印度 (India) 05 - ryan",
+      "server": "tttyder.wsone.icu",
+      "server_port": 443,
+      "password": "M7v%w11Se*",
+      "tls": {
+        "enabled": true,
+        "server_name": "tttyder.wsone.icu",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 06 - ryan",
       "server": "hyfuuf6.wsone.icu",
       "server_port": 443,
       "password": "M7v%w11Se*",
@@ -58,7 +107,10 @@
         "auto",
         "🇮🇳 印度 (India) 01 - ryan",
         "🇮🇳 印度 (India) 02 - ryan",
-        "🇮🇳 印度 (India) 03 - ryan"
+        "🇮🇳 印度 (India) 03 - ryan",
+        "🇮🇳 印度 (India) 04 - ryan",
+        "🇮🇳 印度 (India) 05 - ryan",
+        "🇮🇳 印度 (India) 06 - ryan"
       ]
     },
     {
@@ -67,7 +119,10 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01 - ryan",
         "🇮🇳 印度 (India) 02 - ryan",
-        "🇮🇳 印度 (India) 03 - ryan"
+        "🇮🇳 印度 (India) 03 - ryan",
+        "🇮🇳 印度 (India) 04 - ryan",
+        "🇮🇳 印度 (India) 05 - ryan",
+        "🇮🇳 印度 (India) 06 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
