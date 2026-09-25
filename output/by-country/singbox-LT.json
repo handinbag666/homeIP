@@ -7,21 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - ryan",
-      "server": "195.238.126.20",
       "server_port": 9045,
       "method": "aes-256-cfb",
       "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - ryan",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - ryan",
       "server": "195.238.126.20",
       "server_port": 9086,
       "method": "aes-256-cfb",
@@ -29,15 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - ryan",
-      "server": "195.238.126.20",
-      "server_port": 9008,
-      "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - ryan",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - ryan",
       "server": "195.238.126.20",
       "server_port": 9068,
       "method": "aes-256-cfb",
@@ -45,15 +29,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - ryan",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - ryan",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - ryan",
       "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
@@ -61,16 +45,16 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - ryan",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9011,
+      "server_port": 9008,
       "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
+      "password": "y9VURyNzJWNRYEGQ"
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - ryan",
-      "server": "84.32.215.94",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - ryan",
+      "server": "84.32.215.5",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -89,25 +73,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - ryan",
-      "server": "94.176.234.161",
-      "server_port": 443,
-      "uuid": "d448490d-4ee6-442f-80e1-5e1c186c4ce1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.intel.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8",
-          "short_id": "dbb2ef1c7c"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - ryan",
+      "server": "195.238.126.20",
+      "server_port": 9012,
+      "method": "aes-256-cfb",
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "selector",
@@ -121,9 +92,7 @@
         "🇱🇹 立陶宛 (Lithuania) 05 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 06 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 07 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 08 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 09 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 10 - ryan"
+        "🇱🇹 立陶宛 (Lithuania) 08 - ryan"
       ]
     },
     {
@@ -137,9 +106,7 @@
         "🇱🇹 立陶宛 (Lithuania) 05 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 06 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 07 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 08 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 09 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 10 - ryan"
+        "🇱🇹 立陶宛 (Lithuania) 08 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
