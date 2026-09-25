@@ -4,36 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 01 - ryan",
-      "server": "vpn-in-001.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 02 - ryan",
-      "server": "tttyder.wsone.icu",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "tttyder.wsone.icu",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - ryan",
+      "tag": "🇮🇳 印度 (India) 01 - ryan",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -42,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -52,19 +24,15 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 04 - ryan",
-      "server": "hyfuuf6.wsone.icu",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 02 - ryan",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -73,9 +41,7 @@
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - ryan",
-        "🇮🇳 印度 (India) 02 - ryan",
-        "🇮🇳 印度 (India) 03 - ryan",
-        "🇮🇳 印度 (India) 04 - ryan"
+        "🇮🇳 印度 (India) 02 - ryan"
       ]
     },
     {
@@ -83,9 +49,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇳 印度 (India) 01 - ryan",
-        "🇮🇳 印度 (India) 02 - ryan",
-        "🇮🇳 印度 (India) 03 - ryan",
-        "🇮🇳 印度 (India) 04 - ryan"
+        "🇮🇳 印度 (India) 02 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -12,45 +12,45 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan
-  server: hinet1.2yly.com
-  port: 24215
+  server: dog-tw.kunlun01dns.com
+  port: 21034
   udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - ryan
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16113
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - ryan
+  server: 206.1.98.72
+  port: 21811
+  udp: true
+  type: vmess
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - ryan
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
-  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
-  port: 443
-  udp: true
-  type: anytls
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - ryan
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  port: 443
-  udp: true
-  type: anytls
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan
   server: 6ivh.pnuqcnp.cn
   port: 443
   udp: true
   type: anytls
   password: 9sK2mP8xQ7vL3nZ6
-  sni: 6ivh.pnuqcnp.cn
+  sni: images.ctfassets.net
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -59,9 +59,9 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan
 - name: AUTO
   type: url-test
@@ -70,9 +70,9 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan
 rules:
 - MATCH,PROXIES

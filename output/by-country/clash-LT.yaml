@@ -6,25 +6,25 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - ryan
   server: 195.238.126.20
-  port: 9045
+  port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
+  password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - ryan
+  server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - ryan
   server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - ryan
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   server: 195.238.126.20
   port: 9002
@@ -33,20 +33,6 @@ proxies:
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - ryan
-  server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - ryan
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - ryan
   server: 84.32.215.5
   port: 443
   udp: true
@@ -59,13 +45,6 @@ proxies:
     short-id: 4fa44664f6a566d3
   servername: lt.aether-runet.top
   client-fingerprint: chrome
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - ryan
-  server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,9 +55,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 03 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 05 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 06 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 07 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 08 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,8 +65,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 03 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 05 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 06 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 07 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 08 - ryan
 rules:
 - MATCH,PROXIES

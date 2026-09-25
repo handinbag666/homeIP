@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan
+  server: 206.1.98.72
+  port: 21811
+  udp: true
+  type: vmess
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - ryan
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -16,11 +27,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - ryan
 rules:
 - MATCH,PROXIES
