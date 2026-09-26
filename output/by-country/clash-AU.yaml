@@ -13,15 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 (Australia) 02 - ryan
-  server: 172.105.169.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 172.105.169.70
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 03 - ryan
   server: 51.161.204.244
   port: 443
   udp: true
@@ -33,19 +24,16 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 04 - ryan
-  server: 46.250.240.80
-  port: 2053
+  client-fingerprint: firefox
+- name: 🇦🇺 澳大利亚 (Australia) 03 - ryan
+  server: 172.105.169.70
+  port: 443
   udp: true
   type: vless
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   tls: true
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-    short-id: 4cc9dc65f7770115
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: 172.105.169.70
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +42,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - ryan
   - 🇦🇺 澳大利亚 (Australia) 02 - ryan
   - 🇦🇺 澳大利亚 (Australia) 03 - ryan
-  - 🇦🇺 澳大利亚 (Australia) 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +50,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - ryan
   - 🇦🇺 澳大利亚 (Australia) 02 - ryan
   - 🇦🇺 澳大利亚 (Australia) 03 - ryan
-  - 🇦🇺 澳大利亚 (Australia) 04 - ryan
 rules:
 - MATCH,PROXIES

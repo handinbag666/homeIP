@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - ryan",
-      "server": "104.18.15.103",
+      "server": "172.67.179.82",
       "server_port": 443,
-      "uuid": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
+      "uuid": "7e26fd8f-d75a-473d-84ba-9f4e3f47d086",
       "tls": {
         "enabled": true,
-        "server_name": "server9.9966338.xyz",
+        "server_name": "0-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,41 +20,119 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/imnotarealherox",
+        "path": "/8qMLgNapWf6SBxo8fhQlVPYO",
         "headers": {
-          "Host": "server9.9966338.xyz"
+          "Host": "0-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr"
         }
       }
     },
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 02 - ryan",
-      "server": "nomino.11hi8itbaf.workers.dev",
-      "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "server": "www.nextkyc.com",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "nomino.11hi8itbaf.workers.dev",
+        "server_name": "v2ray1.dozapp.xyz",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/guanwang.awsno.com/hls/cctv5phd.m3u8",
+        "path": "/lMnsZUN4/",
         "headers": {
-          "Host": "nomino.11hi8itbaf.workers.dev"
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 03 - ryan",
+      "server": "www.nextkyc.com",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 04 - ryan",
+      "server": "www.nextkyc.com",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 03 - ryan",
-      "server": "www.calmlunch.com",
+      "tag": "🌐 其他地区 (Other) 05 - ryan",
+      "server": "104.19.229.21",
       "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
         "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "//assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 06 - ryan",
+      "server": "104.19.229.21",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "//assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 07 - ryan",
+      "server": "104.19.229.21",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.gossipglove.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -63,7 +141,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment"
+        "path": "/assignment?L=tls"
       }
     },
     {
@@ -73,7 +151,11 @@
         "auto",
         "🌐 其他地区 (Other) 01 - ryan",
         "🌐 其他地区 (Other) 02 - ryan",
-        "🌐 其他地区 (Other) 03 - ryan"
+        "🌐 其他地区 (Other) 03 - ryan",
+        "🌐 其他地区 (Other) 04 - ryan",
+        "🌐 其他地区 (Other) 05 - ryan",
+        "🌐 其他地区 (Other) 06 - ryan",
+        "🌐 其他地区 (Other) 07 - ryan"
       ]
     },
     {
@@ -82,7 +164,11 @@
       "outbounds": [
         "🌐 其他地区 (Other) 01 - ryan",
         "🌐 其他地区 (Other) 02 - ryan",
-        "🌐 其他地区 (Other) 03 - ryan"
+        "🌐 其他地区 (Other) 03 - ryan",
+        "🌐 其他地区 (Other) 04 - ryan",
+        "🌐 其他地区 (Other) 05 - ryan",
+        "🌐 其他地区 (Other) 06 - ryan",
+        "🌐 其他地区 (Other) 07 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -18,7 +18,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 02 - ryan
-  server: 82.38.64.237
+  server: 82.38.64.229
   port: 8443
   udp: true
   type: hysteria2
@@ -26,16 +26,6 @@ proxies:
   sni: hopp-swizland-new.mysynology.net
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 03 - ryan
-  server: 152.67.75.161
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3a702d4d1de4949005d8431220e040fb
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 04 - ryan
   server: 151.242.2.81
   port: 443
   udp: true
@@ -49,7 +39,7 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
-- name: 🇨🇭 瑞士 (Switzerland) 05 - ryan
+- name: 🇨🇭 瑞士 (Switzerland) 04 - ryan
   server: 77.110.104.238
   port: 443
   udp: true
@@ -66,7 +56,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - ryan
   - 🇨🇭 瑞士 (Switzerland) 03 - ryan
   - 🇨🇭 瑞士 (Switzerland) 04 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 05 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,6 +65,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - ryan
   - 🇨🇭 瑞士 (Switzerland) 03 - ryan
   - 🇨🇭 瑞士 (Switzerland) 04 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 05 - ryan
 rules:
 - MATCH,PROXIES

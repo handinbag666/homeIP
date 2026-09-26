@@ -5,38 +5,70 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - ryan
-  server: 104.18.15.103
+  server: 172.67.179.82
   port: 443
   udp: true
   type: vless
-  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
   tls: true
-  servername: server9.9966338.xyz
+  servername: 0-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /imnotarealherox
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
     headers:
-      Host: server9.9966338.xyz
+      Host: 0-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr
 - name: 🌐 其他地区 (Other) 02 - ryan
-  server: nomino.11hi8itbaf.workers.dev
-  port: 443
+  server: www.nextkyc.com
+  port: 8443
   udp: true
   type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
   tls: true
-  servername: nomino.11hi8itbaf.workers.dev
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /guanwang.awsno.com/hls/cctv5phd.m3u8
+    path: /lMnsZUN4/
     headers:
-      Host: nomino.11hi8itbaf.workers.dev
+      Host: v2ray1.dozapp.xyz
 - name: 🌐 其他地区 (Other) 03 - ryan
-  server: www.calmlunch.com
+  server: www.nextkyc.com
+  port: 8443
+  udp: true
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 04 - ryan
+  server: www.nextkyc.com
+  port: 8443
+  udp: true
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 05 - ryan
+  server: 104.19.229.21
   port: 443
   udp: true
   type: trojan
@@ -45,7 +77,29 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
+    path: //assignment
+- name: 🌐 其他地区 (Other) 06 - ryan
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: //assignment
+- name: 🌐 其他地区 (Other) 07 - ryan
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment?L=tls
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +108,10 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - ryan
   - 🌐 其他地区 (Other) 02 - ryan
   - 🌐 其他地区 (Other) 03 - ryan
+  - 🌐 其他地区 (Other) 04 - ryan
+  - 🌐 其他地区 (Other) 05 - ryan
+  - 🌐 其他地区 (Other) 06 - ryan
+  - 🌐 其他地区 (Other) 07 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,5 +120,9 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - ryan
   - 🌐 其他地区 (Other) 02 - ryan
   - 🌐 其他地区 (Other) 03 - ryan
+  - 🌐 其他地区 (Other) 04 - ryan
+  - 🌐 其他地区 (Other) 05 - ryan
+  - 🌐 其他地区 (Other) 06 - ryan
+  - 🌐 其他地区 (Other) 07 - ryan
 rules:
 - MATCH,PROXIES
