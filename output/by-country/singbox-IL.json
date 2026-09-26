@@ -36,7 +36,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -48,7 +48,28 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 03 - ryan",
-      "server": "193.202.10.2",
+      "server": "185.249.153.108",
+      "server_port": 443,
+      "uuid": "4cf9c712-11c4-47d8-aa31-a1693a1aa4e5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nordivablog.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw",
+          "short_id": "73c9e31ccafda20e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 04 - ryan",
+      "server": "arcturus.yokkastars.com",
       "server_port": 40443,
       "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
       "flow": "xtls-rprx-vision",
@@ -57,96 +78,12 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
           "short_id": "db46e2946fc466fd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 04 - ryan",
-      "server": "platform117.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform117",
-        "headers": {
-          "Host": "platform117.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 05 - ryan",
-      "server": "platform118.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform118",
-        "headers": {
-          "Host": "platform118.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 06 - ryan",
-      "server": "platform101.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform101",
-        "headers": {
-          "Host": "platform101.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 07 - ryan",
-      "server": "platform113.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform113",
-        "headers": {
-          "Host": "platform113.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 08 - ryan",
-      "server": "platform115.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115",
-        "headers": {
-          "Host": "platform115.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 09 - ryan",
-      "server": "platform102.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform102",
-        "headers": {
-          "Host": "platform102.halalkhor.info"
         }
       }
     },
@@ -158,12 +95,7 @@
         "🇮🇱 以色列 (Israel) 01 - ryan",
         "🇮🇱 以色列 (Israel) 02 - ryan",
         "🇮🇱 以色列 (Israel) 03 - ryan",
-        "🇮🇱 以色列 (Israel) 04 - ryan",
-        "🇮🇱 以色列 (Israel) 05 - ryan",
-        "🇮🇱 以色列 (Israel) 06 - ryan",
-        "🇮🇱 以色列 (Israel) 07 - ryan",
-        "🇮🇱 以色列 (Israel) 08 - ryan",
-        "🇮🇱 以色列 (Israel) 09 - ryan"
+        "🇮🇱 以色列 (Israel) 04 - ryan"
       ]
     },
     {
@@ -173,12 +105,7 @@
         "🇮🇱 以色列 (Israel) 01 - ryan",
         "🇮🇱 以色列 (Israel) 02 - ryan",
         "🇮🇱 以色列 (Israel) 03 - ryan",
-        "🇮🇱 以色列 (Israel) 04 - ryan",
-        "🇮🇱 以色列 (Israel) 05 - ryan",
-        "🇮🇱 以色列 (Israel) 06 - ryan",
-        "🇮🇱 以色列 (Israel) 07 - ryan",
-        "🇮🇱 以色列 (Israel) 08 - ryan",
-        "🇮🇱 以色列 (Israel) 09 - ryan"
+        "🇮🇱 以色列 (Israel) 04 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

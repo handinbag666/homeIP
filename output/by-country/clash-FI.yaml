@@ -5,90 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - ryan
-  server: 89.167.8.93
-  port: 443
+  server: 45.149.147.110
+  port: 8443
   udp: true
-  type: anytls
-  password: a7cb7b6afd56539ff6d5976c8d188aba70de4db553fce1b4
-  sni: 89.167.8.93
-  skip-cert-verify: true
+  type: vless
+  uuid: 440f3c08-7599-406e-8ba3-7dbc6324c5ed
+  tls: true
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: 844352756c1fabba
+  servername: api.vkimages.io
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-yandex
 - name: 🇫🇮 芬兰 (Finland) 02 - ryan
-  server: 46.62.174.104
-  port: 443
+  server: 45.149.147.137
+  port: 8443
   udp: true
-  type: anytls
-  password: 265528d9c0ae0a31656c3a84ba2b0d32c66fa21133896567
-  sni: 46.62.174.104
-  skip-cert-verify: true
+  type: vless
+  uuid: 440f3c08-7599-406e-8ba3-7dbc6324c5ed
+  tls: true
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: 844352756c1fabba
+  servername: api.vkimages.io
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-yandex
 - name: 🇫🇮 芬兰 (Finland) 03 - ryan
-  server: 77.42.90.221
-  port: 443
+  server: 104.16.72.101
+  port: 80
   udp: true
-  type: anytls
-  password: fd4666556b7068060c90c646b073531b2c5256fa5ab0cfc2
-  sni: 77.42.90.221
-  skip-cert-verify: true
+  type: vless
+  uuid: d5598622-46b8-b017-3af3-232500000001
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
 - name: 🇫🇮 芬兰 (Finland) 04 - ryan
-  server: 135.181.109.54
-  port: 443
-  udp: true
-  type: anytls
-  password: e6759da990e1c60a5976f6c0fda3b89a0f89159efd015a2d
-  sni: 135.181.109.54
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 05 - ryan
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - ryan
-  server: 185.79.138.71
-  port: 448
-  udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - ryan
-  server: 46.62.135.114
-  port: 443
-  udp: true
-  type: anytls
-  password: ff7bec3d2a17dfde8ef4b961b88739f3e69c39814a837173
-  sni: 46.62.135.114
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 08 - ryan
-  server: 95.216.222.56
-  port: 443
-  udp: true
-  type: anytls
-  password: bdcd8ef90a3ad6a2ea0951c4a3a021579bb53925db828870
-  sni: 95.216.222.56
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 09 - ryan
-  server: est1313.ggisopi.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 10 - ryan
   server: 89.167.99.254
   port: 443
   udp: true
@@ -96,23 +53,7 @@ proxies:
   password: e6c2a08ce36a596a3cff95a952242f5758e569cdeac971c2
   sni: 89.167.99.254
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 11 - ryan
-  server: 89.167.45.138
-  port: 443
-  udp: true
-  type: anytls
-  password: 17801e53d30d1294651e44e788bd6b81b94031bac977c6c2
-  sni: 89.167.45.138
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 12 - ryan
-  server: 46.62.173.175
-  port: 443
-  udp: true
-  type: anytls
-  password: c6b2c9c4d483a46ad329ebc6c9cbb66ccba77cd960cf571f
-  sni: 46.62.173.175
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 13 - ryan
+- name: 🇫🇮 芬兰 (Finland) 05 - ryan
   server: 37.143.129.244
   port: 443
   udp: true
@@ -125,7 +66,64 @@ proxies:
     short-id: 48fd192dc4e46bc0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 14 - ryan
+- name: 🇫🇮 芬兰 (Finland) 06 - ryan
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 07 - ryan
+  server: 46.62.135.114
+  port: 443
+  udp: true
+  type: anytls
+  password: ff7bec3d2a17dfde8ef4b961b88739f3e69c39814a837173
+  sni: 46.62.135.114
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 08 - ryan
+  server: 46.62.174.104
+  port: 443
+  udp: true
+  type: anytls
+  password: 265528d9c0ae0a31656c3a84ba2b0d32c66fa21133896567
+  sni: 46.62.174.104
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 09 - ryan
+  server: 77.42.90.221
+  port: 443
+  udp: true
+  type: anytls
+  password: fd4666556b7068060c90c646b073531b2c5256fa5ab0cfc2
+  sni: 77.42.90.221
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 10 - ryan
+  server: 95.216.222.56
+  port: 443
+  udp: true
+  type: anytls
+  password: bdcd8ef90a3ad6a2ea0951c4a3a021579bb53925db828870
+  sni: 95.216.222.56
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 11 - ryan
+  server: 95.217.24.236
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
+    short-id: a32cfb5deca913ad
+  servername: 62.238.41.21
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 12 - ryan
   server: 77.42.95.24
   port: 443
   udp: true
@@ -133,7 +131,78 @@ proxies:
   password: f3796a52ba2e7382b7e3a55eb01f3a9b82b334ee6722c3a0
   sni: 77.42.95.24
   skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 13 - ryan
+  server: 135.181.109.54
+  port: 443
+  udp: true
+  type: anytls
+  password: e6759da990e1c60a5976f6c0fda3b89a0f89159efd015a2d
+  sni: 135.181.109.54
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 14 - ryan
+  server: 46.62.173.175
+  port: 443
+  udp: true
+  type: anytls
+  password: c6b2c9c4d483a46ad329ebc6c9cbb66ccba77cd960cf571f
+  sni: 46.62.173.175
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 15 - ryan
+  server: 212.193.18.183
+  port: 8446
+  udp: true
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  tls: true
+  reality-opts:
+    public-key: f6xhmL1XqUJ4zdkaDsh9GuEyXc0JXM2Dp5KwU8VHb0c
+    short-id: 7f8e9d0c1b2a
+  servername: maps.apple.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: snob-grpc
+- name: 🇫🇮 芬兰 (Finland) 16 - ryan
+  server: 83.219.97.26
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 17 - ryan
+  server: 89.167.8.93
+  port: 443
+  udp: true
+  type: anytls
+  password: a7cb7b6afd56539ff6d5976c8d188aba70de4db553fce1b4
+  sni: 89.167.8.93
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 18 - ryan
+  server: 89.167.45.138
+  port: 443
+  udp: true
+  type: anytls
+  password: 17801e53d30d1294651e44e788bd6b81b94031bac977c6c2
+  sni: 89.167.45.138
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 19 - ryan
+  server: 185.79.138.71
+  port: 448
+  udp: true
+  type: vless
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 20 - ryan
   server: fi.snobvpn.online
   port: 80
   udp: true
@@ -144,21 +213,8 @@ proxies:
     path: /snob-ws
     headers:
       Host: fi.snobvpn.online
-- name: 🇫🇮 芬兰 (Finland) 16 - ryan
-  server: 144.31.27.215
-  port: 43000
-  udp: true
-  type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 17 - ryan
-  server: me2.movieseryalirani.ir
+- name: 🇫🇮 芬兰 (Finland) 21 - ryan
+  server: me3.movieseryalirani.ir
   port: 443
   udp: true
   type: vless
@@ -169,6 +225,14 @@ proxies:
     short-id: 8d814a
   servername: matrix-client.matrix.org
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 22 - ryan
+  server: me6.movieseryalirani.ir
+  port: 57361
+  udp: true
+  type: vmess
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -191,6 +255,11 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 15 - ryan
   - 🇫🇮 芬兰 (Finland) 16 - ryan
   - 🇫🇮 芬兰 (Finland) 17 - ryan
+  - 🇫🇮 芬兰 (Finland) 18 - ryan
+  - 🇫🇮 芬兰 (Finland) 19 - ryan
+  - 🇫🇮 芬兰 (Finland) 20 - ryan
+  - 🇫🇮 芬兰 (Finland) 21 - ryan
+  - 🇫🇮 芬兰 (Finland) 22 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -213,5 +282,10 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 15 - ryan
   - 🇫🇮 芬兰 (Finland) 16 - ryan
   - 🇫🇮 芬兰 (Finland) 17 - ryan
+  - 🇫🇮 芬兰 (Finland) 18 - ryan
+  - 🇫🇮 芬兰 (Finland) 19 - ryan
+  - 🇫🇮 芬兰 (Finland) 20 - ryan
+  - 🇫🇮 芬兰 (Finland) 21 - ryan
+  - 🇫🇮 芬兰 (Finland) 22 - ryan
 rules:
 - MATCH,PROXIES

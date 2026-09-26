@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9086,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
@@ -23,9 +23,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9068,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
@@ -47,9 +47,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 06 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
@@ -58,6 +58,27 @@
       "server_port": 9008,
       "method": "aes-256-cfb",
       "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - ryan",
+      "server": "94.176.234.161",
+      "server_port": 443,
+      "uuid": "d448490d-4ee6-442f-80e1-5e1c186c4ce1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8",
+          "short_id": "dbb2ef1c7c"
+        }
+      }
     },
     {
       "type": "selector",
@@ -70,7 +91,8 @@
         "🇱🇹 立陶宛 (Lithuania) 04 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 05 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 06 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 07 - ryan"
+        "🇱🇹 立陶宛 (Lithuania) 07 - ryan",
+        "🇱🇹 立陶宛 (Lithuania) 08 - ryan"
       ]
     },
     {
@@ -83,7 +105,8 @@
         "🇱🇹 立陶宛 (Lithuania) 04 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 05 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 06 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 07 - ryan"
+        "🇱🇹 立陶宛 (Lithuania) 07 - ryan",
+        "🇱🇹 立陶宛 (Lithuania) 08 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

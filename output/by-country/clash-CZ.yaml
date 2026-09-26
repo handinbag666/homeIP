@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 希腊 (Greece) 01 - ryan
-  server: 85.90.197.220
+- name: 🇨🇿 捷克 (Czech) 01 - ryan
+  server: 13.143.181.220
   port: 443
   udp: true
   type: vless
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  uuid: 7a8d2c3f-d6dd-0004-81d8-cff23d8364ee
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: QfdR5yEjdbaqSet3-XrkDdVjPO9VTRGlUI-MV-b4p38
+  servername: msk1.maxtelemost.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 希腊 (Greece) 01 - ryan
+  - 🇨🇿 捷克 (Czech) 01 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 希腊 (Greece) 01 - ryan
+  - 🇨🇿 捷克 (Czech) 01 - ryan
 rules:
 - MATCH,PROXIES

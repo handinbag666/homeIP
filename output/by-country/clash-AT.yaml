@@ -25,14 +25,6 @@ proxies:
   servername: at.quattro-tech.ru
   client-fingerprint: qq
 - name: 🇦🇹 奥地利 (Austria) 03 - ryan
-  server: 67.159.17.181
-  port: 30443
-  udp: true
-  type: hysteria2
-  password: 0e1506b1-22a4-4b4f-8082-9ddd2efcd28e
-  sni: filesconvert.org
-  skip-cert-verify: true
-- name: 🇦🇹 奥地利 (Austria) 04 - ryan
   server: zcsagftt.selqora.ir
   port: 51595
   udp: true
@@ -45,6 +37,14 @@ proxies:
     short-id: 913175efbe9ddb1d
   servername: play.google.com
   client-fingerprint: chrome
+- name: 🇦🇹 奥地利 (Austria) 04 - ryan
+  server: 67.159.17.181
+  port: 30443
+  udp: true
+  type: hysteria2
+  password: 0e1506b1-22a4-4b4f-8082-9ddd2efcd28e
+  sni: filesconvert.org
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

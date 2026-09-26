@@ -33,19 +33,23 @@
       "tls": {
         "enabled": true,
         "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - ryan",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
+      "server": "152.67.75.161",
+      "server_port": 443,
+      "password": "3a702d4d1de4949005d8431220e040fb",
       "tls": {
         "enabled": true,
         "server_name": "www.bing.com",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c13f29db6a638ad2b211b9ce2669ef27"
       }
     },
     {
@@ -57,7 +61,11 @@
       "tls": {
         "enabled": true,
         "server_name": "cf9.rumedia-cdn.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
       },
       "transport": {
         "type": "ws",
@@ -80,6 +88,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - ryan",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -88,7 +104,8 @@
         "🇨🇭 瑞士 (Switzerland) 02 - ryan",
         "🇨🇭 瑞士 (Switzerland) 03 - ryan",
         "🇨🇭 瑞士 (Switzerland) 04 - ryan",
-        "🇨🇭 瑞士 (Switzerland) 05 - ryan"
+        "🇨🇭 瑞士 (Switzerland) 05 - ryan",
+        "🇨🇭 瑞士 (Switzerland) 06 - ryan"
       ]
     },
     {
@@ -99,7 +116,8 @@
         "🇨🇭 瑞士 (Switzerland) 02 - ryan",
         "🇨🇭 瑞士 (Switzerland) 03 - ryan",
         "🇨🇭 瑞士 (Switzerland) 04 - ryan",
-        "🇨🇭 瑞士 (Switzerland) 05 - ryan"
+        "🇨🇭 瑞士 (Switzerland) 05 - ryan",
+        "🇨🇭 瑞士 (Switzerland) 06 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

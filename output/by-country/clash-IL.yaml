@@ -29,9 +29,22 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇱 以色列 (Israel) 03 - ryan
-  server: 193.202.10.2
+  server: 185.249.153.108
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4cf9c712-11c4-47d8-aa31-a1693a1aa4e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw
+    short-id: 73c9e31ccafda20e
+  servername: www.nordivablog.ru
+  client-fingerprint: firefox
+- name: 🇮🇱 以色列 (Israel) 04 - ryan
+  server: arcturus.yokkastars.com
   port: 40443
   udp: true
   type: vless
@@ -42,73 +55,7 @@ proxies:
     public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
     short-id: db46e2946fc466fd
   servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇮🇱 以色列 (Israel) 04 - ryan
-  server: platform117.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇮🇱 以色列 (Israel) 05 - ryan
-  server: platform118.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇮🇱 以色列 (Israel) 06 - ryan
-  server: platform101.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇮🇱 以色列 (Israel) 07 - ryan
-  server: platform113.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform113
-    headers:
-      Host: platform113.halalkhor.info
-- name: 🇮🇱 以色列 (Israel) 08 - ryan
-  server: platform115.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇮🇱 以色列 (Israel) 09 - ryan
-  server: platform102.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,11 +65,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 - ryan
   - 🇮🇱 以色列 (Israel) 03 - ryan
   - 🇮🇱 以色列 (Israel) 04 - ryan
-  - 🇮🇱 以色列 (Israel) 05 - ryan
-  - 🇮🇱 以色列 (Israel) 06 - ryan
-  - 🇮🇱 以色列 (Israel) 07 - ryan
-  - 🇮🇱 以色列 (Israel) 08 - ryan
-  - 🇮🇱 以色列 (Israel) 09 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,10 +74,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 - ryan
   - 🇮🇱 以色列 (Israel) 03 - ryan
   - 🇮🇱 以色列 (Israel) 04 - ryan
-  - 🇮🇱 以色列 (Israel) 05 - ryan
-  - 🇮🇱 以色列 (Israel) 06 - ryan
-  - 🇮🇱 以色列 (Israel) 07 - ryan
-  - 🇮🇱 以色列 (Israel) 08 - ryan
-  - 🇮🇱 以色列 (Israel) 09 - ryan
 rules:
 - MATCH,PROXIES
