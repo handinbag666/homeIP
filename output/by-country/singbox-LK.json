@@ -5,24 +5,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - ryan",
-      "server": "175.195.149.58",
-      "server_port": 10280,
-      "uuid": "8638521a-7d64-4ad0-9112-83aa1fc19867",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - ryan",
+      "server": "free.sahanwickramasinghe.me",
+      "server_port": 443,
+      "uuid": "3d08ed67-5a47-42d3-a948-ebc7d2eb21f7",
       "tls": {
         "enabled": true,
-        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
-        "insecure": false,
+        "server_name": "aka.ms",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
         }
       }
     },
@@ -31,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - ryan"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - ryan"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

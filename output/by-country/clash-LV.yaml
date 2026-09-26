@@ -13,25 +13,25 @@ proxies:
   password: rpgbNnU9rDDU4aWZ
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - ryan
   server: 185.135.86.175
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - ryan
-  server: 185.135.86.175
   port: 9017
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: HAVAdE3nXhqA5nHp
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - ryan
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - ryan
   server: 185.135.86.175
-  port: 9082
+  port: 9033
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - ryan
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - ryan
   server: 185.135.86.175
   port: 9007
@@ -40,6 +40,27 @@ proxies:
   cipher: aes-256-cfb
   password: kSPmvwdFzGMMW5pY
 - name: 🇱🇻 拉脱维亚 (Latvia) 06 - ryan
+  server: 185.135.86.175
+  port: 9082
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - ryan
+  server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - ryan
+  server: 185.135.86.175
+  port: 9034
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
+- name: 🇱🇻 拉脱维亚 (Latvia) 09 - ryan
   server: 138.124.180.137
   port: 443
   udp: true
@@ -51,14 +72,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - ryan
-  server: 185.135.86.175
-  port: 9033
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +85,8 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 05 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 06 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 07 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 08 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 09 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +99,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 05 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 06 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 07 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 08 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 09 - ryan
 rules:
 - MATCH,PROXIES

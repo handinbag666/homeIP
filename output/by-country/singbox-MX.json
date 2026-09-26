@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - ryan",
-      "server": "mlxy1.mangshe.xyz",
-      "server_port": 2060,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "tls": {
-        "enabled": true,
-        "server_name": "mlxy1.mangshe.xyz",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - ryan",
+      "server": "64.177.90.30",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "BWyPPTusFKhGgzKh"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - ryan"
+        "🇲🇽 墨西哥 (Mexico) 01 - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - ryan"
+        "🇲🇽 墨西哥 (Mexico) 01 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
