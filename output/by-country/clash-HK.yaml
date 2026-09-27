@@ -10,32 +10,74 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: ac2jdpwv1zl10jim
+  password: v7qnj9jvxtnpmj4l
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - ryan
-  server: 119.246.1.143
-  port: 443
+  server: 47.239.6.251
+  port: 13779
   udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: 119.246.1.143
-  skip-cert-verify: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - ryan
-  server: 202.146.222.174
+  server: 82.152.160.245
+  port: 50898
+  udp: true
+  type: hysteria2
+  password: f15900b5-f86b-432d-a67c-45325dc66a2d
+  sni: iosapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - ryan
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: 202.146.222.29
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - ryan
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - ryan
+  server: xg1.mangshe.xyz
+  port: 2060
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: xg1.mangshe.xyz
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - ryan
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: https%253a%252f%252ft.me%252fclashv8%25f0%259f%2587%25a8%25f0%259f%2587%25b3
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - ryan
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - ryan
+  server: 89.185.26.217
+  port: 443
+  udp: true
+  type: vless
+  uuid: f15900b5-f86b-432d-a67c-45325dc66a2d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EXIEsAJq-s30mA0r997iwrR8ijvGLZ7DOTkr_R39QCE
+    short-id: 54fc3827c8
+  servername: nono.hhhkkhktt.xyz
+  client-fingerprint: safari
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - ryan
+  server: 119.246.1.143
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - ryan
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -43,14 +85,52 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - ryan
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - ryan
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 127.0.0.1
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - ryan
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - ryan
   server: 2.27.109.179
   port: 45464
   udp: true
   type: trojan
   password: XuMweB2PWs
   sni: 2.27.109.179.sslip.io
-  skip-cert-verify: true
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - ryan
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - ryan
+  server: 47.238.210.5
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +142,14 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 05 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 06 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 07 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 08 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 09 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 10 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 11 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 12 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 13 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 14 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +161,13 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 05 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 06 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 07 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 08 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 09 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 10 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 11 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 12 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 13 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 14 - ryan
 rules:
 - MATCH,PROXIES
