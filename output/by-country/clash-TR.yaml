@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - ryan
+  server: 93.190.9.35
+  port: 3090
+  udp: true
+  type: vless
+  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -16,7 +25,7 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
+- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
   server: me17.msjia8844.site
   port: 7443
   udp: true
@@ -26,12 +35,6 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select

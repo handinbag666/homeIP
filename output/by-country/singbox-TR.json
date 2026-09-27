@@ -6,6 +6,17 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - ryan",
+      "server": "93.190.9.35",
+      "server_port": 3090,
+      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - ryan",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -25,7 +36,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - ryan",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - ryan",
       "server": "me17.msjia8844.site",
       "server_port": 7443,
       "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
@@ -38,13 +49,6 @@
         "type": "salamander",
         "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - ryan",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
