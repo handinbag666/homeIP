@@ -4,23 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 墨西哥 (Mexico) 01 - ryan
-  server: 45.164.20.114
-  port: 10226
+- name: 🇬🇷 希腊 (Greece) 01 - ryan
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16310
   udp: true
-  type: vless
-  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 墨西哥 (Mexico) 01 - ryan
+  - 🇬🇷 希腊 (Greece) 01 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 墨西哥 (Mexico) 01 - ryan
+  - 🇬🇷 希腊 (Greece) 01 - ryan
 rules:
 - MATCH,PROXIES

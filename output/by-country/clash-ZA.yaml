@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 南非 (South Africa) 01 - ryan
-  server: 139.84.247.164
-  port: 8388
+  server: 102.37.156.224
+  port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
+  password: aduB9HGxQHjA2SBMRjkHX6
 - name: 🇿🇦 南非 (South Africa) 02 - ryan
   server: 102.133.165.160
   port: 16233
@@ -19,24 +19,17 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
 - name: 🇿🇦 南非 (South Africa) 03 - ryan
-  server: 102.37.156.224
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-- name: 🇿🇦 南非 (South Africa) 04 - ryan
-  server: platform102.golnamakcert.top
+  server: platform113.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform102
+    path: /platform113
     headers:
-      Host: platform102.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 05 - ryan
+      Host: platform113.halalkhor.info
+- name: 🇿🇦 南非 (South Africa) 04 - ryan
   server: platform118.golnamakcert.top
   port: 80
   udp: true
@@ -47,6 +40,17 @@ proxies:
     path: /platform118
     headers:
       Host: platform118.halalkhor.info
+- name: 🇿🇦 南非 (South Africa) 05 - ryan
+  server: platform107.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
 - name: 🇿🇦 南非 (South Africa) 06 - ryan
   server: platform101.golnamakcert.top
   port: 80
@@ -59,16 +63,16 @@ proxies:
     headers:
       Host: platform101.halalkhor.info
 - name: 🇿🇦 南非 (South Africa) 07 - ryan
-  server: platform113.golnamakcert.top
+  server: platform102.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform113
+    path: /platform102
     headers:
-      Host: platform113.halalkhor.info
+      Host: platform102.halalkhor.info
 - name: 🇿🇦 南非 (South Africa) 08 - ryan
   server: platform117.golnamakcert.top
   port: 80
@@ -81,6 +85,35 @@ proxies:
     headers:
       Host: platform117.halalkhor.info
 - name: 🇿🇦 南非 (South Africa) 09 - ryan
+  server: platform108.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
+- name: 🇿🇦 南非 (South Africa) 10 - ryan
+  server: platform106.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇿🇦 南非 (South Africa) 11 - ryan
+  server: 139.84.247.164
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
+- name: 🇿🇦 南非 (South Africa) 12 - ryan
   server: platform115.golnamakcert.top
   port: 80
   udp: true
@@ -91,7 +124,18 @@ proxies:
     path: /platform115
     headers:
       Host: platform115.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 10 - ryan
+- name: 🇿🇦 南非 (South Africa) 13 - ryan
+  server: platform103.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇿🇦 南非 (South Africa) 14 - ryan
   server: platform109.golnamakcert.top
   port: 80
   udp: true
@@ -102,17 +146,6 @@ proxies:
     path: /platform109
     headers:
       Host: platform109.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 11 - ryan
-  server: platform107.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,6 +162,9 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 09 - ryan
   - 🇿🇦 南非 (South Africa) 10 - ryan
   - 🇿🇦 南非 (South Africa) 11 - ryan
+  - 🇿🇦 南非 (South Africa) 12 - ryan
+  - 🇿🇦 南非 (South Africa) 13 - ryan
+  - 🇿🇦 南非 (South Africa) 14 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -145,5 +181,8 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 09 - ryan
   - 🇿🇦 南非 (South Africa) 10 - ryan
   - 🇿🇦 南非 (South Africa) 11 - ryan
+  - 🇿🇦 南非 (South Africa) 12 - ryan
+  - 🇿🇦 南非 (South Africa) 13 - ryan
+  - 🇿🇦 南非 (South Africa) 14 - ryan
 rules:
 - MATCH,PROXIES
