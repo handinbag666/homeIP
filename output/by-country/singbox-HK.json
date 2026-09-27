@@ -12,8 +12,24 @@
       "password": "ac2jdpwv1zl10jim"
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - ryan",
+      "server": "119.246.1.143",
+      "server_port": 443,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "119.246.1.143",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - ryan",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -24,80 +40,20 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - ryan",
-      "server": "47.240.80.220",
-      "server_port": 2052,
-      "password": "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.12169.top",
-        "insecure": true
-      }
-    },
-    {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 - ryan",
-      "server": "202.146.222.29",
+      "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "css.rbxcdn.com",
+        "server_name": "off",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - ryan",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/clashv8🇨🇳",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - ryan",
-      "server": "mz.hkychina.com",
-      "server_port": 8443,
-      "password": "HysTeria2026!Proxy",
-      "tls": {
-        "enabled": true,
-        "server_name": "mz.hkychina.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - ryan",
-      "server": "mn.qwer-cn.org",
-      "server_port": 10920,
-      "method": "aes-128-gcm",
-      "password": "3234f051-172a-4d96-9f8d-2aeec41cd6a5"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - ryan",
-      "server": "2.27.109.179",
-      "server_port": 45464,
-      "password": "XuMweB2PWs",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.27.109.179.sslip.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - ryan",
       "server": "hk2.xiaoliyu.cyou",
       "server_port": 4433,
       "password": "19f72087-4591-4d72-930b-2697078ec2be",
@@ -109,34 +65,14 @@
     },
     {
       "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - ryan",
-      "server": "119.246.1.143",
-      "server_port": 443,
-      "password": "BxceQaOe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - ryan",
+      "server": "2.27.109.179",
+      "server_port": 45464,
+      "password": "XuMweB2PWs",
       "tls": {
         "enabled": true,
-        "server_name": "t.me/ripaojiedian",
+        "server_name": "2.27.109.179.sslip.io",
         "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - ryan",
-      "server": "47.83.207.148",
-      "server_port": 443,
-      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "vah4urdzl3jdx5r2.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "vah4urdzl3jdx5r2.v.3dns.vip"
-        }
       }
     },
     {
@@ -149,12 +85,7 @@
         "🇭🇰 中国香港 (Hong Kong) 03 - ryan",
         "🇭🇰 中国香港 (Hong Kong) 04 - ryan",
         "🇭🇰 中国香港 (Hong Kong) 05 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 06 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 07 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 08 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 09 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 10 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 11 - ryan"
+        "🇭🇰 中国香港 (Hong Kong) 06 - ryan"
       ]
     },
     {
@@ -166,12 +97,7 @@
         "🇭🇰 中国香港 (Hong Kong) 03 - ryan",
         "🇭🇰 中国香港 (Hong Kong) 04 - ryan",
         "🇭🇰 中国香港 (Hong Kong) 05 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 06 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 07 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 08 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 09 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 10 - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 11 - ryan"
+        "🇭🇰 中国香港 (Hong Kong) 06 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
