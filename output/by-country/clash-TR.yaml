@@ -5,33 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - ryan
-  server: 185.87.24.168
-  port: 2085
-  udp: true
-  type: vless
-  uuid: ea53420b-e8ad-4e9d-ab21-ddd546231e92
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
-  server: 93.190.8.22
-  port: 3090
-  udp: true
-  type: vless
-  uuid: dca830a2-3c69-4e1b-bc0b-a2ea22af53ba
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
-  server: 93.190.9.131
-  port: 3090
-  udp: true
-  type: vless
-  uuid: dca830a2-3c69-4e1b-bc0b-a2ea22af53ba
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 04 - ryan
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -43,12 +16,17 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - ryan
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
+  server: trnewpnlszhp.mamadhpbot.ir
+  port: 8080
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  uuid: 4e2bba22-e372-4d7f-89c4-7a8e945183c5
+  network: ws
+  ws-opts:
+    path: /real
+    headers:
+      Host: trnewpnlszhp.mamadhpbot.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,9 +34,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
-  - 🇹🇷 土耳其 (Turkey) 03 - ryan
-  - 🇹🇷 土耳其 (Turkey) 04 - ryan
-  - 🇹🇷 土耳其 (Turkey) 05 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,8 +41,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
-  - 🇹🇷 土耳其 (Turkey) 03 - ryan
-  - 🇹🇷 土耳其 (Turkey) 04 - ryan
-  - 🇹🇷 土耳其 (Turkey) 05 - ryan
 rules:
 - MATCH,PROXIES
