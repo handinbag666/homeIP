@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇹 奥地利 (Austria) 01 - ryan",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - ryan",
       "server": "152.53.1.40",
       "server_port": 443,
       "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
@@ -25,12 +33,24 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - ryan",
-      "server": "82.110.60.9",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - ryan",
+      "server": "g4.haxat.bestvbest.ir",
+      "server_port": 56126,
+      "uuid": "c5cfb08f-e42d-4a08-94e1-4f591a2f7a6f",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oNv1vk-DHPrbFy__k2B7Am2lTtKfW4dXM7shzi7VFyk",
+          "short_id": "228b68f87a662053"
+        }
+      }
     },
     {
       "type": "selector",
@@ -38,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - ryan",
-        "🇦🇹 奥地利 (Austria) 02 - ryan"
+        "🇦🇹 奥地利 (Austria) 02 - ryan",
+        "🇦🇹 奥地利 (Austria) 03 - ryan"
       ]
     },
     {
@@ -46,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - ryan",
-        "🇦🇹 奥地利 (Austria) 02 - ryan"
+        "🇦🇹 奥地利 (Austria) 02 - ryan",
+        "🇦🇹 奥地利 (Austria) 03 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

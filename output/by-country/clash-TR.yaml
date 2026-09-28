@@ -5,15 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - ryan
-  server: 93.190.9.35
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: index.harmonica01.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
+  server: 93.190.9.52
   port: 3090
   udp: true
   type: vless
-  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
+  uuid: 52e8bce3-b255-486d-beb2-aa1b549c44b1
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 02 - ryan
+- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
+  server: me17.msjia8844.site
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇷 土耳其 (Turkey) 04 - ryan
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -25,16 +46,6 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - ryan
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +54,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +63,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 - ryan
 rules:
 - MATCH,PROXIES

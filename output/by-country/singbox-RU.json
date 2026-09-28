@@ -4,16 +4,134 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - ryan",
+      "server": "162.159.45.19",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - ryan",
+      "server": "104.18.46.46",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - ryan",
+      "server": "172.67.191.121",
+      "server_port": 443,
+      "password": "Telegram_healer_config",
+      "tls": {
+        "enabled": true,
+        "server_name": "47hr9isj-655383snd63hjap38q6t.k-f3vpqaltfsxbtaxe.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/V2VWNDZAAEIdXVjOCkLfJnefnR5Pum?ed=2560",
+        "headers": {
+          "Host": "47hr9isj-655383snd63hjap38q6t.k-f3vpqaltfsxbtaxe.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - ryan",
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - ryan",
       "server": "176.32.35.2",
       "server_port": 10090,
       "method": "aes-256-gcm",
       "password": "895b4b796a357570"
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - ryan",
+      "server": "172.66.47.45",
+      "server_port": 2083,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "wk1.f1w.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "wk1.f1w.de5.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - ryan",
+      "server": "130.49.188.4",
+      "server_port": 443,
+      "uuid": "85261643-2fd5-4889-8da9-43abc3c08405",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lk.s.dn.iki-servers.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GW-DWwk3vtXtXBEqQxY_Cf83JIisyyk34rUrtkMZ90g",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - ryan",
+      "server": "31.130.151.110",
+      "server_port": 888,
+      "method": "chacha20-ietf-poly1305",
+      "password": "eGhEETcnlO2yHa1Bw-xW1g"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - ryan",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I="
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - ryan",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10 - ryan",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -25,7 +143,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - ryan",
+      "tag": "🇷🇺 俄罗斯 (Russia) 11 - ryan",
+      "server": "fbsv6.guardora.pro",
+      "server_port": 443,
+      "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+      "tls": {
+        "enabled": true,
+        "server_name": "fbsv6.guardora.pro",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "fbsv6.guardora.pro"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 12 - ryan",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -50,7 +191,16 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - ryan",
         "🇷🇺 俄罗斯 (Russia) 02 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 03 - ryan"
+        "🇷🇺 俄罗斯 (Russia) 03 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 04 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 05 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 06 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 07 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 08 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 09 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 10 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 11 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 12 - ryan"
       ]
     },
     {
@@ -59,7 +209,16 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - ryan",
         "🇷🇺 俄罗斯 (Russia) 02 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 03 - ryan"
+        "🇷🇺 俄罗斯 (Russia) 03 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 04 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 05 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 06 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 07 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 08 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 09 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 10 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 11 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 12 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
