@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - ryan
+  server: 77.83.247.207
+  port: 18285
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 02 - ryan
   server: 45.149.147.97
   port: 443
   udp: true
@@ -17,46 +24,7 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02 - ryan
-  server: 179.254.109.54
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-0003-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: cosw.ggisopi.su
-  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 03 - ryan
-  server: 185.79.138.71
-  port: 448
-  udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - ryan
-  server: 87.120.107.246
-  port: 443
-  udp: true
-  type: vless
-  uuid: 10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2
-  tls: true
-  reality-opts:
-    public-key: 20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc
-    short-id: fd4f9db207ff64db
-  servername: dl.google.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel_nl
-- name: 🇫🇮 芬兰 (Finland) 05 - ryan
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -68,7 +36,52 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04 - ryan
+  server: 83.219.97.26
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - ryan
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 06 - ryan
+  server: 185.79.138.71
+  port: 448
+  udp: true
+  type: vless
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - ryan
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - ryan
   server: 144.31.27.215
   port: 43000
   udp: true
@@ -81,34 +94,19 @@ proxies:
     short-id: 568d87a47271344e
   servername: 144.31.27.215
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - ryan
-  server: 212.193.18.183
-  port: 8446
+- name: 🇫🇮 芬兰 (Finland) 09 - ryan
+  server: 153.52.117.131
+  port: 443
   udp: true
   type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
   tls: true
-  reality-opts:
-    public-key: f6xhmL1XqUJ4zdkaDsh9GuEyXc0JXM2Dp5KwU8VHb0c
-    short-id: 7f8e9d0c1b2a
-  servername: maps.apple.com
+  servername: fi.astrafic.ru
+  skip-cert-verify: false
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: snob-grpc
-- name: 🇫🇮 芬兰 (Finland) 08 - ryan
-  server: 95.217.24.236
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
-    short-id: a32cfb5deca913ad
-  servername: 95.217.24.236
-  client-fingerprint: random
+    grpc-service-name: vless-grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -122,6 +120,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - ryan
   - 🇫🇮 芬兰 (Finland) 07 - ryan
   - 🇫🇮 芬兰 (Finland) 08 - ryan
+  - 🇫🇮 芬兰 (Finland) 09 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -135,5 +134,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - ryan
   - 🇫🇮 芬兰 (Finland) 07 - ryan
   - 🇫🇮 芬兰 (Finland) 08 - ryan
+  - 🇫🇮 芬兰 (Finland) 09 - ryan
 rules:
 - MATCH,PROXIES

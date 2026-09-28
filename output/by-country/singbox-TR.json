@@ -6,42 +6,34 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - ryan",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "transport": {
-        "type": "ws",
-        "path": "/axch1mttbxz2k55y01",
-        "headers": {
-          "Host": "index.harmonica01.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - ryan",
-      "server": "93.190.9.52",
-      "server_port": 3090,
-      "uuid": "52e8bce3-b255-486d-beb2-aa1b549c44b1",
+      "server": "185.87.24.168",
+      "server_port": 2085,
+      "uuid": "ea53420b-e8ad-4e9d-ab21-ddd546231e92",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - ryan",
+      "server": "93.190.8.22",
+      "server_port": 3090,
+      "uuid": "dca830a2-3c69-4e1b-bc0b-a2ea22af53ba",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - ryan",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-      "tls": {
-        "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+      "server": "93.190.9.131",
+      "server_port": 3090,
+      "uuid": "dca830a2-3c69-4e1b-bc0b-a2ea22af53ba",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
@@ -55,7 +47,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -65,6 +57,13 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - ryan",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -72,7 +71,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - ryan",
         "🇹🇷 土耳其 (Turkey) 02 - ryan",
         "🇹🇷 土耳其 (Turkey) 03 - ryan",
-        "🇹🇷 土耳其 (Turkey) 04 - ryan"
+        "🇹🇷 土耳其 (Turkey) 04 - ryan",
+        "🇹🇷 土耳其 (Turkey) 05 - ryan"
       ]
     },
     {
@@ -82,7 +82,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - ryan",
         "🇹🇷 土耳其 (Turkey) 02 - ryan",
         "🇹🇷 土耳其 (Turkey) 03 - ryan",
-        "🇹🇷 土耳其 (Turkey) 04 - ryan"
+        "🇹🇷 土耳其 (Turkey) 04 - ryan",
+        "🇹🇷 土耳其 (Turkey) 05 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
