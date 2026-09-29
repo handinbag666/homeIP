@@ -7,37 +7,69 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - ryan",
       "server": "185.135.86.175",
-      "server_port": 9033,
-      "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - ryan",
-      "server": "185.135.86.175",
       "server_port": 9034,
       "method": "aes-256-cfb",
       "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - ryan",
+      "server": "185.135.86.175",
+      "server_port": 9094,
+      "method": "aes-256-cfb",
+      "password": "rpgbNnU9rDDU4aWZ"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - ryan",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9036,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "hbtvgUz5uNYyB3Rf"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - ryan",
+      "server": "185.135.86.175",
+      "server_port": 9007,
+      "method": "aes-256-cfb",
+      "password": "kSPmvwdFzGMMW5pY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - ryan",
       "server": "185.135.86.175",
       "server_port": 9086,
       "method": "aes-256-cfb",
       "password": "37Z4TFCYhfxcpc9Q"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - ryan",
+      "server": "185.135.86.175",
+      "server_port": 9082,
+      "method": "aes-256-cfb",
+      "password": "45xgMgm386pjWjTx"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - ryan",
+      "server": "185.135.86.175",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - ryan",
+      "server": "185.135.86.175",
+      "server_port": 9033,
+      "method": "aes-256-cfb",
+      "password": "UTJA57ypk2XKQpnm"
+    },
+    {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - ryan",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - ryan",
       "server": "31.57.28.147",
       "server_port": 443,
       "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
@@ -58,23 +90,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - ryan",
-      "server": "193.163.203.199",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - ryan",
+      "server": "latvia-3.kochvpn.pw",
       "server_port": 443,
-      "uuid": "3e2591b2-4739-4c59-b540-344f0b6505ac",
-      "flow": "xtls-rprx-vision",
+      "uuid": "8de0e6f4-d365-fa64-d5ba-eed9ea513e06",
       "tls": {
         "enabled": true,
-        "server_name": "x6.megabitvpn.org",
+        "server_name": "latvia-3.kochvpn.pw",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xa2v36oJSdYGM1SSiMYyehw9RTdlBHOLcE5-YOK6unE",
-          "short_id": "3c7ab85b281ecc8f"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/ws"
       }
     },
     {
@@ -87,7 +118,11 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - ryan",
         "🇱🇻 拉脱维亚 (Latvia) 04 - ryan",
         "🇱🇻 拉脱维亚 (Latvia) 05 - ryan",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - ryan"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - ryan",
+        "🇱🇻 拉脱维亚 (Latvia) 07 - ryan",
+        "🇱🇻 拉脱维亚 (Latvia) 08 - ryan",
+        "🇱🇻 拉脱维亚 (Latvia) 09 - ryan",
+        "🇱🇻 拉脱维亚 (Latvia) 10 - ryan"
       ]
     },
     {
@@ -99,7 +134,11 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - ryan",
         "🇱🇻 拉脱维亚 (Latvia) 04 - ryan",
         "🇱🇻 拉脱维亚 (Latvia) 05 - ryan",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - ryan"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - ryan",
+        "🇱🇻 拉脱维亚 (Latvia) 07 - ryan",
+        "🇱🇻 拉脱维亚 (Latvia) 08 - ryan",
+        "🇱🇻 拉脱维亚 (Latvia) 09 - ryan",
+        "🇱🇻 拉脱维亚 (Latvia) 10 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,61 +6,67 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - ryan
   server: 195.238.126.20
-  port: 9011
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - ryan
   server: 195.238.126.20
-  port: 9086
+  port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
+  password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - ryan
-  server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   server: 195.238.126.20
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - ryan
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - ryan
-  server: 62.77.158.1
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - ryan
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - ryan
+  server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - ryan
+  server: lithuania-2.kochvpn.pw
   port: 443
   udp: true
   type: vless
-  uuid: 2eceaf2b-a775-5a9c-9990-dad2b3660fb6
-  flow: xtls-rprx-vision
+  uuid: 2923fef2-3b52-a9c2-cde4-c2343eb74a2c
   tls: true
-  reality-opts:
-    public-key: sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs
-    short-id: 6a
-  servername: online.1c.ru
-  client-fingerprint: chrome
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - ryan
-  server: 176.123.165.180
-  port: 9881
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabbccdd
-  servername: dl.google.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - ryan
+  servername: lithuania-2.kochvpn.pw
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /stream/ws
+- name: 🇱🇹 立陶宛 (Lithuania) 09 - ryan
   server: 94.176.234.161
   port: 443
   udp: true
@@ -72,7 +78,7 @@ proxies:
     public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
     short-id: dbb2ef1c7c
   servername: www.intel.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,6 +91,8 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 06 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 07 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 08 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 09 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,5 +105,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 06 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 07 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 08 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 09 - ryan
 rules:
 - MATCH,PROXIES

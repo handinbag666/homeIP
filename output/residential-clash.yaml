@@ -4,76 +4,80 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - ryan
-  server: 172.64.42.85
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan
-  server: b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  sni: b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - ryan
-  server: hk01.kfc-520.com
-  port: 60001
-  udp: true
-  type: hysteria2
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
-  sni: hk01.kfc-520.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
-  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
-  port: 443
-  udp: true
-  type: anytls
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - ryan
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇭🇰 中国香港 (Hong Kong) 06 (移动家宽) - ryan
-  server: dog-hk.kunlun01dns.com
-  port: 21041
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
+  server: dog-tw.kunlun01dns.com
+  port: 21035
   udp: true
   type: vmess
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16116
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
+  server: tw3.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: tw3.dexlos.com
+  skip-cert-verify: false
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - ryan
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
+  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
+  port: 443
+  udp: true
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 06 (家宽) - ryan
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - ryan
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - ryan
-  - 🇭🇰 中国香港 (Hong Kong) 06 (移动家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
+  - 🇺🇸 美国 (United States) 06 (家宽) - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - ryan
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - ryan
-  - 🇭🇰 中国香港 (Hong Kong) 06 (移动家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
+  - 🇺🇸 美国 (United States) 06 (家宽) - ryan
 rules:
 - MATCH,PROXIES
