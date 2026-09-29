@@ -13,61 +13,54 @@ proxies:
   password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - ryan
   server: 195.238.126.20
-  port: 9078
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - ryan
-  server: 195.238.126.84
-  port: 9039
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - ryan
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - ryan
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - ryan
   server: 195.238.126.20
   port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - ryan
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - ryan
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   server: 195.238.126.20
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - ryan
-  server: 195.238.126.20
-  port: 9086
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - ryan
+  server: 62.77.158.1
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 10 - ryan
+  type: vless
+  uuid: 2eceaf2b-a775-5a9c-9990-dad2b3660fb6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs
+    short-id: 6a
+  servername: online.1c.ru
+  client-fingerprint: chrome
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - ryan
+  server: 176.123.165.180
+  port: 9881
+  udp: true
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aabbccdd
+  servername: dl.google.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - ryan
   server: 94.176.234.161
   port: 443
   udp: true
@@ -92,9 +85,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 06 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 07 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 08 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 09 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 10 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,8 +97,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 06 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 07 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 08 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 09 - ryan
-  - 🇱🇹 立陶宛 (Lithuania) 10 - ryan
 rules:
 - MATCH,PROXIES
