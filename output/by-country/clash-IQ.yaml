@@ -5,7 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - ryan
-  server: arcturus.yokkastars.com
+  server: 172.64.153.235
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+  tls: true
+  servername: socks5.revil-time3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /socks5://128.140.46.169:13482
+    headers:
+      Host: socks5.revil-time3.workers.dev
+- name: 🇮🇶 IQ 02 - ryan
+  server: 104.19.164.155
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
+  tls: true
+  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
+- name: 🇮🇶 IQ 03 - ryan
+  server: 172.67.167.77
+  port: 443
+  udp: true
+  type: vless
+  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
+  tls: true
+  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/6871nrbnl9WsdAiOUInt
+    headers:
+      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
+- name: 🇮🇶 IQ 04 - ryan
+  server: 178.17.57.34
   port: 40443
   udp: true
   type: vless
@@ -23,11 +68,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - ryan
+  - 🇮🇶 IQ 02 - ryan
+  - 🇮🇶 IQ 03 - ryan
+  - 🇮🇶 IQ 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - ryan
+  - 🇮🇶 IQ 02 - ryan
+  - 🇮🇶 IQ 03 - ryan
+  - 🇮🇶 IQ 04 - ryan
 rules:
 - MATCH,PROXIES
