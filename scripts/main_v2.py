@@ -713,6 +713,10 @@ def parse_trojan(uri: str):
         return None
     password, host, port, query, _ = m.groups()
     params = _query_dict(query or "")
+      # ★ 校验 sni 是否为有效公网域名，无效则丢弃该节点
+    sni = params.get("sni", params.get("peer", host))
+    if sni and "." not in sni:
+        return None
     outbound = {
         "type": "trojan",
         "tag": "node",
