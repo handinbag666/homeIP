@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - ryan",
-      "server": "13.48.104.64",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - ryan",
       "server": "70.34.212.124",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -21,7 +13,31 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - ryan",
+      "server": "51.20.96.231",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - ryan",
+      "server": "51.20.72.15",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - ryan",
+      "server": "51.20.86.152",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - ryan",
       "server": "51.20.143.248",
       "server_port": 443,
       "method": "aes-256-cfb",
@@ -29,7 +45,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - ryan",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - ryan",
       "server": "193.42.39.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -52,16 +68,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - ryan",
-      "server": "51.20.96.231",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - ryan",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - ryan",
       "server": "sw-01.vacvps.com",
       "server_port": 443,
       "uuid": "84a3061b-3573-4a3c-a631-f26c31209268",
@@ -82,7 +90,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - ryan",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - ryan",
       "server": "5.157.10.148",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -102,28 +110,8 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - ryan",
-      "server": "svip.skycon808.com",
-      "server_port": 60005,
-      "password": "13f0acfa-38c1-4e82-a758-583aa31740df",
-      "tls": {
-        "enabled": true,
-        "server_name": "xjp18.2uuzhe.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - ryan",
-      "server": "51.20.86.152",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 10 - ryan",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - ryan",
       "server": "62.60.159.81",
       "server_port": 2053,
       "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
@@ -146,6 +134,42 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 - ryan",
+      "server": "176.108.246.110",
+      "server_port": 9830,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇸🇪 瑞典 (Sweden) 11 - ryan",
+      "server": "svip.skycon808.com",
+      "server_port": 60005,
+      "password": "13f0acfa-38c1-4e82-a758-583aa31740df",
+      "tls": {
+        "enabled": true,
+        "server_name": "xjp18.2uuzhe.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -159,7 +183,8 @@
         "🇸🇪 瑞典 (Sweden) 07 - ryan",
         "🇸🇪 瑞典 (Sweden) 08 - ryan",
         "🇸🇪 瑞典 (Sweden) 09 - ryan",
-        "🇸🇪 瑞典 (Sweden) 10 - ryan"
+        "🇸🇪 瑞典 (Sweden) 10 - ryan",
+        "🇸🇪 瑞典 (Sweden) 11 - ryan"
       ]
     },
     {
@@ -175,7 +200,8 @@
         "🇸🇪 瑞典 (Sweden) 07 - ryan",
         "🇸🇪 瑞典 (Sweden) 08 - ryan",
         "🇸🇪 瑞典 (Sweden) 09 - ryan",
-        "🇸🇪 瑞典 (Sweden) 10 - ryan"
+        "🇸🇪 瑞典 (Sweden) 10 - ryan",
+        "🇸🇪 瑞典 (Sweden) 11 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

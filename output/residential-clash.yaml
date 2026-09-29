@@ -4,35 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
-  server: dog-tw.kunlun01dns.com
-  port: 21035
+- name: 🇨🇦 加拿大 (Canada) 01 (家宽) - ryan
+  server: 188.114.97.6
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
+  server: dog-hk.kunlun01dns.com
+  port: 21022
   udp: true
   type: vmess
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16116
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan
+  server: dog-hk.kunlun01dns.com
+  port: 21019
   udp: true
   type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
-  server: tw3.dexlos.com
-  port: 8080
-  udp: true
-  type: tuic
-  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  sni: tw3.dexlos.com
-  skip-cert-verify: false
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
 - name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - ryan
   server: test.keoplentuio.xyz
   port: 2053
@@ -47,37 +45,25 @@ proxies:
   password: 9sK2mP8xQ7vL3nZ6
   sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 06 (家宽) - ryan
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - ryan
   - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan
   - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
-  - 🇺🇸 美国 (United States) 06 (家宽) - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - ryan
   - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan
   - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
-  - 🇺🇸 美国 (United States) 06 (家宽) - ryan
 rules:
 - MATCH,PROXIES
