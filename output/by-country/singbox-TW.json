@@ -4,78 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - ryan",
-      "server": "165.154.195.38",
-      "server_port": 35034,
-      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
-      "security": "auto"
-    },
-    {
-      "type": "tuic",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - ryan",
-      "server": "tw3.dexlos.com",
-      "server_port": 8080,
-      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "tls": {
-        "enabled": true,
-        "server_name": "tw3.dexlos.com",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - ryan",
-      "server": "160.187.100.109",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - ryan",
       "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
+        "server_name": "https://t.me/WangCai2",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - ryan",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - ryan",
-      "server": "35.201.181.122",
-      "server_port": 443,
-      "uuid": "22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0",
-          "short_id": "32f66f37df3f58d2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - ryan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - ryan",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -93,6 +47,14 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - ryan",
+      "server": "165.154.195.38",
+      "server_port": 35034,
+      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -100,9 +62,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - ryan",
         "🇹🇼 中国台湾 (Taiwan) 02 - ryan",
         "🇹🇼 中国台湾 (Taiwan) 03 - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 04 - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 05 - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 06 - ryan"
+        "🇹🇼 中国台湾 (Taiwan) 04 - ryan"
       ]
     },
     {
@@ -112,9 +72,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - ryan",
         "🇹🇼 中国台湾 (Taiwan) 02 - ryan",
         "🇹🇼 中国台湾 (Taiwan) 03 - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 04 - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 05 - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 06 - ryan"
+        "🇹🇼 中国台湾 (Taiwan) 04 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,19 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - ryan
-  server: 213.183.63.60
-  port: 9098
+  server: 199.232.78.101
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
   server: 213.183.63.60
-  port: 9054
+  port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
   server: 213.183.63.60
   port: 9064
@@ -27,32 +31,32 @@ proxies:
   password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
   server: 213.183.63.60
-  port: 9028
+  port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
+  password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - ryan
   server: 213.183.63.60
-  port: 9085
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - ryan
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - ryan
   server: 213.183.63.60
   port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - ryan
-  server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 08 - ryan
   server: 213.183.63.60
   port: 9049
@@ -61,6 +65,13 @@ proxies:
   cipher: aes-256-cfb
   password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 09 - ryan
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - ryan
   server: 193.148.59.178
   port: 443
   udp: true
@@ -73,7 +84,7 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - ryan
+- name: 🇧🇬 保加利亚 (Bulgaria) 11 - ryan
   server: 136.175.82.85
   port: 18775
   udp: true
@@ -101,6 +112,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 09 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 10 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,5 +128,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 09 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 10 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - ryan
 rules:
 - MATCH,PROXIES

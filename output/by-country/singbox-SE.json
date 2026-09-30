@@ -6,15 +6,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - ryan",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "server": "13.49.76.55",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - ryan",
-      "server": "51.20.72.15",
+      "server": "51.20.96.231",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -22,31 +22,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - ryan",
-      "server": "13.48.104.64",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - ryan",
-      "server": "51.20.86.152",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - ryan",
-      "server": "13.49.76.55",
+      "server": "51.20.122.188",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - ryan",
-      "server": "79.141.174.147",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - ryan",
+      "server": "193.42.39.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -54,7 +38,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -69,7 +53,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - ryan",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - ryan",
       "server": "5.157.10.148",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -90,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - ryan",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - ryan",
       "server": "62.60.159.81",
       "server_port": 2053,
       "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
@@ -113,6 +97,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - ryan",
+      "server": "13.48.104.64",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -123,8 +115,7 @@
         "🇸🇪 瑞典 (Sweden) 04 - ryan",
         "🇸🇪 瑞典 (Sweden) 05 - ryan",
         "🇸🇪 瑞典 (Sweden) 06 - ryan",
-        "🇸🇪 瑞典 (Sweden) 07 - ryan",
-        "🇸🇪 瑞典 (Sweden) 08 - ryan"
+        "🇸🇪 瑞典 (Sweden) 07 - ryan"
       ]
     },
     {
@@ -137,8 +128,7 @@
         "🇸🇪 瑞典 (Sweden) 04 - ryan",
         "🇸🇪 瑞典 (Sweden) 05 - ryan",
         "🇸🇪 瑞典 (Sweden) 06 - ryan",
-        "🇸🇪 瑞典 (Sweden) 07 - ryan",
-        "🇸🇪 瑞典 (Sweden) 08 - ryan"
+        "🇸🇪 瑞典 (Sweden) 07 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

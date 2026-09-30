@@ -28,8 +28,20 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - ryan
+  server: 92b6d0ff54070b56.IROnlY4l.Ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0b47cd2c-cd11-4398-a323-ef4a08475e77
+  tls: true
+  reality-opts:
+    public-key: pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew
+    short-id: 37d86205006fe1fb
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - ryan
   server: 85.192.48.142
   port: 443
   udp: true
@@ -41,7 +53,7 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: firefox
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +62,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +71,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - ryan
   - 🇹🇷 土耳其 (Turkey) 02 - ryan
   - 🇹🇷 土耳其 (Turkey) 03 - ryan
+  - 🇹🇷 土耳其 (Turkey) 04 - ryan
 rules:
 - MATCH,PROXIES
