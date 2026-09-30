@@ -6,6 +6,17 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - ryan",
+      "server": "93.190.9.125",
+      "server_port": 3090,
+      "uuid": "be0df112-9edc-4580-8e7f-626688cd048d",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - ryan",
       "server": "85.192.48.142",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -15,33 +26,12 @@
         "server_name": "nvidia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
           "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "short_id": "db04ce8bdb8900f1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - ryan",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
         }
       }
     },
@@ -56,7 +46,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -66,25 +56,9 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - ryan",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-      "tls": {
-        "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - ryan",
-      "server": "19990ed1bb252449.ironly4l.ir",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - ryan",
+      "server": "19990ed1bb252449.IROnlY4l.Ir",
       "server_port": 443,
       "uuid": "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7",
       "tls": {
@@ -109,8 +83,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - ryan",
         "🇹🇷 土耳其 (Turkey) 02 - ryan",
         "🇹🇷 土耳其 (Turkey) 03 - ryan",
-        "🇹🇷 土耳其 (Turkey) 04 - ryan",
-        "🇹🇷 土耳其 (Turkey) 05 - ryan"
+        "🇹🇷 土耳其 (Turkey) 04 - ryan"
       ]
     },
     {
@@ -120,8 +93,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - ryan",
         "🇹🇷 土耳其 (Turkey) 02 - ryan",
         "🇹🇷 土耳其 (Turkey) 03 - ryan",
-        "🇹🇷 土耳其 (Turkey) 04 - ryan",
-        "🇹🇷 土耳其 (Turkey) 05 - ryan"
+        "🇹🇷 土耳其 (Turkey) 04 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
