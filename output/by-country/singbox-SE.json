@@ -14,7 +14,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - ryan",
-      "server": "13.49.76.55",
+      "server": "51.20.72.15",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -22,7 +22,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - ryan",
-      "server": "51.20.96.231",
+      "server": "13.48.104.64",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -30,14 +30,22 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - ryan",
-      "server": "51.20.143.248",
+      "server": "51.20.86.152",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - ryan",
+      "server": "13.49.76.55",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - ryan",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - ryan",
       "server": "79.141.174.147",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -46,7 +54,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -61,8 +69,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - ryan",
-      "server": "surstreming.vvzzkontaktezzvv.garden",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - ryan",
+      "server": "5.157.10.148",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
       "flow": "xtls-rprx-vision",
@@ -71,7 +79,7 @@
         "server_name": "surstreming.vvzzkontaktezzvv.garden",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -82,7 +90,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - ryan",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - ryan",
       "server": "62.60.159.81",
       "server_port": 2053,
       "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
@@ -91,7 +99,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -115,7 +123,8 @@
         "🇸🇪 瑞典 (Sweden) 04 - ryan",
         "🇸🇪 瑞典 (Sweden) 05 - ryan",
         "🇸🇪 瑞典 (Sweden) 06 - ryan",
-        "🇸🇪 瑞典 (Sweden) 07 - ryan"
+        "🇸🇪 瑞典 (Sweden) 07 - ryan",
+        "🇸🇪 瑞典 (Sweden) 08 - ryan"
       ]
     },
     {
@@ -128,7 +137,8 @@
         "🇸🇪 瑞典 (Sweden) 04 - ryan",
         "🇸🇪 瑞典 (Sweden) 05 - ryan",
         "🇸🇪 瑞典 (Sweden) 06 - ryan",
-        "🇸🇪 瑞典 (Sweden) 07 - ryan"
+        "🇸🇪 瑞典 (Sweden) 07 - ryan",
+        "🇸🇪 瑞典 (Sweden) 08 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

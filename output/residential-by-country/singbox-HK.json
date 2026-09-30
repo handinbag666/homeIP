@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "anytls",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - ryan",
-      "server": "hk01.kfc-520.com",
-      "server_port": 60001,
-      "password": "5ec96249-b753-317a-b065-b67ad66b8185",
+      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
+      "server_port": 443,
+      "password": "9sK2mP8xQ7vL3nZ6",
       "tls": {
         "enabled": true,
-        "server_name": "hk01.kfc-520.com",
+        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
         "insecure": true
       }
     },

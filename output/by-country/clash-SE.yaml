@@ -12,27 +12,34 @@ proxies:
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02 - ryan
-  server: 13.49.76.55
+  server: 51.20.72.15
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 03 - ryan
-  server: 51.20.96.231
+  server: 13.48.104.64
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 04 - ryan
-  server: 51.20.143.248
+  server: 51.20.86.152
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 05 - ryan
+  server: 13.49.76.55
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 06 - ryan
   server: 79.141.174.147
   port: 33743
   udp: true
@@ -42,12 +49,12 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 06 - ryan
-  server: surstreming.vvzzkontaktezzvv.garden
+- name: 🇸🇪 瑞典 (Sweden) 07 - ryan
+  server: 5.157.10.148
   port: 443
   udp: true
   type: vless
@@ -58,8 +65,8 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 07 - ryan
+  client-fingerprint: ios
+- name: 🇸🇪 瑞典 (Sweden) 08 - ryan
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -70,7 +77,7 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
@@ -86,6 +93,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - ryan
   - 🇸🇪 瑞典 (Sweden) 06 - ryan
   - 🇸🇪 瑞典 (Sweden) 07 - ryan
+  - 🇸🇪 瑞典 (Sweden) 08 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,5 +106,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - ryan
   - 🇸🇪 瑞典 (Sweden) 06 - ryan
   - 🇸🇪 瑞典 (Sweden) 07 - ryan
+  - 🇸🇪 瑞典 (Sweden) 08 - ryan
 rules:
 - MATCH,PROXIES
