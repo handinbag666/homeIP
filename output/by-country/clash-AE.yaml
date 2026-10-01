@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - ryan
+  server: 104.143.223.230
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 8dafd22b-72fc-4d78-ae00-33affecb8fcd
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 02 - ryan
   server: 78.40.195.140
   port: 443
   udp: true
@@ -17,18 +26,17 @@ proxies:
     short-id: 98096455d963bdbb
   servername: www.booking.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - ryan
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - ryan
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 04 - ryan
   server: 146.70.102.82
   port: 443
   udp: true
@@ -41,6 +49,15 @@ proxies:
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
   client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - ryan
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +66,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - ryan
   - 🇦🇪 阿联酋 (UAE) 02 - ryan
   - 🇦🇪 阿联酋 (UAE) 03 - ryan
+  - 🇦🇪 阿联酋 (UAE) 04 - ryan
+  - 🇦🇪 阿联酋 (UAE) 05 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,5 +76,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - ryan
   - 🇦🇪 阿联酋 (UAE) 02 - ryan
   - 🇦🇪 阿联酋 (UAE) 03 - ryan
+  - 🇦🇪 阿联酋 (UAE) 04 - ryan
+  - 🇦🇪 阿联酋 (UAE) 05 - ryan
 rules:
 - MATCH,PROXIES

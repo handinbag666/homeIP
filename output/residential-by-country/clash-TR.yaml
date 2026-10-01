@@ -5,22 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan
-  server: tcdnu.azad0namah.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
-  tls: true
-  servername: tcdnu.azad0namah.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tuws/
-    headers:
-      Host: tcdnu.azad0namah.ir
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - ryan
-  server: test.keoplentuio.xyz
+  server: 178.83.46.216
   port: 2053
   udp: true
   type: vless
@@ -31,13 +16,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - ryan
 rules:
 - MATCH,PROXIES
