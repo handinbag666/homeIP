@@ -5,20 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - ryan
-  server: 212.192.13.143
-  port: 20999
+  server: 162.159.0.53
+  port: 2052
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - ryan
-  server: 46.29.163.78
-  port: 20999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - ryan
   server: xg1.mangshe.xyz
   port: 2060
   udp: true
@@ -26,54 +23,14 @@ proxies:
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: xg1.mangshe.xyz
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - ryan
+  server: 46.29.163.78
+  port: 20999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - ryan
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fclashv8
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - ryan
-  server: bgroup.hk1.ilovegairport.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8079ccd4-4b4b-44e2-92f0-8f0367ad9c24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Z0sxSuzxnWYa5FNTZ-W4ImxQd674VG4KfmOBqlcudjU
-    short-id: 7c7ad24684
-  servername: ap-east-1.console.aws.amazon.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - ryan
-  server: 195.58.144.56
-  port: 11907
-  udp: true
-  type: vless
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  tls: true
-  servername: 195.58.144.56
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - ryan
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - ryan
-  server: 31.57.248.176
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: b0917015b656b3dd2286b5633af0c5c1
-  sni: 31.57.248.176
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - ryan
   server: nas.aizhzo.com
   port: 5010
   udp: true
@@ -83,15 +40,31 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - ryan
-  server: mz.hkychina.com
-  port: 8443
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - ryan
+  server: 202.146.222.29
+  port: 443
   udp: true
   type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2����
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - ryan
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - ryan
+  server: 8f3c6c53-tmkao0-u4zl7f-1jk6u.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
+  sni: 8f3c6c53-tmkao0-u4zl7f-1jk6u.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - ryan
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - ryan
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -107,52 +80,15 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - ryan
-  server: 194.99.79.26
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - ryan
+  server: els.mangshe.xyz
+  port: 2060
   udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aksai.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - ryan
-  server: 5.223.51.84
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  tls: true
-  servername: hk.152568.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - ryan
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  port: 443
-  udp: true
-  type: anytls
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: els.mangshe.xyz
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - ryan
-  server: 47.240.80.220
-  port: 2052
-  udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: vpn.12169.top
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - ryan
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - ryan
   server: 207.57.135.199
   port: 8443
   udp: true
@@ -167,7 +103,15 @@ proxies:
     path: /cdn/packages/runtime-core.tar.gz
     headers:
       Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - ryan
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - ryan
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - ryan
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -175,14 +119,78 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - ryan
-  server: ru1.xiaoliyu.cyou
-  port: 18333
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - ryan
+  server: 194.99.79.26
+  port: 443
   udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: ru1.xiaoliyu.cyou
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: aksai.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - ryan
+  server: 2.27.109.179
+  port: 45464
+  udp: true
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - ryan
+  server: 45.82.244.40
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  tls: true
+  servername: hk.152568.xyz
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - ryan
+  server: 195.58.144.56
+  port: 11907
+  udp: true
+  type: vless
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  tls: true
+  servername: 195.58.144.56
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - ryan
+  server: 212.192.13.143
+  port: 20999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - ryan
+  server: 47.240.80.220
+  port: 2052
+  udp: true
+  type: trojan
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: 47.240.80.220
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 19 - ryan
+  server: 36.139.117.41
+  port: 50011
+  udp: true
+  type: vmess
+  uuid: 9195e0f1-f466-4e69-838f-a95519b5d45e
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -206,6 +214,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 16 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 17 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 18 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 19 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -229,5 +238,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 16 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 17 - ryan
   - 🇭🇰 中国香港 (Hong Kong) 18 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 19 - ryan
 rules:
 - MATCH,PROXIES

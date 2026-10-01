@@ -4,26 +4,36 @@
   },
   "outbounds": [
     {
-      "type": "tuic",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
-      "server": "tw3.dexlos.com",
-      "server_port": 8080,
-      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21018,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - ryan",
+      "server": "ce1fc2d8.krkt.hkssip.com",
+      "server_port": 49642,
+      "method": "aes-256-gcm",
+      "password": "ac9c0a7b"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - ryan",
+      "server": "52a88eac-tmkao0-u4zl7f-1jk6u.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "tw3.dexlos.com",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "52a88eac-tmkao0-u4zl7f-1jk6u.hk3.hyhuawei.com",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -42,66 +52,86 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 (家宽) - ryan",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
       "server": "ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn",
       "server_port": 443,
       "password": "9sK2mP8xQ7vL3nZ6",
       "tls": {
         "enabled": true,
-        "server_name": "ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn",
+        "server_name": "127.0.0.1",
         "insecure": true
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 05 (家宽) - ryan",
-      "server": "155.117.19.17",
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - ryan",
+      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
       "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
+      "password": "9sK2mP8xQ7vL3nZ6",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 07 (移动家宽) - ryan",
+      "server": "tcdnu.azad0namah.ir",
+      "server_port": 8443,
+      "uuid": "0da0a073-a5b0-4229-bf11-24592f6290b9",
+      "tls": {
+        "enabled": true,
+        "server_name": "tcdnu.azad0namah.ir",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tuws/",
+        "headers": {
+          "Host": "tcdnu.azad0namah.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 08 (移动家宽) - ryan",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan",
-        "🇸🇬 新加坡 (Singapore) 03 (家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - ryan",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
-        "🇺🇸 美国 (United States) 05 (家宽) - ryan"
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - ryan",
+        "🇹🇷 土耳其 (Turkey) 07 (移动家宽) - ryan",
+        "🇹🇷 土耳其 (Turkey) 08 (移动家宽) - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ryan",
-        "🇸🇬 新加坡 (Singapore) 03 (家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - ryan",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
-        "🇺🇸 美国 (United States) 05 (家宽) - ryan"
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - ryan",
+        "🇹🇷 土耳其 (Turkey) 07 (移动家宽) - ryan",
+        "🇹🇷 土耳其 (Turkey) 08 (移动家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
