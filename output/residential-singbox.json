@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - ryan",
-      "server": "172.64.52.6",
-      "server_port": 2082,
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - ryan",
+      "server": "172.64.154.8",
+      "server_port": 2052,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -18,26 +18,19 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16112,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - ryan",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - ryan",
       "server": "178.83.46.216",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan",
-      "server": "hi.northcluster.info",
-      "server_port": 52300,
-      "uuid": "6e571484-4166-4699-8f58-b34a1823691f",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/video",
-        "headers": {
-          "Host": "hi.northcluster.info"
-        }
-      }
     },
     {
       "type": "anytls",
@@ -52,60 +45,24 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - ryan",
-      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
-      "server_port": 443,
-      "password": "9sK2mP8xQ7vL3nZ6",
-      "tls": {
-        "enabled": true,
-        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - ryan",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - ryan"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan",
+        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - ryan",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - ryan"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan",
+        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

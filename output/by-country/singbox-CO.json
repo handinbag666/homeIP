@@ -4,11 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇨🇴 哥伦比亚 (Colombia) 01 - ryan",
-      "server": "158.247.125.162",
-      "server_port": 62145,
-      "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+      "server": "149.104.107.41",
+      "server_port": 8090,
+      "method": "aes-256-gcm",
+      "password": "PCnnH6SQSnfoS27"
     },
     {
       "type": "selector",
