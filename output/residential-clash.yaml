@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - ryan
-  server: 172.64.154.8
+- name: 🇺🇸 美国 (United States) 01 (家宽) - ryan
+  server: 162.159.39.218
   port: 2052
   udp: true
   type: vless
@@ -15,21 +15,40 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16112
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan
+  server: 6ab2b012-tmm5c0-tpmc23-1s3lb.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - ryan
-  server: 178.83.46.216
+  type: hysteria2
+  password: fbf91120-50ba-11ef-a203-f23c91cfbbc9
+  sni: 6ab2b012-tmm5c0-tpmc23-1s3lb.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - ryan
+  server: d68b7bb6-tmm5c0-ts40sw-14g76.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 4729b4c8-1790-11eb-8684-f23c913c8d2b
+  sni: d68b7bb6-tmm5c0-ts40sw-14g76.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
+  server: 118.167.235.241
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - ryan
+  server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan
   server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
   port: 443
   udp: true
@@ -42,18 +61,22 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - ryan
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - ryan
+  - 🇺🇸 美国 (United States) 01 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - ryan
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - ryan
+  - 🇺🇸 美国 (United States) 01 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - ryan
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - ryan
 rules:
 - MATCH,PROXIES

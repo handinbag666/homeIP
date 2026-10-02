@@ -4,26 +4,44 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16112,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - ryan",
+      "server": "6ab2b012-tmm5c0-tpmc23-1s3lb.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "fbf91120-50ba-11ef-a203-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "6ab2b012-tmm5c0-tpmc23-1s3lb.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan",
+      "server": "d68b7bb6-tmm5c0-ts40sw-14g76.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "4729b4c8-1790-11eb-8684-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "d68b7bb6-tmm5c0-ts40sw-14g76.nw4.hyhuawei.com",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
