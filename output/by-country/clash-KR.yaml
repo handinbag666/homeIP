@@ -13,6 +13,29 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - ryan
+  server: 141.164.45.187
+  port: 9101
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇰🇷 韩国 (South Korea) 03 - ryan
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - ryan
+  server: vpn-kr-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - ryan
   server: 132.145.80.230
   port: 80
   udp: true
@@ -23,42 +46,13 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇰🇷 韩国 (South Korea) 03 - ryan
-  server: 3.39.4.109
-  port: 18967
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 04 - ryan
-  server: 132.226.226.189
+- name: 🇰🇷 韩国 (South Korea) 06 - ryan
+  server: 131.186.19.174
   port: 50160
   udp: true
   type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - ryan
-  server: vpn-kr-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - ryan
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
+  password: 7302ad33229de166d393cd56143a1e4c
+  sni: vk.com
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 07 - ryan
   server: 3.39.4.109
@@ -79,15 +73,15 @@ proxies:
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: t.me
+  sni: 152.67.200.82
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 09 - ryan
-  server: 131.186.19.174
+  server: 132.226.226.189
   port: 50160
   udp: true
   type: hysteria2
-  password: 7302ad33229de166d393cd56143a1e4c
-  sni: google.com
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 10 - ryan
   server: 154.90.62.70
@@ -98,6 +92,32 @@ proxies:
   sni: 154.90.62.70
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 11 - ryan
+  server: 3.39.4.109
+  port: 18967
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 12 - ryan
+  server: 47.80.14.8
+  port: 443
+  udp: true
+  type: vless
+  uuid: 581cb8c3-dadb-4e10-a18b-5e79bfe7bd93
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
+    short-id: 71110d3f7ef57760
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 13 - ryan
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -108,14 +128,7 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 12 - ryan
-  server: 141.164.45.187
-  port: 5498
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -133,6 +146,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 10 - ryan
   - 🇰🇷 韩国 (South Korea) 11 - ryan
   - 🇰🇷 韩国 (South Korea) 12 - ryan
+  - 🇰🇷 韩国 (South Korea) 13 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -150,5 +164,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 10 - ryan
   - 🇰🇷 韩国 (South Korea) 11 - ryan
   - 🇰🇷 韩国 (South Korea) 12 - ryan
+  - 🇰🇷 韩国 (South Korea) 13 - ryan
 rules:
 - MATCH,PROXIES

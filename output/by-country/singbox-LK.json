@@ -6,21 +6,6 @@
     {
       "type": "vless",
       "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - ryan",
-      "server": "trackydev.site",
-      "server_port": 443,
-      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
-      "tls": {
-        "enabled": true,
-        "server_name": "trackydev.site",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 02 - ryan",
       "server": "free.sahanwickramasinghe.me",
       "server_port": 80,
       "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
@@ -33,12 +18,53 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 02 - ryan",
+      "server": "140.245.120.16",
+      "server_port": 443,
+      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
+      "tls": {
+        "enabled": true,
+        "server_name": "trackydev.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 03 - ryan",
+      "server": "free.sahanwickramasinghe.me",
+      "server_port": 8443,
+      "uuid": "c73ffa6e-a102-4984-9176-3e6242c1925e",
+      "tls": {
+        "enabled": true,
+        "server_name": "zoom.us",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇰 斯里兰卡 (Sri Lanka) 01 - ryan",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - ryan"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - ryan",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 03 - ryan"
       ]
     },
     {
@@ -46,7 +72,8 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇰 斯里兰卡 (Sri Lanka) 01 - ryan",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - ryan"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - ryan",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 03 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
