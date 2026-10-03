@@ -5,49 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - ryan
-  server: www.speedtest.net
-  port: 443
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: vless
-  uuid: b19419fa-8009-455b-b059-765e2856883a
-  tls: true
-  servername: akbarian34.j9z65ce2uyks.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/3Qe9Fv1V2cqEtXyBQApZYi?ed=2560
-    headers:
-      Host: akbarian34.j9z65ce2uyks.workers.dev
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
 - name: 🇷🇺 俄罗斯 (Russia) 02 - ryan
-  server: 91.196.32.163
-  port: 443
-  udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: 91.196.32.163
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - ryan
-  server: 31.76.34.216
-  port: 443
-  udp: true
-  type: vless
-  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
-  servername: ru-c-1.minzt.su
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - ryan
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - ryan
   server: srv-17e124.21freedom.net
   port: 11592
   udp: true
@@ -55,7 +19,20 @@ proxies:
   password: 41edb44c8e
   sni: srv-17e124.21freedom.net
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - ryan
+- name: 🇷🇺 俄罗斯 (Russia) 03 - ryan
+  server: 194.113.235.66
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  servername: github.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 04 - ryan
   server: 81.177.215.175
   port: 443
   udp: true
@@ -68,7 +45,7 @@ proxies:
     short-id: 9e4eced6e98ed4d4
   servername: github.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - ryan
+- name: 🇷🇺 俄罗斯 (Russia) 05 - ryan
   server: 217.19.122.200
   port: 443
   udp: true
@@ -83,34 +60,31 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 08 - ryan
-  server: 45.12.75.242
-  port: 26424
+- name: 🇷🇺 俄罗斯 (Russia) 06 - ryan
+  server: 31.76.34.216
+  port: 443
   udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
+    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
+  servername: ru-c-1.minzt.su
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09 - ryan
-  server: els.mangshe.xyz
-  port: 2060
+- name: 🇷🇺 俄罗斯 (Russia) 07 - ryan
+  server: 81.94.148.120
+  port: 7449
   udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: els.mangshe.xyz
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 10 - ryan
-  server: ru.xiaoliyu.cyou
-  port: 18333
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: ru.xiaoliyu.cyou
-  skip-cert-verify: true
+  type: vless
+  uuid: 2690c11f-7258-43fe-aeb9-d90f93a3c317
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: blW-TdkBvKRn4-lkM64Cn2QgfOqjCRYRQ9upE6RPt3c
+    short-id: c0c41dc21cf7c18e
+  servername: passport.yandex.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,9 +97,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - ryan
   - 🇷🇺 俄罗斯 (Russia) 06 - ryan
   - 🇷🇺 俄罗斯 (Russia) 07 - ryan
-  - 🇷🇺 俄罗斯 (Russia) 08 - ryan
-  - 🇷🇺 俄罗斯 (Russia) 09 - ryan
-  - 🇷🇺 俄罗斯 (Russia) 10 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -138,8 +109,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - ryan
   - 🇷🇺 俄罗斯 (Russia) 06 - ryan
   - 🇷🇺 俄罗斯 (Russia) 07 - ryan
-  - 🇷🇺 俄罗斯 (Russia) 08 - ryan
-  - 🇷🇺 俄罗斯 (Russia) 09 - ryan
-  - 🇷🇺 俄罗斯 (Russia) 10 - ryan
 rules:
 - MATCH,PROXIES

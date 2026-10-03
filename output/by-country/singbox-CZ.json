@@ -4,68 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇿 捷克 (Czech) 01 - ryan",
-      "server": "104.21.34.106",
-      "server_port": 443,
-      "uuid": "d8c14c5c-a80a-4f6f-a5fb-52071849c443",
+      "server": "153.76.190.41",
+      "server_port": 8443,
+      "password": "3a92b39a-5f02-415e-a908-783ec320e83f",
       "tls": {
         "enabled": true,
-        "server_name": "CgxGqchEiAMnA-jkS01FiDlsnqOjwF-S.ALIAmA.WOrKErS.DeV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiZTFWRGJFS0NUd2F2NkRmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
-        "headers": {
-          "Host": "cgxgqcheiamna-jks01fidlsnqojwf-s.aliama.workers.dev"
-        }
+        "server_name": "speedtestmark.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - ryan",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "d9abc6e3-83bf-4c28-ae68-72465e2abe39",
-      "transport": {
-        "type": "ws",
-        "path": "/vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT?ed=2560",
-        "headers": {
-          "Host": "ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - ryan",
-      "server": "86.54.82.184",
-      "server_port": 443,
-      "uuid": "454431fc-71e2-42b1-b375-5b55dd06666a",
-      "tls": {
-        "enabled": true,
-        "server_name": "example.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - ryan",
       "server": "85.117.235.50",
       "server_port": 443,
       "uuid": "f4d71fd6-1c25-4748-836b-1dbda9268039",
@@ -85,27 +37,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇨🇿 捷克 (Czech) 05 - ryan",
-      "server": "153.76.190.41",
-      "server_port": 8443,
-      "password": "3a92b39a-5f02-415e-a908-783ec320e83f",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtestmark.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - ryan",
-        "🇨🇿 捷克 (Czech) 02 - ryan",
-        "🇨🇿 捷克 (Czech) 03 - ryan",
-        "🇨🇿 捷克 (Czech) 04 - ryan",
-        "🇨🇿 捷克 (Czech) 05 - ryan"
+        "🇨🇿 捷克 (Czech) 02 - ryan"
       ]
     },
     {
@@ -113,10 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - ryan",
-        "🇨🇿 捷克 (Czech) 02 - ryan",
-        "🇨🇿 捷克 (Czech) 03 - ryan",
-        "🇨🇿 捷克 (Czech) 04 - ryan",
-        "🇨🇿 捷克 (Czech) 05 - ryan"
+        "🇨🇿 捷克 (Czech) 02 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
