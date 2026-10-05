@@ -6,6 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 01 - ryan",
+      "server": "102.37.156.224",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aduB9HGxQHjA2SBMRjkHX6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 02 - ryan",
       "server": "102.133.165.160",
       "server_port": 16233,
       "method": "chacha20-ietf-poly1305",
@@ -13,47 +21,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 02 - ryan",
+      "tag": "🇿🇦 南非 (South Africa) 03 - ryan",
       "server": "139.84.247.164",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "tfAcRikawhNoZAhu"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇿🇦 南非 (South Africa) 03 - ryan",
-      "server": "shop.fasfood.top",
-      "server_port": 7344,
-      "uuid": "ad1b3b8c-8d2a-4009-b7b7-11d98b2d43bb",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 04 - ryan",
-      "server": "34.35.58.153",
-      "server_port": 443,
-      "uuid": "8d65c8a7-4876-4556-bb6a-feccfb46ee81",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE",
-          "short_id": "89b3a20484eb43ec"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 05 - ryan",
-      "server": "102.37.156.224",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "aduB9HGxQHjA2SBMRjkHX6"
     },
     {
       "type": "selector",
@@ -62,9 +34,7 @@
         "auto",
         "🇿🇦 南非 (South Africa) 01 - ryan",
         "🇿🇦 南非 (South Africa) 02 - ryan",
-        "🇿🇦 南非 (South Africa) 03 - ryan",
-        "🇿🇦 南非 (South Africa) 04 - ryan",
-        "🇿🇦 南非 (South Africa) 05 - ryan"
+        "🇿🇦 南非 (South Africa) 03 - ryan"
       ]
     },
     {
@@ -73,9 +43,7 @@
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - ryan",
         "🇿🇦 南非 (South Africa) 02 - ryan",
-        "🇿🇦 南非 (South Africa) 03 - ryan",
-        "🇿🇦 南非 (South Africa) 04 - ryan",
-        "🇿🇦 南非 (South Africa) 05 - ryan"
+        "🇿🇦 南非 (South Africa) 03 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

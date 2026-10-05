@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - ryan",
-      "server": "144.31.232.216",
-      "server_port": 443,
-      "password": "06e88dd6-e264-4981-8c26-d7ab17348ab2",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi01.clgate.network",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - ryan",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - ryan",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -37,50 +25,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - ryan",
-      "server": "77.42.28.120",
-      "server_port": 1280,
-      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "is1-ssl.mzstatic.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - ryan",
-      "server": "65.108.3.59",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - ryan",
+      "server": "188.130.209.216",
       "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
+      "uuid": "444623e9-f27d-487c-b7cc-436931967e79",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "web.eitaa.com",
+        "server_name": "emaar.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
+          "public_key": "M7yPV6xLi9h6EevpqZfXLZBuxoey8kz1c6Bh0pK5fho",
+          "short_id": "170ab9ced015571f"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - ryan",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - ryan",
+      "server": "45.149.114.171",
+      "server_port": 777,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
     },
     {
       "type": "selector",
@@ -89,9 +59,7 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - ryan",
         "🇫🇮 芬兰 (Finland) 02 - ryan",
-        "🇫🇮 芬兰 (Finland) 03 - ryan",
-        "🇫🇮 芬兰 (Finland) 04 - ryan",
-        "🇫🇮 芬兰 (Finland) 05 - ryan"
+        "🇫🇮 芬兰 (Finland) 03 - ryan"
       ]
     },
     {
@@ -100,9 +68,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - ryan",
         "🇫🇮 芬兰 (Finland) 02 - ryan",
-        "🇫🇮 芬兰 (Finland) 03 - ryan",
-        "🇫🇮 芬兰 (Finland) 04 - ryan",
-        "🇫🇮 芬兰 (Finland) 05 - ryan"
+        "🇫🇮 芬兰 (Finland) 03 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

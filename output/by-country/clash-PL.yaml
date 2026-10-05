@@ -5,6 +5,46 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - ryan
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 02 - ryan
+  server: 217.30.10.44
+  port: 9052
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 03 - ryan
+  server: 70.34.255.101
+  port: 80
+  udp: true
+  type: vless
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 04 - ryan
+  server: 70.34.252.154
+  port: 80
+  udp: true
+  type: vless
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 05 - ryan
+  server: 45.192.12.93
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 06 - ryan
   server: 144.31.131.38
   port: 443
   udp: true
@@ -17,23 +57,7 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 02 - ryan
-  server: cheerful-swan.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 03 - ryan
-  server: 222.167.245.240
-  port: 28015
-  udp: true
-  type: hysteria2
-  password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
-  sni: api-test-udp-traffic.kaneki.cfd
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 04 - ryan
+- name: 🇵🇱 波兰 (Poland) 07 - ryan
   server: 31.77.13.19
   port: 2063
   udp: true
@@ -44,37 +68,29 @@ proxies:
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - ryan
-  server: 83.168.107.220
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 08 - ryan
+  server: 189.74.116.13
   port: 443
   udp: true
   type: vless
-  uuid: b1813cbd-831f-4cb3-baf8-5bc0cc8298bc
+  uuid: 684a58f3-e942-4486-a3a1-effd2f277b25
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo
-    short-id: c56d4f1c
-  servername: google.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 06 - ryan
-  server: go.wwwinternetvideo.click
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.mediaperekat.cc
+  client-fingerprint: edge
+- name: 🇵🇱 波兰 (Poland) 09 - ryan
+  server: 202.78.163.237
   port: 443
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 07 - ryan
-  server: scrap.halyvanedorogo.ru
-  port: 35076
-  udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 08 - ryan
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 10 - ryan
   server: 188.114.96.19
   port: 80
   udp: true
@@ -87,49 +103,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 09 - ryan
-  server: 83.168.95.145
-  port: 443
-  udp: true
-  type: vless
-  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 10 - ryan
-  server: 144.31.4.193
-  port: 444
-  udp: true
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇵🇱 波兰 (Poland) 11 - ryan
-  server: 185.91.54.30
-  port: 8444
-  udp: true
-  type: vless
-  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
-  tls: true
-  reality-opts:
-    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
-    short-id: 9e15546f267baa64
-  servername: ads.x5.ru
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-reality
 proxy-groups:
 - name: PROXIES
   type: select
@@ -145,7 +118,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - ryan
   - 🇵🇱 波兰 (Poland) 09 - ryan
   - 🇵🇱 波兰 (Poland) 10 - ryan
-  - 🇵🇱 波兰 (Poland) 11 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -161,6 +133,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - ryan
   - 🇵🇱 波兰 (Poland) 09 - ryan
   - 🇵🇱 波兰 (Poland) 10 - ryan
-  - 🇵🇱 波兰 (Poland) 11 - ryan
 rules:
 - MATCH,PROXIES
