@@ -5,29 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - ryan
-  server: 217.30.10.44
-  port: 9099
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 02 - ryan
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 03 - ryan
-  server: 70.34.255.101
-  port: 80
-  udp: true
-  type: vless
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇵🇱 波兰 (Poland) 04 - ryan
   server: 70.34.252.154
   port: 80
   udp: true
@@ -36,29 +13,56 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇵🇱 波兰 (Poland) 02 - ryan
+  server: 70.34.255.101
+  port: 80
+  udp: true
+  type: vless
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 03 - ryan
+  server: 202.78.163.237
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 04 - ryan
+  server: 81.90.20.200
+  port: 443
+  udp: true
+  type: vless
+  uuid: 51c14658-8873-4454-9383-c41fc80bde4b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl.pupoe.sbs
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 05 - ryan
-  server: 45.192.12.93
+  server: 150.251.113.34
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 06 - ryan
+  server: 144.31.49.47
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 06 - ryan
-  server: 144.31.131.38
-  port: 443
-  udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: prod.pl-node-01.security-sbrf.ru
-  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 07 - ryan
-  server: 31.77.13.19
+  server: pl-waw.dontblockmepls.com
   port: 2063
   udp: true
   type: vless
@@ -70,39 +74,18 @@ proxies:
   servername: rusbid.de
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 08 - ryan
-  server: 189.74.116.13
+  server: 177.1.192.72
   port: 443
   udp: true
   type: vless
-  uuid: 684a58f3-e942-4486-a3a1-effd2f277b25
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  servername: api.mediaperekat.cc
-  client-fingerprint: edge
-- name: 🇵🇱 波兰 (Poland) 09 - ryan
-  server: 202.78.163.237
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 10 - ryan
-  server: 188.114.96.19
-  port: 80
-  udp: true
-  type: vmess
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,8 +99,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - ryan
   - 🇵🇱 波兰 (Poland) 07 - ryan
   - 🇵🇱 波兰 (Poland) 08 - ryan
-  - 🇵🇱 波兰 (Poland) 09 - ryan
-  - 🇵🇱 波兰 (Poland) 10 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -131,7 +112,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - ryan
   - 🇵🇱 波兰 (Poland) 07 - ryan
   - 🇵🇱 波兰 (Poland) 08 - ryan
-  - 🇵🇱 波兰 (Poland) 09 - ryan
-  - 🇵🇱 波兰 (Poland) 10 - ryan
 rules:
 - MATCH,PROXIES
