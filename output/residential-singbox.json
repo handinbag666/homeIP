@@ -7,47 +7,38 @@
       "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan",
       "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21022,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21041,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan",
+      "server": "dog-hk.kunlun01dns.com",
       "server_port": 21021,
       "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - ryan",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
       "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16116,
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - ryan",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16115,
       "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
       "security": "auto"
     },
     {
-      "type": "tuic",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
-      "server": "tw3.dexlos.com",
-      "server_port": 8080,
-      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "tls": {
-        "enabled": true,
-        "server_name": "tw3.dexlos.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
-      "server": "hinet1.2yly.com",
+      "server": "61.230.162.88",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -55,7 +46,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -65,15 +56,32 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 (移动家宽) R50 - ryan",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 (移动家宽) - ryan",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16114,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan",
         "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan"
+        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
+        "🇹🇷 土耳其 (Turkey) 06 (移动家宽) R50 - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 07 (移动家宽) - ryan"
       ]
     },
     {
@@ -81,10 +89,12 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan",
         "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan"
+        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan",
+        "🇹🇷 土耳其 (Turkey) 06 (移动家宽) R50 - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 07 (移动家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

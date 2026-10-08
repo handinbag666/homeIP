@@ -6,41 +6,38 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan
   server: dog-hk.kunlun01dns.com
+  port: 21022
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
+  server: dog-hk.kunlun01dns.com
+  port: 21041
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan
+  server: dog-hk.kunlun01dns.com
   port: 21021
   udp: true
   type: vmess
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - ryan
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16116
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - ryan
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16115
   udp: true
   type: vmess
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
-  server: tw3.dexlos.com
-  port: 8080
-  udp: true
-  type: tuic
-  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  sni: tw3.dexlos.com
-  skip-cert-verify: true
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
 - name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
-  server: hinet1.2yly.com
+  server: 61.230.162.88
   port: 24215
   udp: true
   type: vless
@@ -49,26 +46,44 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 06 (移动家宽) R50 - ryan
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇭🇰 中国香港 (Hong Kong) 07 (移动家宽) - ryan
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16114
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
   - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) R50 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 07 (移动家宽) - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - ryan
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - ryan
   - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - ryan
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - ryan
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - ryan
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) R50 - ryan
+  - 🇭🇰 中国香港 (Hong Kong) 07 (移动家宽) - ryan
 rules:
 - MATCH,PROXIES
