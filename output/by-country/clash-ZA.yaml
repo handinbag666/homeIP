@@ -12,19 +12,17 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
 - name: 🇿🇦 南非 (South Africa) 02 - ryan
-  server: 102.37.156.224
+  server: 34.35.189.111
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-- name: 🇿🇦 南非 (South Africa) 03 - ryan
-  server: 139.84.247.164
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
+  type: vless
+  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
+  tls: true
+  reality-opts:
+    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
+    short-id: 5ced03e42cc31aab
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇿🇦 南非 (South Africa) 01 - ryan
   - 🇿🇦 南非 (South Africa) 02 - ryan
-  - 🇿🇦 南非 (South Africa) 03 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇿🇦 南非 (South Africa) 01 - ryan
   - 🇿🇦 南非 (South Africa) 02 - ryan
-  - 🇿🇦 南非 (South Africa) 03 - ryan
 rules:
 - MATCH,PROXIES

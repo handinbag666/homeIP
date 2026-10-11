@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 越南 (Vietnam) 01 - ryan
-  server: 43.255.157.118
-  port: 44988
+- name: 🇮🇶 IQ 01 - ryan
+  server: arcturus.yokkastars.com
+  port: 40443
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
-    short-id: bb82c8
-  servername: www.tesla.com
-  client-fingerprint: firefox
+    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
+    short-id: db46e2946fc466fd
+  servername: deepl.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 越南 (Vietnam) 01 - ryan
+  - 🇮🇶 IQ 01 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 (Vietnam) 01 - ryan
+  - 🇮🇶 IQ 01 - ryan
 rules:
 - MATCH,PROXIES
