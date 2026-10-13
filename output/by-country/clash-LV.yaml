@@ -6,12 +6,19 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - ryan
   server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - ryan
+  server: 185.135.86.175
   port: 9082
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 45xgMgm386pjWjTx
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - ryan
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - ryan
   server: 216.173.71.43
   port: 443
   udp: true
@@ -24,14 +31,14 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: lv.nztvpn.com
   client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - ryan
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - ryan
   server: 185.135.86.175
-  port: 9094
+  port: 9034
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - ryan
+  password: Yg4MbdXFQ9HFFVY6
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - ryan
   server: 31.57.106.241
   port: 443
   udp: true
@@ -53,6 +60,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 03 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 04 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,5 +70,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 03 - ryan
   - 🇱🇻 拉脱维亚 (Latvia) 04 - ryan
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - ryan
 rules:
 - MATCH,PROXIES
