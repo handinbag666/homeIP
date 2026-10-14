@@ -13,13 +13,6 @@ proxies:
   sni: 140.238.213.114
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 02 - ryan
-  server: 132.243.175.144
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-- name: 🇨🇭 瑞士 (Switzerland) 03 - ryan
   server: 138.124.63.224
   port: 8444
   udp: true
@@ -34,9 +27,9 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇨🇭 瑞士 (Switzerland) 04 - ryan
+- name: 🇨🇭 瑞士 (Switzerland) 03 - ryan
   server: 208.69.78.217
-  port: 33187
+  port: 21054
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -44,21 +37,9 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 05 - ryan
+- name: 🇨🇭 瑞士 (Switzerland) 04 - ryan
   server: 208.69.78.217
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 06 - ryan
-  server: 208.69.78.217
-  port: 21086
+  port: 33013
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -75,8 +56,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - ryan
   - 🇨🇭 瑞士 (Switzerland) 03 - ryan
   - 🇨🇭 瑞士 (Switzerland) 04 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 05 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 06 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,7 +65,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - ryan
   - 🇨🇭 瑞士 (Switzerland) 03 - ryan
   - 🇨🇭 瑞士 (Switzerland) 04 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 05 - ryan
-  - 🇨🇭 瑞士 (Switzerland) 06 - ryan
 rules:
 - MATCH,PROXIES
