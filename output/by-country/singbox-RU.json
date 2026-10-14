@@ -14,6 +14,79 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - ryan",
+      "server": "194.87.196.107",
+      "server_port": 50120,
+      "method": "aes-256-gcm",
+      "password": "4938e975724d0ed1"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - ryan",
+      "server": "213.165.56.102",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "freede.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g",
+          "short_id": "57e7977c9011061c"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - ryan",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - ryan",
+      "server": "194.87.118.184",
+      "server_port": 2053,
+      "password": "7ab3c77e-8fcc-4848-918f-cae3d4eac794",
+      "tls": {
+        "enabled": true,
+        "server_name": "194.87.118.184",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - ryan",
+      "server": "153.80.241.206",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
@@ -28,63 +101,34 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - ryan",
-      "server": "193.233.74.6",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - ryan",
+      "server": "hy9.shamanfun.ru",
+      "server_port": 1443,
+      "password": "c635b5f6-b5ea-4e57-927f-75860b0cb984",
       "tls": {
         "enabled": true,
-        "server_name": "github.com",
+        "server_name": "hy9.shamanfun.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - ryan",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - ryan",
-      "server": "194.38.11.86",
-      "server_port": 65443,
-      "method": "aes-256-cfb",
-      "password": "7eadc6dbe2ae"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - ryan",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY="
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - ryan",
-      "server": "freede.aiage.work",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "freede.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g",
-          "short_id": "57e7977c9011061c"
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
         }
       }
     },
@@ -97,7 +141,10 @@
         "🇷🇺 俄罗斯 (Russia) 02 - ryan",
         "🇷🇺 俄罗斯 (Russia) 03 - ryan",
         "🇷🇺 俄罗斯 (Russia) 04 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 05 - ryan"
+        "🇷🇺 俄罗斯 (Russia) 05 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 06 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 07 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 08 - ryan"
       ]
     },
     {
@@ -108,7 +155,10 @@
         "🇷🇺 俄罗斯 (Russia) 02 - ryan",
         "🇷🇺 俄罗斯 (Russia) 03 - ryan",
         "🇷🇺 俄罗斯 (Russia) 04 - ryan",
-        "🇷🇺 俄罗斯 (Russia) 05 - ryan"
+        "🇷🇺 俄罗斯 (Russia) 05 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 06 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 07 - ryan",
+        "🇷🇺 俄罗斯 (Russia) 08 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

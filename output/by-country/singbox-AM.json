@@ -5,21 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan",
-      "server": "googol.wookshop.ir",
-      "server_port": 17915,
-      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - ryan",
+      "server": "77.91.68.70",
+      "server_port": 55983,
+      "uuid": "f667a096-5231-4cfb-8759-92bb32473139",
       "tls": {
         "enabled": true,
-        "server_name": "googol.wookshop.ir",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg",
+          "short_id": "0e"
         }
       }
     },
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

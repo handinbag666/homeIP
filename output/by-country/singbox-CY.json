@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - ryan",
-      "server": "frr.drwrdoh.org",
-      "server_port": 8086,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:dQ6WYcPpGX5xIxUVPAR8w1A9eY6kEVoKKW3HleJ6o8Y="
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - ryan",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - ryan",
       "server": "5.253.30.99",
       "server_port": 40443,
       "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
@@ -34,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - ryan",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - ryan",
       "server": "hydra.yokkastars.com",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
@@ -43,7 +35,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -58,7 +50,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - ryan",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - ryan",
       "server": "77.110.105.122",
       "server_port": 443,
       "uuid": "019fbe0f-2d9f-4b89-9f81-e1e36129892a",
@@ -66,7 +58,11 @@
       "tls": {
         "enabled": true,
         "server_name": "co-pl.speedtec.ru",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
       }
     },
     {
@@ -76,8 +72,7 @@
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - ryan",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - ryan",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - ryan",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - ryan"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - ryan"
       ]
     },
     {
@@ -86,8 +81,7 @@
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - ryan",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - ryan",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - ryan",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - ryan"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
