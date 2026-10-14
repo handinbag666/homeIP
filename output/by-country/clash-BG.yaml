@@ -6,25 +6,32 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - ryan
   server: 213.183.63.60
-  port: 9066
+  port: 9049
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
+  password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
+  server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
   server: 213.183.63.60
   port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
-  server: 213.183.63.60
-  port: 9049
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +40,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +49,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
   - 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
 rules:
 - MATCH,PROXIES

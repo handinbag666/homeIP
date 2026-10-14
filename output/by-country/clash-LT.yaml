@@ -6,25 +6,25 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - ryan
   server: 195.238.126.20
-  port: 9011
+  port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
+  password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - ryan
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - ryan
   server: 195.238.126.20
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - ryan
+  server: 195.238.126.20
+  port: 9002
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   server: 195.238.126.20
   port: 9008
@@ -33,17 +33,19 @@ proxies:
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - ryan
-  server: 80.209.237.144
-  port: 443
+  server: 195.238.126.20
+  port: 9011
   udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  tls: true
-  reality-opts:
-    public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
-    short-id: 2301ac8aee8bf6d4
-  servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: ''
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - ryan
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +56,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 03 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 05 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 06 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +67,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 03 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 04 - ryan
   - 🇱🇹 立陶宛 (Lithuania) 05 - ryan
+  - 🇱🇹 立陶宛 (Lithuania) 06 - ryan
 rules:
 - MATCH,PROXIES
