@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - ryan",
+      "server": "206.1.102.64",
+      "server_port": 8080,
+      "uuid": "184a0393-5c9e-403c-9be6-427b066308e1",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - ryan",
       "server": "62.60.233.157",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -25,27 +33,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - ryan",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
-        }
       }
     },
     {
@@ -70,13 +57,22 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - ryan",
+      "server": "vexnet.zqpm.ir",
+      "server_port": 8443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "th0rqbIessg0mdrvFRoKjI6fNz33bqfe"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - ryan",
         "🇹🇷 土耳其 (Turkey) 02 - ryan",
-        "🇹🇷 土耳其 (Turkey) 03 - ryan"
+        "🇹🇷 土耳其 (Turkey) 03 - ryan",
+        "🇹🇷 土耳其 (Turkey) 04 - ryan"
       ]
     },
     {
@@ -85,7 +81,8 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - ryan",
         "🇹🇷 土耳其 (Turkey) 02 - ryan",
-        "🇹🇷 土耳其 (Turkey) 03 - ryan"
+        "🇹🇷 土耳其 (Turkey) 03 - ryan",
+        "🇹🇷 土耳其 (Turkey) 04 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

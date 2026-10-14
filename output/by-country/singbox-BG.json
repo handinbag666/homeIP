@@ -7,25 +7,41 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - ryan",
       "server": "213.183.63.60",
+      "server_port": 9064,
+      "method": "aes-256-cfb",
+      "password": "cp8pRSUAyLhTfVWH"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - ryan",
+      "server": "213.183.63.60",
+      "server_port": 9049,
+      "method": "aes-256-cfb",
+      "password": "PRBf4BS2HvJqtWxY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - ryan",
+      "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
       "password": "9eeJ2fwnZA5Fxgz8"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - ryan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - ryan",
       "server": "213.183.63.60",
-      "server_port": 9098,
+      "server_port": 9085,
       "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "selector",
@@ -34,7 +50,9 @@
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - ryan",
         "🇧🇬 保加利亚 (Bulgaria) 02 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - ryan"
+        "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
+        "🇧🇬 保加利亚 (Bulgaria) 04 - ryan",
+        "🇧🇬 保加利亚 (Bulgaria) 05 - ryan"
       ]
     },
     {
@@ -43,7 +61,9 @@
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - ryan",
         "🇧🇬 保加利亚 (Bulgaria) 02 - ryan",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - ryan"
+        "🇧🇬 保加利亚 (Bulgaria) 03 - ryan",
+        "🇧🇬 保加利亚 (Bulgaria) 04 - ryan",
+        "🇧🇬 保加利亚 (Bulgaria) 05 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

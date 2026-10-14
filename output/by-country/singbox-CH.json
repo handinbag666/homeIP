@@ -40,10 +40,18 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - ryan",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - ryan",
       "server": "208.69.78.217",
-      "server_port": 21054,
+      "server_port": 8444,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -57,9 +65,9 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - ryan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - ryan",
       "server": "208.69.78.217",
-      "server_port": 33013,
+      "server_port": 21158,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -79,7 +87,8 @@
         "🇨🇭 瑞士 (Switzerland) 01 - ryan",
         "🇨🇭 瑞士 (Switzerland) 02 - ryan",
         "🇨🇭 瑞士 (Switzerland) 03 - ryan",
-        "🇨🇭 瑞士 (Switzerland) 04 - ryan"
+        "🇨🇭 瑞士 (Switzerland) 04 - ryan",
+        "🇨🇭 瑞士 (Switzerland) 05 - ryan"
       ]
     },
     {
@@ -89,7 +98,8 @@
         "🇨🇭 瑞士 (Switzerland) 01 - ryan",
         "🇨🇭 瑞士 (Switzerland) 02 - ryan",
         "🇨🇭 瑞士 (Switzerland) 03 - ryan",
-        "🇨🇭 瑞士 (Switzerland) 04 - ryan"
+        "🇨🇭 瑞士 (Switzerland) 04 - ryan",
+        "🇨🇭 瑞士 (Switzerland) 05 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

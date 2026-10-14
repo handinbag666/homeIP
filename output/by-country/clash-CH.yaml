@@ -28,8 +28,15 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇨🇭 瑞士 (Switzerland) 03 - ryan
+  server: 132.243.175.144
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+- name: 🇨🇭 瑞士 (Switzerland) 04 - ryan
   server: 208.69.78.217
-  port: 21054
+  port: 8444
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -37,9 +44,9 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 04 - ryan
+- name: 🇨🇭 瑞士 (Switzerland) 05 - ryan
   server: 208.69.78.217
-  port: 33013
+  port: 21158
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -56,6 +63,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - ryan
   - 🇨🇭 瑞士 (Switzerland) 03 - ryan
   - 🇨🇭 瑞士 (Switzerland) 04 - ryan
+  - 🇨🇭 瑞士 (Switzerland) 05 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,5 +73,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - ryan
   - 🇨🇭 瑞士 (Switzerland) 03 - ryan
   - 🇨🇭 瑞士 (Switzerland) 04 - ryan
+  - 🇨🇭 瑞士 (Switzerland) 05 - ryan
 rules:
 - MATCH,PROXIES
