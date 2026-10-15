@@ -19,26 +19,15 @@ proxies:
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 03 - ryan
-  server: 164.37.100.195
+  server: 186.190.211.188
   port: 443
   udp: true
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   tls: true
-  reality-opts:
-    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
-    short-id: 2e124af254a65e7c
-  servername: tomaz1337shellbuy.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
+  servername: 186.190.211.188
+  skip-cert-verify: true
 - name: 🇬🇧 英国 (United Kingdom) 04 - ryan
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 05 - ryan
   server: 23.81.34.204
   port: 443
   udp: true
@@ -51,67 +40,31 @@ proxies:
     short-id: b19b017d6f453873
   servername: speed.cloudflare.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 06 - ryan
-  server: 186.190.211.188
+- name: 🇬🇧 英国 (United Kingdom) 05 - ryan
+  server: 146.70.104.235
   port: 443
   udp: true
   type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 186.190.211.188
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 07 - ryan
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 08 - ryan
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: viber.com
-- name: 🇬🇧 英国 (United Kingdom) 09 - ryan
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 10 - ryan
-  server: 46.250.250.149
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  uuid: 698922a2-1ca5-4bfb-92fb-0aa7e779ce21
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
+    public-key: FcvI0ncjwII1n6tnWQ6nLWuwRpk8hdYoYzYCi1sbhjY
+    short-id: 1c3ce7aa488b3e50
+  servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 11 - ryan
+- name: 🇬🇧 英国 (United Kingdom) 06 - ryan
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 07 - ryan
   server: 31.59.217.164
   port: 443
   udp: true
@@ -124,39 +77,116 @@ proxies:
     short-id: 1625a2a79d01328f
   servername: www.adobe.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 12 - ryan
+- name: 🇬🇧 英国 (United Kingdom) 08 - ryan
   server: 146.70.61.37
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 13 - ryan
-  server: 51.89.194.151
-  port: 2053
+- name: 🇬🇧 英国 (United Kingdom) 09 - ryan
+  server: 138.124.125.193
+  port: 10444
   udp: true
   type: vless
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
-  tls: true
-  reality-opts:
-    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
-    short-id: d051f678212f9d54
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 14 - ryan
-  server: 83.147.18.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: fd8cf7e1173f0edb
-  servername: www.cloudflare.com
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: safari
+- name: 🇬🇧 英国 (United Kingdom) 10 - ryan
+  server: 164.37.100.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
+    short-id: 2e124af254a65e7c
+  servername: tomaz1337shellbuy.vvzzkontaktezzvv.garden
   client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 11 - ryan
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 12 - ryan
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 13 - ryan
+  server: 195.72.166.251
+  port: 443
+  udp: true
+  type: vless
+  uuid: 64c05afc-ce81-4ba0-b697-afa04da1427e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RKDT6fVgcZS8Qfzhv5rbeHRIflA3UTKD_HNLJyOoUwk
+    short-id: 25349b36802f
+  servername: www.lloydsbankinggroup.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 14 - ryan
+  server: 193.188.21.253
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
 - name: 🇬🇧 英国 (United Kingdom) 15 - ryan
+  server: 94.156.250.148
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇬🇧 英国 (United Kingdom) 16 - ryan
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 17 - ryan
+  server: 46.250.250.149
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  tls: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 18 - ryan
   server: 193.163.203.170
   port: 443
   udp: true
@@ -169,19 +199,13 @@ proxies:
     short-id: b28db60d77c50b4f
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 16 - ryan
-  server: 46.250.240.80
-  port: 2053
+- name: 🇬🇧 英国 (United Kingdom) 19 - ryan
+  server: 138.124.90.177
+  port: 10443
   udp: true
   type: vless
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
-  tls: true
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-    short-id: 4cc9dc65f7770115
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 17 - ryan
+  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
+- name: 🇬🇧 英国 (United Kingdom) 20 - ryan
   server: 107.181.151.39
   port: 443
   udp: true
@@ -194,20 +218,7 @@ proxies:
     short-id: bbcab8fa80a3
   servername: www.microsoft.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 18 - ryan
-  server: 87.239.249.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
-    short-id: 91af08b1ce1f
-  servername: www.foxsports.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 19 - ryan
+- name: 🇬🇧 英国 (United Kingdom) 21 - ryan
   server: staging.lastilhame.monster
   port: 443
   udp: true
@@ -220,19 +231,49 @@ proxies:
     short-id: 18e4d2d21241
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 20 - ryan
+- name: 🇬🇧 英国 (United Kingdom) 22 - ryan
   server: webdisk.jaggyslawa.org
   port: 443
   udp: true
   type: vless
-  uuid: 88742d38-3f5c-4b9c-b256-7df5db8257ec
+  uuid: 75113671-63e3-452d-87d3-261a37e8b472
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 8f79726c5002
+    short-id: baf023e1026a
   servername: www.mozilla.org
-  client-fingerprint: edge
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 23 - ryan
+  server: v36.hdacd.com
+  port: 30836
+  udp: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: 🇬🇧 英国 (United Kingdom) 24 - ryan
+  server: 46.250.240.80
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  tls: true
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+    short-id: 4cc9dc65f7770115
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 25 - ryan
+  server: zs.giannaycs.com
+  port: 12972
+  udp: true
+  type: vless
+  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
+  tls: true
+  servername: zs.giannaycs.com
+  skip-cert-verify: false
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -258,6 +299,11 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 18 - ryan
   - 🇬🇧 英国 (United Kingdom) 19 - ryan
   - 🇬🇧 英国 (United Kingdom) 20 - ryan
+  - 🇬🇧 英国 (United Kingdom) 21 - ryan
+  - 🇬🇧 英国 (United Kingdom) 22 - ryan
+  - 🇬🇧 英国 (United Kingdom) 23 - ryan
+  - 🇬🇧 英国 (United Kingdom) 24 - ryan
+  - 🇬🇧 英国 (United Kingdom) 25 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -283,5 +329,10 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 18 - ryan
   - 🇬🇧 英国 (United Kingdom) 19 - ryan
   - 🇬🇧 英国 (United Kingdom) 20 - ryan
+  - 🇬🇧 英国 (United Kingdom) 21 - ryan
+  - 🇬🇧 英国 (United Kingdom) 22 - ryan
+  - 🇬🇧 英国 (United Kingdom) 23 - ryan
+  - 🇬🇧 英国 (United Kingdom) 24 - ryan
+  - 🇬🇧 英国 (United Kingdom) 25 - ryan
 rules:
 - MATCH,PROXIES
