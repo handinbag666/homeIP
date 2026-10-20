@@ -5,15 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - ryan
-  server: 119.46.51.45
-  port: 37515
-  udp: true
-  type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 02 - ryan
-  server: support.zoom.us.v2ray.simspeedup.com
+  server: V2rAy.SiMsPeEdUp.CoM
   port: 80
   udp: true
   type: vless
@@ -22,9 +14,9 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: support.zoom.us.v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 03 - ryan
-  server: 104.18.26.90
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 泰国 (Thailand) 02 - ryan
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
@@ -38,13 +30,19 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 04 - ryan
-  server: 103.107.52.106
-  port: 52351
+- name: 🇹🇭 泰国 (Thailand) 03 - ryan
+  server: funagfrdfs.alixxplay.com
+  port: 56415
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  servername: www.kaidee.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +51,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - ryan
   - 🇹🇭 泰国 (Thailand) 02 - ryan
   - 🇹🇭 泰国 (Thailand) 03 - ryan
-  - 🇹🇭 泰国 (Thailand) 04 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +59,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - ryan
   - 🇹🇭 泰国 (Thailand) 02 - ryan
   - 🇹🇭 泰国 (Thailand) 03 - ryan
-  - 🇹🇭 泰国 (Thailand) 04 - ryan
 rules:
 - MATCH,PROXIES

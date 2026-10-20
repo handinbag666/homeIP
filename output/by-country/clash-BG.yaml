@@ -5,48 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - ryan
-  server: 213.183.63.60
-  port: 9061
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
-  server: 213.183.63.60
-  port: 9049
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
-  server: 213.183.63.60
-  port: 9030
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
-  server: 213.183.63.60
-  port: 9029
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - ryan
-  server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - ryan
-  server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - ryan
   server: 195.123.226.21
   port: 443
   udp: true
@@ -65,23 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - ryan
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - ryan
 rules:
 - MATCH,PROXIES
