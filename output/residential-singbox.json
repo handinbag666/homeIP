@@ -5,22 +5,33 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - ryan",
+      "server": "112.169.175.199",
+      "server_port": 31157,
+      "uuid": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd"
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan",
+      "server": "654968169.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan",
+      "server": "684616s4.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
       }
     },
     {
@@ -28,14 +39,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ryan"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - ryan",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

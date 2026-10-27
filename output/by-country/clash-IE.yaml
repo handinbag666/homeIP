@@ -5,12 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - ryan
-  server: 52.214.157.27
+  server: ir-new-ded.failspace.top
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ir-new-ded.failspace.top
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

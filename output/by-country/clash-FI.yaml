@@ -5,6 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - ryan
+  server: 45.149.147.213
+  port: 4444
+  udp: true
+  type: trojan
+  password: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  sni: 45-149-147-213.sslip.io
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: kobedin-server1-trojan
+- name: 🇫🇮 芬兰 (Finland) 02 - ryan
+  server: 45.149.147.213
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  tls: true
+  servername: 45-149-147-213.sslip.io
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: kobedin-server1-vless
+- name: 🇫🇮 芬兰 (Finland) 03 - ryan
+  server: 177.3.214.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
+  servername: finlandlanzarotte.live
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04 - ryan
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 05 - ryan
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -15,37 +61,85 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - ryan
-  server: 144.31.34.146
-  port: 2096
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 06 - ryan
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
   tls: true
-  servername: fi1.merky.one
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /mky-ws-4f19c8a7
-    headers:
-      Host: fi1.merky.one
-- name: 🇫🇮 芬兰 (Finland) 03 - ryan
-  server: angelmh.cv
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - ryan
+  server: dashboard.ojestore.top
+  port: 5381
+  udp: true
+  type: vmess
+  uuid: ef8502b7-9b45-4537-936d-d3af01dee2e3
+  alterId: 0
+  cipher: auto
+- name: 🇫🇮 芬兰 (Finland) 08 - ryan
+  server: 8fc752g.fi3.h1clayd.click
   port: 443
   udp: true
   type: vless
-  uuid: 6e517227-c561-4d2d-9368-ca914b3fb3f2
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   tls: true
-  servername: c.mhzedir.qzz.io
+  reality-opts:
+    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
+    short-id: 09d0a94a1c6fc9d5
+  servername: 8fc752g.fi3.h1clayd.click
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: f345a414c040
+- name: 🇫🇮 芬兰 (Finland) 09 - ryan
+  server: 65.109.212.193
+  port: 465
+  udp: true
+  type: vless
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com.
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: mhzedir.qzz.io
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 10 - ryan
+  server: 2.27.13.152
+  port: 2096
+  udp: true
+  type: vless
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  tls: true
+  servername: st4834a.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st4834a.rumedia-cdn.com
+- name: 🇫🇮 芬兰 (Finland) 11 - ryan
+  server: 196.196.204.180
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  tls: true
+  reality-opts:
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+    short-id: 023a1e6ffc32be10
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +148,14 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - ryan
   - 🇫🇮 芬兰 (Finland) 02 - ryan
   - 🇫🇮 芬兰 (Finland) 03 - ryan
+  - 🇫🇮 芬兰 (Finland) 04 - ryan
+  - 🇫🇮 芬兰 (Finland) 05 - ryan
+  - 🇫🇮 芬兰 (Finland) 06 - ryan
+  - 🇫🇮 芬兰 (Finland) 07 - ryan
+  - 🇫🇮 芬兰 (Finland) 08 - ryan
+  - 🇫🇮 芬兰 (Finland) 09 - ryan
+  - 🇫🇮 芬兰 (Finland) 10 - ryan
+  - 🇫🇮 芬兰 (Finland) 11 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,5 +164,13 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - ryan
   - 🇫🇮 芬兰 (Finland) 02 - ryan
   - 🇫🇮 芬兰 (Finland) 03 - ryan
+  - 🇫🇮 芬兰 (Finland) 04 - ryan
+  - 🇫🇮 芬兰 (Finland) 05 - ryan
+  - 🇫🇮 芬兰 (Finland) 06 - ryan
+  - 🇫🇮 芬兰 (Finland) 07 - ryan
+  - 🇫🇮 芬兰 (Finland) 08 - ryan
+  - 🇫🇮 芬兰 (Finland) 09 - ryan
+  - 🇫🇮 芬兰 (Finland) 10 - ryan
+  - 🇫🇮 芬兰 (Finland) 11 - ryan
 rules:
 - MATCH,PROXIES
