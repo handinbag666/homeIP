@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇹 葡萄牙 (Portugal) 01 - ryan
-  server: 188.121.123.142
-  port: 9118
+- name: 🇦🇱 AL 01 - ryan
+  server: dns22.m3hrzd.ir
+  port: 1348
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: MjA4Mzg3OTY4YWViNzczMjQ3ZDI3MzljN2ZkZTQw
+  cipher: chacha20-ietf-poly1305
+  password: LzEeLj2OP0DQmpPDtVTazdGC0cHcT0Kn
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇹 葡萄牙 (Portugal) 01 - ryan
+  - 🇦🇱 AL 01 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇹 葡萄牙 (Portugal) 01 - ryan
+  - 🇦🇱 AL 01 - ryan
 rules:
 - MATCH,PROXIES
