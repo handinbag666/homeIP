@@ -25,9 +25,17 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - ryan
+  server: 139.84.145.241
+  port: 46362
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: in002.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 04 - ryan
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -38,8 +46,8 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - ryan
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 05 - ryan
   server: 152.67.8.205
   port: 80
   udp: true
@@ -59,6 +67,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - ryan
   - 🇮🇳 印度 (India) 03 - ryan
   - 🇮🇳 印度 (India) 04 - ryan
+  - 🇮🇳 印度 (India) 05 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +77,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - ryan
   - 🇮🇳 印度 (India) 03 - ryan
   - 🇮🇳 印度 (India) 04 - ryan
+  - 🇮🇳 印度 (India) 05 - ryan
 rules:
 - MATCH,PROXIES

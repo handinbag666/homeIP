@@ -27,7 +27,7 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - ryan",
-      "server": "cz-prg.dontblockmepls.com",
+      "server": "31.77.13.22",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
       "flow": "xtls-rprx-vision",
@@ -50,11 +50,11 @@
       "tag": "🇨🇿 捷克 (Czech) 03 - ryan",
       "server": "server.slavkiti.monster",
       "server_port": 443,
-      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
+      "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -62,7 +62,7 @@
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "73a9e631a09b"
+          "short_id": "8325360e8bd2"
         }
       }
     },
