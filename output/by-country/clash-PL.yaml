@@ -17,47 +17,19 @@ proxies:
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 03 - ryan
-  server: 45.148.119.127
-  port: 443
+  server: 77.232.135.141
+  port: 8445
   udp: true
   type: vless
-  uuid: 329e13e4-ee7c-4802-ac72-5fcab79c2402
-  flow: xtls-rprx-vision
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
   tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 04 - ryan
-  server: scrap.halyvanedorogo.ru
-  port: 35076
-  udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - ryan
-  server: poland-new-new.failspace.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-new-new.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 06 - ryan
-  server: 2.26.6.1
-  port: 2087
-  udp: true
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 07 - ryan
   server: 54.37.131.126
   port: 80
   udp: true
@@ -70,7 +42,17 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 08 - ryan
+- name: 🇵🇱 波兰 (Poland) 05 - ryan
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 06 - ryan
   server: 92.118.150.146
   port: 443
   udp: true
@@ -89,8 +71,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - ryan
   - 🇵🇱 波兰 (Poland) 05 - ryan
   - 🇵🇱 波兰 (Poland) 06 - ryan
-  - 🇵🇱 波兰 (Poland) 07 - ryan
-  - 🇵🇱 波兰 (Poland) 08 - ryan
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,7 +82,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - ryan
   - 🇵🇱 波兰 (Poland) 05 - ryan
   - 🇵🇱 波兰 (Poland) 06 - ryan
-  - 🇵🇱 波兰 (Poland) 07 - ryan
-  - 🇵🇱 波兰 (Poland) 08 - ryan
 rules:
 - MATCH,PROXIES

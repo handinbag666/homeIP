@@ -7,33 +7,25 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9086,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9078,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - ryan",
       "server": "195.238.126.20",
-      "server_port": 9008,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - ryan",
-      "server": "195.238.126.20",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "selector",
@@ -42,8 +34,7 @@
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 02 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 03 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 04 - ryan"
+        "🇱🇹 立陶宛 (Lithuania) 03 - ryan"
       ]
     },
     {
@@ -52,8 +43,7 @@
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01 - ryan",
         "🇱🇹 立陶宛 (Lithuania) 02 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 03 - ryan",
-        "🇱🇹 立陶宛 (Lithuania) 04 - ryan"
+        "🇱🇹 立陶宛 (Lithuania) 03 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

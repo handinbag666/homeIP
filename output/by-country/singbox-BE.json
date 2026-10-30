@@ -4,22 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - ryan",
-      "server": "www.shopify.com",
-      "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "guanwang.awsno.com",
-        "insecure": false
-      },
+      "type": "vless",
+      "tag": "🇧🇪 比利时 (Belgium) 01 - ryan",
+      "server": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev",
+      "server_port": 2095,
+      "uuid": "73796e63-0000-4000-8000-000000000008",
       "transport": {
         "type": "ws",
-        "path": "/hls/cctv5phd.m3u8",
+        "path": "/",
         "headers": {
-          "Host": "guanwang.awsno.com"
+          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
         }
       }
     },
@@ -28,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - ryan"
+        "🇧🇪 比利时 (Belgium) 01 - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - ryan"
+        "🇧🇪 比利时 (Belgium) 01 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

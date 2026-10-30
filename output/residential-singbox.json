@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan",
+      "server": "206.1.96.108",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "tls": {
+        "enabled": true,
+        "server_name": "me17.msjia8844.site",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 (家宽) - ryan",
+      "tag": "🇮🇳 印度 (India) 02 (家宽) - ryan",
       "server": "122.176.216.52",
       "server_port": 443,
       "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
@@ -15,7 +31,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "android"
         }
       },
       "transport": {
@@ -27,32 +43,20 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan",
-      "server": "654968169.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
-      "tls": {
-        "enabled": true,
-        "server_name": "654968169.df6h451rh.xin",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan",
+        "🇮🇳 印度 (India) 02 (家宽) - ryan"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - ryan",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - ryan"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - ryan",
+        "🇮🇳 印度 (India) 02 (家宽) - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

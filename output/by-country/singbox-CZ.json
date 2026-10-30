@@ -48,13 +48,34 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03 - ryan",
-      "server": "server.slavkiti.monster",
+      "server": "46.8.113.64",
       "server_port": 443,
-      "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
+      "uuid": "55ad002b-6cdf-4d76-81bb-91f3f605afc5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.foxsports.com",
+        "server_name": "www.zabbix.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_SukRXeT9BnvrE3eQTrw8vwsrhu7w3hNTMTEK2xzHEw",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 04 - ryan",
+      "server": "server.slavkiti.monster",
+      "server_port": 443,
+      "uuid": "1896c6c9-a941-4688-a865-29027bf7f8e6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -62,7 +83,7 @@
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "8325360e8bd2"
+          "short_id": "6c825bc79850"
         }
       }
     },
@@ -73,7 +94,8 @@
         "auto",
         "🇨🇿 捷克 (Czech) 01 - ryan",
         "🇨🇿 捷克 (Czech) 02 - ryan",
-        "🇨🇿 捷克 (Czech) 03 - ryan"
+        "🇨🇿 捷克 (Czech) 03 - ryan",
+        "🇨🇿 捷克 (Czech) 04 - ryan"
       ]
     },
     {
@@ -82,7 +104,8 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - ryan",
         "🇨🇿 捷克 (Czech) 02 - ryan",
-        "🇨🇿 捷克 (Czech) 03 - ryan"
+        "🇨🇿 捷克 (Czech) 03 - ryan",
+        "🇨🇿 捷克 (Czech) 04 - ryan"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
